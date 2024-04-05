@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { TitleAnimation } from "../../components/TitleAnimation";
-import {
-  Box,
-  Breadcrumbs,
-  Container,
-  Grid,
-  Link,
-  Typography,
-} from "@mui/material";
+import { Box, Breadcrumbs, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { data } from "./CareerCards";
-
 
 export const CareerCardData = () => {
   const theme = useTheme();
   const { id } = useParams();
-  const [careerData,setCareerData]= useState({})
+  const [careerData, setCareerData] = useState({});
 
   useEffect(() => {
-      const singleData = data.find((val) => val.id == id);
-      if (singleData && singleData.heading) {
-        setCareerData(singleData);
-      }   
-  },[careerData])
+    const singleData = data.find((val) => val.id == id);
+    if (singleData && singleData.heading) {
+      setCareerData(singleData);
+    }
+  }, [careerData]);
   return (
     <>
       <Box paddingY={9} mt={"50px"}>
@@ -33,20 +25,24 @@ export const CareerCardData = () => {
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Box mt={"40px"}>
           <Breadcrumbs>
-            <Link
-              underline="none"
-              href=""
-              sx={{ fontSize: { xs: "14px", xl: "17px" } }}
-              color={theme.palette.gray}
-            >
-              Career
+            <Link to={"/careers"}>
+              <Typography
+                underline="none"
+                href=""
+                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                color={theme.palette.gray}
+              >
+                Career
+              </Typography>
             </Link>
-            <Link
-              underline="none"
-              href=""
-              sx={{ fontSize: { xs: "14px", xl: "17px" } }}
-            >
-              {careerData.heading}
+            <Link>
+              <Typography
+                underline="none"
+                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                color={theme.palette.primary.main}
+              >
+                {careerData.heading}
+              </Typography>
             </Link>
           </Breadcrumbs>
 

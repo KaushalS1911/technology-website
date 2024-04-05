@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Box, CardMedia, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import monilsir from "../../assets/images/about/TPPS0075 1.png";
 import Harshadsir from "../../assets/images/about/Mask group.png";

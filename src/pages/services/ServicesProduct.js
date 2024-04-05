@@ -1,11 +1,10 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import first from "../../assets/images/Services/Group 392.png";
 import first1 from "../../assets/images/Services/Group 393.png";
 import first2 from "../../assets/images/Services/Union.png";
 import first3 from "../../assets/images/Services/Vector 10.png";
 import first4 from "../../assets/images/Services/Vector 11.png";
-import { Image } from "@mui/icons-material";
 import { useTheme } from "@emotion/react";
 
 const ServicesProduct = () => {
@@ -58,11 +57,12 @@ const ServicesProduct = () => {
               <Box
                 bgcolor="white"
                 sx={{
-                  // padding: "25px 15px",
                   padding: { xl: "35px 25px", xs: "25px 20px" },
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
+                  width: "100%",
+                  height: "100%",
                   transition: " 0.5s",
                   "&:hover": {
                     transform: "translateY(-10px)",

@@ -19,7 +19,7 @@ function Location() {
               >
                 Mail Here
               </Typography>
-              <Typography variant="body1" sx={{ color: "#6c757d" }}>
+              <Typography variant="body1" sx={{ color: "#6c757d",wordBreak: "break-word" }}>
                 jbs.technology26@gmail.com
               </Typography>
             </Box>

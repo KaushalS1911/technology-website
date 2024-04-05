@@ -1,10 +1,8 @@
 import React from "react";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import heroimage from "../../assets/images/about/Group 380.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { ServicesCounter } from "./ServicesCounter";
 import { useTheme } from "@emotion/react";
 import { Box } from "@mui/material";
 
@@ -28,20 +26,28 @@ function Herosection() {
               alignItems: "center",
             }}
           >
-            <div>
+            <Box>
               <Typography
                 variant={isSmallScreen ? "h4" : "h2"}
-                color={theme.palette.primary.main}
+                sx={{ fontWeight: "600" }}
                 gutterBottom
               >
-                Our Team <br /> Is Your Team
+                Our Team <br /> Is Your{" "}
+                <Typography
+                  color={theme.palette.primary.main}
+                  sx={{ fontWeight: "600" }}
+                  variant={isSmallScreen ? "h4" : "h2"}
+                  component={"span"}
+                >
+                  Team
+                </Typography>
               </Typography>
               <Typography variant="body1" paragraph>
                 Experience, Rigor, and a User-Centric Approach.
               </Typography>
-            </div>
+            </Box>
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ textAlign: "center"}}>
+          <Grid item xs={12} sm={6} sx={{ textAlign: "center" }}>
             <img src={heroimage} alt="" />
           </Grid>
         </Grid>

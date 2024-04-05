@@ -1,14 +1,14 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { ServicesCounter } from "./ServicesCounter";
 import { useTheme } from "@emotion/react";
+import { Counter } from "../../components/global/Counter";
 function MoreAbout() {
   const theme = useTheme();
   return (
     <>
-      <div className="MoreAboutSection" style={{ margin: "40px 0px" }}>
-        <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
-          <ServicesCounter />
+      <Counter />
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
+        <div className="MoreAboutSection" style={{ margin: "40px 0px" }}>
           <Grid
             container
             sx={{
@@ -31,7 +31,7 @@ function MoreAbout() {
                   borderRadius: "15px",
                   height: "100%",
                   transition: " 0.5s",
-                  cursor:"pointer",
+                  cursor: "pointer",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },
@@ -66,7 +66,7 @@ function MoreAbout() {
                   borderRadius: "15px",
                   height: "100%",
                   transition: " 0.5s",
-                  cursor:"pointer",
+                  cursor: "pointer",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },
@@ -100,7 +100,7 @@ function MoreAbout() {
                   borderRadius: "15px",
                   height: "100%",
                   transition: " 0.5s",
-                  cursor:"pointer",
+                  cursor: "pointer",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },
@@ -119,8 +119,8 @@ function MoreAbout() {
               </Box>
             </Grid>
           </Grid>
-        </Box>
-      </div>
+        </div>
+      </Box>
     </>
   );
 }

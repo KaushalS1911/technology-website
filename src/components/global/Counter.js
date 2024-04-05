@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useTheme } from "@emotion/react";
-import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
-export const ServicesCounter = () => {
+export const Counter = () => {
   const theme = useTheme();
   const [counterState, setCounterstate] = useState(false);
 
-  // const servicesCoun
   return (
     <>
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
