@@ -1,0 +1,88 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.fg {
+  animation: slide 3s infinite alternate-reverse linear;
+}
+
+@keyframes slide {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.bradcrumb {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  animation: run 2s infinite linear alternate-reverse;
+}
+@keyframes run {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 98%;
+  }
+}
+
+/*  ==================== location ======================== */
+.contact-info-box {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+.contact-info-box .contact-icon {
+  text-align: center;
+  background: #f7fafd;
+  border-radius: 50%;
+  color: #0086ff;
+  font-size: 30px !important;
+  height: 65px;
+  line-height: 62px;
+  transition: 0.5s;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info-box:hover .contact-icon {
+  background-color: #0086ff;
+  color: white;
+}
+.contact-info-box:hover {
+  transform: translateY(-10px);
+}
