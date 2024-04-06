@@ -39,9 +39,7 @@ const MainCources = () => {
 
   return (
     <>
-      {/* <Container sx={{ mt: "40px" }}> */}
       <Box
-        // py={5}
         mt="40px"
         px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
         sx={{ mt: "40px" }}
@@ -50,7 +48,7 @@ const MainCources = () => {
           <Typography variant="h3" sx={{ fontWeight: "600", fontSize: "35px" }}>
             What we do?
           </Typography>
-          <Typography variant="body1" my={2}>
+          <Typography variant="body1" my={4}>
             We help entrepreneurs and business leaders build and launch
             innovative custom software solutions to the market across a range of
             verticals & industries. We can help you turn your vision into a
@@ -70,7 +68,11 @@ const MainCources = () => {
                   cursor: "pointer",
                   transition: "all 0.5s",
                   "&:hover": {
-                    transform: "scale(1.05)",
+                    transform: "translateY(-10px)",
+                    "& > div": {
+                      color: "#fff",
+                      bgcolor: "primary.main",
+                    },
                   },
                 }}
               >
@@ -81,8 +83,9 @@ const MainCources = () => {
                     borderRadius: "50%",
                     display: "grid",
                     placeItems: "center",
-                    color: "#fff",
-                    bgcolor: `${theme.palette.primary.light}`,
+                    color: "primary.main",
+                    bgcolor: "#f7fafd",
+                    transition: "all 0.5s",
                     marginBottom: 2,
                   }}
                 >
@@ -103,7 +106,6 @@ const MainCources = () => {
           ))}
         </Grid>
       </Box>
-      {/* </Container> */}
     </>
   );
 };

@@ -6,9 +6,7 @@ import bglayer1 from "../../assets/images/home-image/bglayer1.png";
 
 const WhyUs = () => {
   return (
-    // <Container sx={{ mt: "40px" }}>
     <Box
-      // mt="40px"
       px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
       sx={{ background: `url(${bglayer1}) no-repeat 0% 0%` }}
       py="60px"
@@ -200,7 +198,6 @@ const WhyUs = () => {
         </Grid>
       </Grid>
     </Box>
-    // </Container>
   );
 };
 

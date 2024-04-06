@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import heroImage from "../../assets/images/home-image/3c.png";
 import { useTheme } from "@emotion/react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const theme = useTheme();
@@ -61,28 +62,32 @@ const Hero = () => {
                 component={Box}
                 direction={{ xs: "column", sm: "row" }}
               >
-                <Button
-                  variant="contained"
-                  sx={{
-                    borderRadius: 4,
-                    padding: 1,
-                    width: { xs: "100%", sm: "200px" },
-                  }}
-                >
-                  Contact Us
-                </Button>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderRadius: 4,
-                    marginX: { xs: 0, sm: 2 },
-                    marginY: { xs: 2, sm: 0 },
-                    width: { xs: "100%", sm: "200px" },
-                    padding: 1,
-                  }}
-                >
-                  See Portfolio
-                </Button>
+                <Link to="/contact">
+                  <Button
+                    variant="contained"
+                    sx={{
+                      borderRadius: 4,
+                      padding: 1,
+                      width: { xs: "100%", sm: "200px" },
+                    }}
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
+                <Link to="/portfolio">
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      borderRadius: 4,
+                      marginX: { xs: 0, sm: 2 },
+                      marginY: { xs: 2, sm: 0 },
+                      width: { xs: "100%", sm: "200px" },
+                      padding: 1,
+                    }}
+                  >
+                    See Portfolio
+                  </Button>
+                </Link>
               </Stack>
             </Box>
           </Grid>

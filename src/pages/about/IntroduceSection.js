@@ -16,6 +16,7 @@ import staff6 from "../../assets/images/about/staff-6.jpg";
 import staff7 from "../../assets/images/about/staff-7.jpg";
 import staff8 from "../../assets/images/about/staff-8.jpg";
 import React from "react";
+import { Link } from "react-router-dom";
 function IntroduceSection() {
   const theme = useTheme();
   return (
@@ -56,26 +57,28 @@ function IntroduceSection() {
                 nesciunt corrupti libero consequatur? Fugiat minus vero et alias
                 consequuntur .
               </Typography>
-              <Button
-                variant={"outline"}
-                sx={{
-                  mt: 3,
-                  borderRadius: "30px",
-                  fontWeight: "bold",
-                  mt: "30px",
-                  padding: "12px 42px",
-                  border: `2px solid ${theme.palette.primary.main}`,
-                  color: theme.palette.primary.main,
-                  backgroundColor: theme.palette.common.white,
-                  "&:hover": {
-                    backgroundColor: theme.palette.primary.main,
-                    color: theme.palette.common.white,
-                    borderColor: theme.palette.primary.main,
-                  },
-                }}
-              >
-                SEE OUR WORK
-              </Button>
+              <Link to="/portfolio">
+                <Button
+                  variant={"outline"}
+                  sx={{
+                    mt: 3,
+                    borderRadius: "30px",
+                    fontWeight: "bold",
+                    mt: "30px",
+                    padding: "12px 42px",
+                    border: `2px solid ${theme.palette.primary.main}`,
+                    color: theme.palette.primary.main,
+                    backgroundColor: theme.palette.common.white,
+                    "&:hover": {
+                      backgroundColor: theme.palette.primary.main,
+                      color: theme.palette.common.white,
+                      borderColor: theme.palette.primary.main,
+                    },
+                  }}
+                >
+                  SEE OUR WORK
+                </Button>
+              </Link>
             </Grid>
             <Grid
               item

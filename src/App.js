@@ -6,24 +6,25 @@ import { Services } from "./pages/services/Services";
 import { Careers } from "./pages/careers/Careers";
 import { Route, Routes } from "react-router-dom";
 import { CareerCardData } from "./pages/careers/CareerCardData";
-import Home from "./pages/Home";
+// import Home from "./pages/Home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/Contact Us/Contact";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/services" element={<Services/>}/>
+        <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/career-card-data/:id" element={<CareerCardData />} />
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/> 
+      <Footer />
     </>
   );
 }

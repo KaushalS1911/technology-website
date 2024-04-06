@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Link, Typography } from "@mui/material";
+import { Box, Container, Grid,  Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "@emotion/react";
 import footerBack from "../assets/images/Footer/Object.png";
@@ -10,6 +10,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const theme = useTheme();
   return (
@@ -33,15 +34,21 @@ const Footer = () => {
               md={4}
               sx={{ display: "flex", justifyContent: "center" }}
             >
-              <Box
-                sx={{ maxHeight: "270px", maxWidth: "270px", padding: "32px" }}
-              >
-                <img
-                  src={footerLogo}
-                  alt="logo"
-                  style={{ objectFit: "contain" }}
-                />
-              </Box>
+              <Link to={"/"}>
+                <Box
+                  sx={{
+                    maxHeight: "270px",
+                    maxWidth: "270px",
+                    padding: "32px",
+                  }}
+                >
+                  <img
+                    src={footerLogo}
+                    alt="logo"
+                    style={{ objectFit: "contain" }}
+                  />
+                </Box>
+              </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={2} sx={{ py: "25px" }}>
               <Typography
@@ -55,76 +62,88 @@ const Footer = () => {
                 Company
               </Typography>
               <Box sx={{ my: 1.3 }}>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Home
+                <Link to="/">
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    Home
+                  </Box>
                 </Link>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  About
+                <Link to="/about">
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    About
+                  </Box>
                 </Link>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Portfolio
+                <Link to="/portfolio">
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    Portfolio
+                  </Box>
                 </Link>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Services
+                <Link to="/services">
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    Services
+                  </Box>
                 </Link>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Careers
+                <Link to={"/careers"}>
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    Careers
+                  </Box>
                 </Link>
-                <Link
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "12px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Contact Us
+                <Link to={"/contact "}>
+                  <Box
+                    sx={{
+                      textDecoration: "none",
+                      color: theme.palette.footerGray,
+                      fontSize: "12px",
+                      letterSpacing: "0.8px",
+                      my: "9px",
+                    }}
+                  >
+                    Contact Us
+                  </Box>
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
-              <Typography
+              <Box
                 sx={{
                   letterSpacing: "0.7px",
                   fontSize: "15px",
@@ -133,9 +152,9 @@ const Footer = () => {
                 }}
               >
                 Services
-              </Typography>
+              </Box>
               <Box sx={{ my: 1.3 }}>
-                <Link
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -145,8 +164,8 @@ const Footer = () => {
                   }}
                 >
                   Website Development
-                </Link>
-                <Link
+                </Box>
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -156,8 +175,8 @@ const Footer = () => {
                   }}
                 >
                   Cloud App Development
-                </Link>
-                <Link
+                </Box>
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -167,7 +186,7 @@ const Footer = () => {
                   }}
                 >
                   Website Hosting
-                </Link>
+                </Box>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
@@ -182,7 +201,7 @@ const Footer = () => {
                 Address
               </Typography>
               <Box sx={{ my: 1.3 }}>
-                <Link
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -198,8 +217,8 @@ const Footer = () => {
                   <Box sx={{ fontSize: "12px" }}>
                     203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
                   </Box>
-                </Link>
-                <Link
+                </Box>
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -215,8 +234,8 @@ const Footer = () => {
                   <Box sx={{ fontSize: "12px" }}>
                     jbs.technology26@gmail.com
                   </Box>
-                </Link>
-                <Link
+                </Box>
+                <Box
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
@@ -229,9 +248,9 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   Phone : 79844 43901
-                </Link>
+                </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: "5px" }}>
-                  <Link>
+                  <Box>
                     <FacebookOutlinedIcon
                       sx={{
                         fontSize: "30px",
@@ -239,8 +258,8 @@ const Footer = () => {
                         mx: "2px",
                       }}
                     />
-                  </Link>
-                  <Link>
+                  </Box>
+                  <Box>
                     <TwitterIcon
                       sx={{
                         fontSize: "30px",
@@ -248,8 +267,8 @@ const Footer = () => {
                         mx: "2px",
                       }}
                     />
-                  </Link>
-                  <Link>
+                  </Box>
+                  <Box>
                     <InstagramIcon
                       sx={{
                         fontSize: "30px",
@@ -257,8 +276,8 @@ const Footer = () => {
                         mx: "2px",
                       }}
                     />
-                  </Link>
-                  <Link>
+                  </Box>
+                  <Box>
                     <LinkedInIcon
                       sx={{
                         fontSize: "30px",
@@ -266,7 +285,7 @@ const Footer = () => {
                         mx: "2px",
                       }}
                     />
-                  </Link>
+                  </Box>
                 </Box>
               </Box>
             </Grid>

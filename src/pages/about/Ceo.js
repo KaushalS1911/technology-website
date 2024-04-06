@@ -101,6 +101,7 @@ function Ceo() {
             {itemData.map((item, index) => (
               <Grid item lg={3} sm={4} xs={12} key={index}>
                 <CEOBox
+                  
                   image={item.img}
                   name={item.name}
                   position={item.position}

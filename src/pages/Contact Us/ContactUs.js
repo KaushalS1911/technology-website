@@ -5,6 +5,7 @@ import ContactImg from "../../assets/images/Contact/Contact-Us_image.png";
 import { Grid, TextField, Button, Container, Box } from "@mui/material";
 import { TitleAnimation } from "./TitleAnimation ";
 import { useTheme } from "@emotion/react";
+import axios from "axios";
 
 function ContactUs() {
   const theme = useTheme();
@@ -28,9 +29,17 @@ function ContactUs() {
       message: "",
     },
     validationSchema: validationSchema,
-    onSubmit: async (values, action) => {
-      console.log(values);
-      action.resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        await axios.post(
+          "https://jbs-institut-backend.onrender.com/api/user-form",
+          values
+        );
+        resetForm();
+      }
+      catch (error) {
+        console.error("Error submitting form:", error);
+      }
     },
   });
   return (

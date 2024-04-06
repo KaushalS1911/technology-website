@@ -4,7 +4,7 @@ import { useTheme } from "@emotion/react";
 function CEOBox({ image, name, position }) {
   const theme = useTheme();
   return (
-    <Card sx={{ margin: "3px 0px" }}>
+    <Card sx={{ margin: "3px 0px",cursor:"pointer" }}>
       <CardMedia component="img" height="140" image={image} alt={name} />
       <CardContent sx={{ padding: "8px 16px" }}>
         <Typography
