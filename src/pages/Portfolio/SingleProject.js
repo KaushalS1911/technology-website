@@ -6,7 +6,6 @@ import { useTheme } from "@emotion/react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import image from "../../assets/images/about/Group 380.png";
 import { portfolioItems } from "./Portfolio";
 
 

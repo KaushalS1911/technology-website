@@ -49,7 +49,7 @@ function MoreAbout() {
                                     We pride ourselves on
                                     being a dynamic and forward-thinking
                                     technology solutions provider. Established
-                                    in [Year], our journey has been marked by a
+                                    in 2018, our journey has been marked by a
                                     relentless commitment to innovation and a
                                     passion for delivering exceptional results.
                                     As a team of dedicated professionals, we
