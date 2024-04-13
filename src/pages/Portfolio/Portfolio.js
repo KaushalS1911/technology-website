@@ -4,38 +4,80 @@ import { useTheme } from "@emotion/react";
 import nectarImg from "../../assets/images/portfolio/nectar-2 (1) 1.png";
 import nectarlogo from "../../assets/images/portfolio/Group 1 1.png";
 import nectarlogo2 from "../../assets/images/portfolio/Group 1 1 (1).png";
+
+import project1 from "../../assets/images/portfolio/project1 (1).png"
+import stocklogo from "../../assets/images/portfolio/sytock logo.png"
+import project2 from "../../assets/images/portfolio/stock.jpg";
+import project3 from "../../assets/images/portfolio/project1 (4).png";
+import jbs from "../../assets/images/portfolio/jbs.jpg";
+import paperlogo from "../../assets/images/portfolio/paperlogo.png";
+import nectar from "../../assets/images/portfolio/nectar.jpg";
+import { useNavigate } from "react-router-dom";
+
+
+
+const portfolioItems = [
+  {
+    id: 1,
+    img: nectarImg,
+    logo: nectarlogo,
+    title: "Nectar",
+    description:
+      "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
+    buttonVariant: "outlined",
+    buttonColor: "#fff",
+    buttonBorder: "white",
+    buttonBackground: "#fff",
+    backgroundColor: "rgba(91,212,129,1)",
+    sectionTextColor: "white",
+    images: [{nectarImg},{nectar}],
+  },
+  {
+    id: 2,
+    img: project2,
+    logo: paperlogo,
+    title: "Paper Generation",
+    description:
+      "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
+    buttonVariant: "outlined",
+    buttonColor: "rgba(91,212,129,1)",
+    buttonBorder: "rgba(91,212,129,1)",
+    buttonBackground: "rgba(91,212,129,1)",
+    backgroundColor: "#fff",
+    sectionTextColor: "#3E3E3E",
+  },
+  {
+    id: 3,
+    img: project1,
+    logo: stocklogo,
+    title: "Hedger Community",
+    description:
+      "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
+    buttonVariant: "outlined",
+    buttonColor: "#fff",
+    buttonBorder: "white",
+    buttonBackground: "#fff",
+    backgroundColor: "#141C25",
+    sectionTextColor: "white",
+  },
+  {
+    id: 4,
+    img: project3,
+    logo: jbs,
+    title: "Institute Website",
+    description:
+      "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
+    buttonVariant: "outlined",
+    buttonColor: "#141C25",
+    buttonBorder: "#141C25",
+    buttonBackground: "#141C25",
+    backgroundColor: "#fff",
+    sectionTextColor: "#3E3E3E",
+  },
+];
 const Portfolio = () => {
   const theme = useTheme();
-  const portfolioItems = [
-    {
-      id: 1,
-      img: nectarImg,
-      logo: nectarlogo,
-      title: "Social Media Community for Fans",
-      description:
-        "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
-      buttonVariant: "outlined",
-      buttonColor: "#fff",
-      buttonBorder: "white",
-      buttonBackground: "#fff",
-      backgroundColor: "rgba(91,212,129,1)",
-      sectionTextColor: "white",
-    },
-    {
-      id: 2,
-      img: nectarImg,
-      logo: nectarlogo2,
-      title: "Social Media Community for Fans",
-      description:
-        "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences.",
-      buttonVariant: "outlined",
-      buttonColor: "rgba(91,212,129,1)",
-      buttonBorder: "rgba(91,212,129,1)",
-      buttonBackground: "rgba(91,212,129,1)",
-      backgroundColor: "#fff",
-      sectionTextColor: "#3E3E3E",
-    },
-  ];
+  const navigate = useNavigate()
   return (
     <>
       <Box bgcolor={theme.palette.backgroundLiteGrey} sx={{ mt: "40px" }}>
@@ -140,6 +182,9 @@ const Portfolio = () => {
                         color: item.backgroundColor,
                       },
                     }}
+                    onClick={() =>
+                      navigate(`/portfolio/single-project/${item.id}`)
+                    }
                   >
                     View more
                   </Button>
@@ -174,4 +219,5 @@ const Portfolio = () => {
     </>
   );
 };
+export { portfolioItems };
 export default Portfolio;

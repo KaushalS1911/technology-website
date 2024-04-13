@@ -10,6 +10,7 @@ import { CareerCardData } from "./pages/careers/CareerCardData";
 import About from "./pages/about/About";
 import Contact from "./pages/Contact Us/Contact";
 import Home from "./pages/Home/Home";
+import SingleProject from "./pages/Portfolio/SingleProject";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route
+          path="/portfolio/single-project/:id"
+          element={<SingleProject />}
+        />
         <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/career-card-data/:id" element={<CareerCardData />} />

@@ -87,3 +87,27 @@ li {
 .contact-info-box:hover {
   transform: translateY(-10px);
 }
+
+
+
+
+/*  *************** slider ****************** */
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+.owl-carousel .owl-nav button span{
+  background-color: #d6d6d6 !important;
+  padding: 15px !important;
+  font-size: 25px !important;
+}
+.owl-carousel .owl-nav .owl-prev{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.owl-carousel .owl-nav .owl-next{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
