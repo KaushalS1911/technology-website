@@ -1,15 +1,15 @@
 import React from "react";
 import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import {useTheme} from "@emotion/react";
-import nectarImg from "../../assets/images/portfolio/nectar-2 (1) 1.png";
-import nectarlogo from "../../assets/images/portfolio/Group 1 1.png";
-import project1 from "../../assets/images/portfolio/project1 (1).png"
-import stocklogo from "../../assets/images/portfolio/sytock logo.png"
-import project2 from "../../assets/images/portfolio/stock.jpg";
-import project3 from "../../assets/images/portfolio/project1 (4).png";
-import jbs from "../../assets/images/portfolio/jbs.jpg";
-import paperlogo from "../../assets/images/portfolio/paperlogo.png";
-import nectar from "../../assets/images/portfolio/nectar.jpg";
+import nectarImg from "../../assets/images/portfolio/nectar-2 (1) 1.webp";
+import nectarlogo from "../../assets/images/portfolio/Group 1 1.webp";
+import project1 from "../../assets/images/portfolio/project1 (1).webp"
+import stocklogo from "../../assets/images/portfolio/sytock logo.webp"
+import project2 from "../../assets/images/portfolio/stock.webp";
+import project3 from "../../assets/images/portfolio/project1 (4).webp";
+import jbs from "../../assets/images/portfolio/jbs.webp";
+import paperlogo from "../../assets/images/portfolio/paperlogo.webp";
+import nectar from "../../assets/images/portfolio/nectar.webp";
 import {useNavigate} from "react-router-dom";
 
 

@@ -1,8 +1,8 @@
 import React from "react";
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
-import ContactImg from "../../assets/images/Contact/Contact-Us_image.png";
-import { Grid, TextField, Button, Container, Box } from "@mui/material";
+import ContactImg from "../../assets/images/Contact/Contact-Us_image.webp";
+import { Grid, TextField, Button, Box } from "@mui/material";
 import { TitleAnimation } from "./TitleAnimation ";
 import { useTheme } from "@emotion/react";
 import axios from "axios";
@@ -36,8 +36,7 @@ function ContactUs() {
           values
         );
         resetForm();
-      }
-      catch (error) {
+      } catch (error) {
         console.error("Error submitting form:", error);
       }
     },
@@ -65,7 +64,7 @@ function ContactUs() {
               <div className="contact-image">
                 <img
                   src={ContactImg}
-                  alt="contact-image"
+                  alt="contactimage"
                   className="img-fluid"
                 />
               </div>

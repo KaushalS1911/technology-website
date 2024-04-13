@@ -1,10 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import first from "../../assets/images/Services/Group 392.png";
-import first1 from "../../assets/images/Services/Group 393.png";
-import first2 from "../../assets/images/Services/Union.png";
-import first3 from "../../assets/images/Services/Vector 10.png";
-import first4 from "../../assets/images/Services/Vector 11.png";
+import first from "../../assets/images/Services/Group 392.webp";
+import first1 from "../../assets/images/Services/Group 393.webp";
+import first2 from "../../assets/images/Services/Union.webp";
+import first3 from "../../assets/images/Services/Vector 10.webp";
+import first4 from "../../assets/images/Services/Vector 11.webp";
 import { useTheme } from "@emotion/react";
 
 const ServicesProduct = () => {

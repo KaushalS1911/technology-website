@@ -2,7 +2,6 @@ import React from "react";
 import { TitleAnimation } from "../../components/TitleAnimation";
 import { Box } from "@mui/material";
 import { CareerCards } from "./CareerCards";
-import { CareerCardData } from "./CareerCardData";
 import { useTheme } from "@emotion/react";
 
 export const Careers = () => {

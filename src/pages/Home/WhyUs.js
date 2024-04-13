@@ -1,8 +1,8 @@
-import { Box, Container, Grid, Paper, Typography } from "@mui/material";
+import { Box,  Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import group from "../../assets/images/home-image/4.png";
-import smallLogo from "../../assets/images/home-image/Group 370.png";
-import bglayer1 from "../../assets/images/home-image/bglayer1.png";
+import group from "../../assets/images/home-image/4.webp";
+import smallLogo from "../../assets/images/home-image/Group 370.webp";
+import bglayer1 from "../../assets/images/home-image/bglayer1.webp";
 
 const WhyUs = () => {
   return (

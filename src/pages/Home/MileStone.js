@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 // import { TitleAnimation } from "../TitleAnimation";
-import keyboardImg from "../../assets/images/home-image/keyboard.jpg";
+import keyboardImg from "../../assets/images/home-image/keyboard.webp";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { TitleAnimation } from "../Contact Us/TitleAnimation ";

@@ -1,8 +1,8 @@
 import { useTheme } from "@emotion/react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import img1 from "../../assets/images/Careers/new.webp";
-import node from "../../assets/images/Careers/node-js-icon.png";
+import node from "../../assets/images/Careers/node-js-icon.webp";
 import flutter from "../../assets/images/Careers/Flutter_Featured_Logo.webp";
 import { useNavigate } from "react-router-dom";
 
@@ -58,7 +58,7 @@ const data = [
 ];
 export const CareerCards = () => {
   const theme = useTheme();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>

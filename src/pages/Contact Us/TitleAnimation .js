@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 export const TitleAnimation = ({ title }) => {
   const theme = useTheme();

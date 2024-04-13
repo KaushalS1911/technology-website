@@ -1,8 +1,8 @@
-import { Box, Container, Grid,  Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "@emotion/react";
-import footerBack from "../assets/images/Footer/Object.png";
-import footerLogo from "../assets/images/Footer/footerlogo.png";
+import footerBack from "../assets/images/Footer/Object.webp";
+import footerLogo from "../assets/images/Footer/footerlogo.webp";
 import ModeOfTravelOutlinedIcon from "@mui/icons-material/ModeOfTravelOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
@@ -251,40 +251,48 @@ const Footer = () => {
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: "5px" }}>
                   <Box>
-                    <FacebookOutlinedIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link to="https://www.facebook.com/profile.php?id=61555676966897" target="_blank">
+                      <FacebookOutlinedIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <TwitterIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link to="https://twitter.com/JBSTechnology26" target="_blank">
+                      <TwitterIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <InstagramIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link to="https://www.instagram.com/jbs_technology/?hl=en" target="_blank">
+                      <InstagramIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <LinkedInIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link to="https://www.linkedin.com/company/jbs-coder-infotech/" target="_blank">
+                      <LinkedInIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                 </Box>
               </Box>

@@ -1,16 +1,16 @@
 import { useTheme } from "@emotion/react";
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import monilsir from "../../assets/images/about/TPPS0075 1.png";
-import Harshadsir from "../../assets/images/about/Mask group.png";
-import logo from "../../assets/images/about/Group 387.png";
+import monilsir from "../../assets/images/about/TPPS0075 1.webp";
+import Harshadsir from "../../assets/images/about/Mask group.webp";
+import logo from "../../assets/images/about/Group 387.webp";
 import CEOBox from "./CEOBox";
-import Dev1 from "../../../src/assets/images/about/dev1.jpg"
-import Dev2 from "../../../src/assets/images/about/dev2.jpg"
-import Dev3 from "../../../src/assets/images/about/dev3.jpg"
-import Dev4 from "../../../src/assets/images/about/dev4.jpg"
-import Dev5 from "../../../src/assets/images/about/dev5.jpg"
-import Dev7 from "../../../src/assets/images/about/dev7.jpg"
+import Dev1 from "../../../src/assets/images/about/dev1.webp"
+import Dev2 from "../../../src/assets/images/about/dev2.webp"
+import Dev3 from "../../../src/assets/images/about/dev3.webp"
+import Dev4 from "../../../src/assets/images/about/dev4.webp"
+import Dev5 from "../../../src/assets/images/about/dev5.webp"
+import Dev7 from "../../../src/assets/images/about/dev7.webp"
 
 const itemData = [
   {
