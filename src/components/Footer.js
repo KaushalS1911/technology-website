@@ -54,7 +54,7 @@ const Footer = () => {
               <Typography
                 sx={{
                   letterSpacing: "0.7px",
-                  fontSize: "15px",
+                  fontSize: "16px",
                   mb: "14px",
                   display: "block",
                 }}
@@ -80,7 +80,7 @@ const Footer = () => {
                     sx={{
                       textDecoration: "none",
                       color: theme.palette.footerGray,
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.8px",
                       my: "9px",
                     }}
@@ -93,7 +93,7 @@ const Footer = () => {
                     sx={{
                       textDecoration: "none",
                       color: theme.palette.footerGray,
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.8px",
                       my: "9px",
                     }}
@@ -106,7 +106,7 @@ const Footer = () => {
                     sx={{
                       textDecoration: "none",
                       color: theme.palette.footerGray,
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.8px",
                       my: "9px",
                     }}
@@ -119,7 +119,7 @@ const Footer = () => {
                     sx={{
                       textDecoration: "none",
                       color: theme.palette.footerGray,
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.8px",
                       my: "9px",
                     }}
@@ -132,7 +132,7 @@ const Footer = () => {
                     sx={{
                       textDecoration: "none",
                       color: theme.palette.footerGray,
-                      fontSize: "12px",
+                      fontSize: "13px",
                       letterSpacing: "0.8px",
                       my: "9px",
                     }}
@@ -146,7 +146,7 @@ const Footer = () => {
               <Box
                 sx={{
                   letterSpacing: "0.7px",
-                  fontSize: "15px",
+                  fontSize: "16px",
                   mb: "14px",
                   display: "block",
                 }}
@@ -158,7 +158,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                   }}
@@ -169,7 +169,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                   }}
@@ -180,7 +180,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                   }}
@@ -193,7 +193,7 @@ const Footer = () => {
               <Typography
                 sx={{
                   letterSpacing: "0.7px",
-                  fontSize: "15px",
+                  fontSize: "16px",
                   mb: "14px",
                   display: "block",
                 }}
@@ -205,7 +205,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                     display: "flex",
@@ -214,7 +214,7 @@ const Footer = () => {
                   <ModeOfTravelOutlinedIcon
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
-                  <Box sx={{ fontSize: "12px" }}>
+                  <Box sx={{ fontSize: "13px" }}>
                     203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
                   </Box>
                 </Box>
@@ -222,7 +222,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                     display: "flex",
@@ -231,7 +231,7 @@ const Footer = () => {
                   <EmailOutlinedIcon
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
-                  <Box sx={{ fontSize: "12px" }}>
+                  <Box sx={{ fontSize: "13px" }}>
                     jbs.technology26@gmail.com
                   </Box>
                 </Box>
@@ -239,7 +239,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
-                    fontSize: "12px",
+                    fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
                   }}

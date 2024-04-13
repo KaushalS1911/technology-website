@@ -42,7 +42,7 @@ const WhyUs = () => {
                 },
               }}
             >
-              <Paper component={Box} p={4} borderRadius="3">
+              <Paper component={Box} p={4} borderRadius="3" height="100%">
                 <Box>
                   <img
                     src={smallLogo}
@@ -51,11 +51,13 @@ const WhyUs = () => {
                   />
                 </Box>
                 <Typography variant="h6" fontWeight={600} my={1}>
-                  Innovative Solutions
+                  Innovative Technology
                 </Typography>
                 <Typography variant="body2">
-                  Stay ahead with forward-thinking solutions, embracing the
-                  latest technology for your business in the digital landscape.
+                  Our platform is built on the latest technological
+                  advancements, ensuring fast, reliable, and scalable
+                  interactions. With JBS Technology, you stay connected smoothly
+                  and efficiently, regardless of your location.
                 </Typography>
               </Paper>
             </Grid>
@@ -71,7 +73,7 @@ const WhyUs = () => {
                 },
               }}
             >
-              <Paper component={Box} p={4} borderRadius="3">
+              <Paper component={Box} p={4} borderRadius="3" height="100%">
                 <Box>
                   <img
                     src={smallLogo}
@@ -80,11 +82,13 @@ const WhyUs = () => {
                   />
                 </Box>
                 <Typography variant="h6" fontWeight={600}>
-                  Innovative Solutions
+                  User-Centric Design
                 </Typography>
                 <Typography variant="body2">
-                  Stay ahead with forward-thinking solutions, embracing the
-                  latest technology for your business in the digital landscape.
+                  We prioritize simplicity and functionality in our design,
+                  making our social network intuitive and easy to navigate for
+                  everyone. Your experience on our platform is seamless,
+                  empowering you to focus on your connections and content.
                 </Typography>
               </Paper>
             </Grid>
@@ -120,7 +124,7 @@ const WhyUs = () => {
               },
             }}
           >
-            <Paper component={Box} p={4} borderRadius="3">
+            <Paper component={Box} p={4} borderRadius="3" height="100%">
               <Box>
                 <img
                   src={smallLogo}
@@ -129,11 +133,13 @@ const WhyUs = () => {
                 />
               </Box>
               <Typography variant="h6" fontWeight={600}>
-                Innovative Solutions
+                Privacy and Security
               </Typography>
               <Typography variant="body2">
-                Stay ahead with forward-thinking solutions, embracing the latest
-                technology for your business in the digital landscape.
+                We use advanced security measures to protect your data and
+                ensure your interactions remain private. With robust privacy
+                settings, you control your information, allowing you to
+                communicate with confidence and peace of mind.
               </Typography>
             </Paper>
           </Grid>
@@ -149,7 +155,7 @@ const WhyUs = () => {
               },
             }}
           >
-            <Paper component={Box} p={4} borderRadius="3">
+            <Paper component={Box} p={4} borderRadius="3" height="100%">
               <Box>
                 <img
                   src={smallLogo}
@@ -158,11 +164,13 @@ const WhyUs = () => {
                 />
               </Box>
               <Typography variant="h6" fontWeight={600}>
-                Innovative Solutions
+                Global Community
               </Typography>
               <Typography variant="body2">
-                Stay ahead with forward-thinking solutions, embracing the latest
-                technology for your business in the digital landscape.
+                Connect with a diverse and vibrant community from across the
+                globe. Our platform removes geographical and cultural barriers,
+                enriching your social media experience with a variety of
+                perspectives and interactions.
               </Typography>
             </Paper>
           </Grid>
@@ -178,7 +186,7 @@ const WhyUs = () => {
               },
             }}
           >
-            <Paper component={Box} p={4} borderRadius="3">
+            <Paper component={Box} p={4} borderRadius="3" height="100%">
               <Box>
                 <img
                   src={smallLogo}
@@ -187,11 +195,13 @@ const WhyUs = () => {
                 />
               </Box>
               <Typography variant="h6" fontWeight={600}>
-                Innovative Solutions
+                Responsive Support
               </Typography>
               <Typography variant="body2">
-                Stay ahead with forward-thinking solutions, embracing the latest
-                technology for your business in the digital landscape.
+                Our customer service team is always available to provide timely
+                and effective assistance. Whether you have a technical question
+                or need help with your account, we are here to ensure your
+                experience is hassle-free.
               </Typography>
             </Paper>
           </Grid>

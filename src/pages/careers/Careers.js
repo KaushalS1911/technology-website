@@ -13,7 +13,7 @@ export const Careers = () => {
         <Box bgcolor={"white"} paddingY={9} mt={"40px"}>
           <TitleAnimation title="Openings" />
         </Box>
-        <Box mt={"40px"}>
+        <Box mt={"40px"} mb={"80px"}>
           <CareerCards />
         </Box>
         

@@ -17,23 +17,23 @@ const MainCources = () => {
         {
             id: "2",
             logo: CodeOffIcon,
-            courseName: "Web Development",
+            courseName: "App Development",
             courseDescription:
-                "From simple brochure sites to powerful web applications, we craft digital experiences that engage, convert, and grow your business.",
+                "Got an app idea? We turn it into reality. From concept to launch, our experts build custom apps that solve problems and drive results.",
         },
         {
             id: "3",
             logo: CodeOffIcon,
-            courseName: "Web Development",
+            courseName: "Graphic Design",
             courseDescription:
-                "From simple brochure sites to powerful web applications, we craft digital experiences that engage, convert, and grow your business.",
+                " We work closely with you to understand your brand values, target audience, and design preferences, ensuring that our designs align with your vision and goals.",
         },
         {
             id: "4",
             logo: CodeOffIcon,
-            courseName: "Web Development",
+            courseName: "E-commerce Development",
             courseDescription:
-                "From simple brochure sites to powerful web applications, we craft digital experiences that engage, convert, and grow your business.",
+                "  We leverage cutting-edge technologies and industry best practices to create e-commerce websites that are visually appealing, easy to navigate, and optimized for conversions.",
         },
     ];
 
@@ -67,7 +67,7 @@ const MainCources = () => {
                                     border: `3px dashed ${theme.palette.primary.main}`,
                                     padding: 3,
                                     borderRadius: 2,
-                                    cursor: "pointer",
+                                    height:"100%",cursor: "pointer",
                                     transition: "all 0.5s",
                                     "&:hover": {
                                         transform: "translateY(-10px)",
@@ -96,7 +96,7 @@ const MainCources = () => {
                                 <Typography
                                     variant="h5"
                                     fontWeight={500}
-                                    sx={{marginY: "5px"}}
+                                    sx={{marginY: "10px"}}
                                 >
                                     {course.courseName}
                                 </Typography>
