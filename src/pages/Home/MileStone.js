@@ -17,7 +17,7 @@ const MileStone = () => {
           color: "#fff",
           background: `linear-gradient(rgba(0, 51, 97, 0.6), rgba(0, 0, 0, 0.9)), url(${keyboardImg}) no-repeat fixed`,
           backgroundSize: "cover",
-          py: "70px",
+          p: "70px",
           // mt: "60px",
         }}
       >
@@ -33,29 +33,30 @@ const MileStone = () => {
             <Grid item xs={6} sm={3}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
-                  <CountUp start={0} end={60} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={50} duration={2} delay={0}></CountUp>
                 )}
                 +
               </Typography>
-              <Typography variant="body2">Happy Clients</Typography>
+              <Typography variant="subtitle">Happy Clients</Typography>
             </Grid>
             <Grid item xs={6} sm={3}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
-                  <CountUp start={0} end={180} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={80} duration={2} delay={0}></CountUp>
                 )}
                 +
               </Typography>
-              <Typography variant="body2">Projects</Typography>
+              <Typography variant="subtitle">Projects</Typography>
             </Grid>
             <Grid item xs={6} sm={3}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
-                  <CountUp start={0} end={20} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={15} duration={2} delay={0}></CountUp>
                 )}
                 +
               </Typography>
-              <Typography variant="body2">Team</Typography>
+              <Typography variant="subtitle">In-house
+                specialists</Typography>
             </Grid>
             <Grid item xs={6} sm={3}>
               <Typography sx={{ fontSize: "40px" }}>
@@ -69,7 +70,7 @@ const MileStone = () => {
                 )}
                 +
               </Typography>
-              <Typography variant="body2">Hours Spent</Typography>
+              <Typography variant="subtitle">Hours Spent</Typography>
             </Grid>
           </Grid>
         </ScrollTrigger>

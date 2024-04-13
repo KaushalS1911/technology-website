@@ -35,7 +35,7 @@ function Location() {
                 Visit Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                F-38 , City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
+                203 , City Center, Yogi Chowk , Yogi Chowk Ground, Chikuwadi, Varachha, Surat - 395010 , Gujarat. IN
               </Typography>
             </Box>
           </Grid>

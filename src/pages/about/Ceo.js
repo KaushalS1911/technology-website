@@ -5,6 +5,12 @@ import monilsir from "../../assets/images/about/TPPS0075 1.png";
 import Harshadsir from "../../assets/images/about/Mask group.png";
 import logo from "../../assets/images/about/Group 387.png";
 import CEOBox from "./CEOBox";
+import Dev1 from "../../../src/assets/images/about/dev1.jpg"
+import Dev2 from "../../../src/assets/images/about/dev2.jpg"
+import Dev3 from "../../../src/assets/images/about/dev3.jpg"
+import Dev4 from "../../../src/assets/images/about/dev4.jpg"
+import Dev5 from "../../../src/assets/images/about/dev5.jpg"
+import Dev7 from "../../../src/assets/images/about/dev7.jpg"
 
 const itemData = [
   {
@@ -20,46 +26,36 @@ const itemData = [
 ];
 const staff = [
   {
-    img: monilsir,
-    name: "Monil Kakadiya",
-    position: "Co-Founter & CEO",
+    img: Dev1,
+    name: "Kaushal Sojitra",
+    position: "Full Stack Developer",
   },
   {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
+    img: Dev2,
+    name: "Abhishek Vaghsiya",
+    position: "Frontend Developer",
   },
   {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
+    img: Dev5,
+    name: "Harshil Savaliya",
+    position: "Full Stack Developer",
   },
   {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
-  },
-  {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
-  },
-  {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
+    img: Dev3,
+    name: "Manav Gabani",
+    position: "Flutter Developer",
   },
 ];
 const staff_2 = [
   {
-    img: monilsir,
-    name: "Monil Kakadiya",
-    position: "Co-Founter & CEO",
+    img: Dev4,
+    name: "Yash Kakadiya",
+    position: "UI / UX Designer",
   },
   {
-    img: Harshadsir,
-    name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
+    img: Dev7,
+    name: "Dixita Ghelani",
+    position: "UI / UX Designer",
   },
 ];
 
@@ -89,7 +85,7 @@ function Ceo() {
               >
                 Our founding team started their journeys in the corporate world.
                 They then moved on to build their own startups before coming
-                together to form Altar.io. They studied lean product development
+                together to form JBS Technology. They studied lean product development
                 through building startups from the ground up with very few
                 resources. This is why when you build a product with us it will
                 always be streamlined to the most important features for your
@@ -128,7 +124,7 @@ function Ceo() {
                 color={theme.palette.gray}
               >
                 We have a rigorous screening process to identify the best
-                talent, from inception, UXUI design, and development. We are
+                talent, from inception, UX / UI design, and development. We are
                 always on the lookout for great problem solvers with passion and
                 drive, these are the types of people we want to work with and
                 learn from ourselves.
@@ -183,7 +179,7 @@ function Ceo() {
                 lineHeight: "32px",
               }}
             >
-              Ui & Ux Designer
+              UI / UX Designer
             </Typography>
           </Box>
           <Grid container justifyContent="start" spacing={3} py={3}>

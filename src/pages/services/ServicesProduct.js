@@ -13,33 +13,33 @@ const ServicesProduct = () => {
   const data = [
     {
       image: first,
-      heading: "Product scope",
-      descripation:
-        "A structured 15 day process to align your product vision with your business goals.",
+      heading: "Expertise",
+      description:
+        "Our team of seasoned professionals brings a wealth of experience and expertise to every project.",
     },
     {
       image: first1,
-      heading: "Product scope",
-      descripation:
-        "A structured 15 day process to align your product vision with your business goals.",
+      heading: "Innovation",
+      description:
+        "We stay at the forefront of technology trends, ensuring our solutions are innovative and future-ready.",
     },
     {
       image: first2,
-      heading: "Product scope",
-      descripation:
-        "A structured 15 day process to align your product vision with your business goals.",
+      heading: "Client-Centric Approach",
+      description:
+        "Your success is our priority. We work closely with clients to understand their goals and deliver solutions that exceed expectations.",
     },
     {
       image: first3,
-      heading: "Product scope",
-      descripation:
-        "A structured 15 day process to align your product vision with your business goals.",
+      heading: "Agility",
+      description:
+        "In a rapidly evolving digital landscape, we embrace agility to adapt quickly and effectively to changing requirements.",
     },
     {
       image: first4,
-      heading: "Product scope",
-      descripation:
-        "A structured 15 day process to align your product vision with your business goals.",
+      heading: "Forward-Thinking Service",
+      description:
+        "Our commitment to innovation means we're always one step ahead, ready to meet your evolving needs with cutting-edge solutions.",
     },
   ];
   return (
@@ -87,7 +87,7 @@ const ServicesProduct = () => {
                   sx={{
                     marginTop: "10px",
                     fontWeight: "700",
-                    fontSize: { xl: "30px" },
+                    fontSize: { xl: "26px" },
                   }}
                 >
                   {val.heading}
@@ -101,7 +101,7 @@ const ServicesProduct = () => {
                     letterSpacing: "0.5px",
                   }}
                 >
-                  {val.descripation}
+                  {val.description}
                 </Typography>
               </Box>
             </Grid>

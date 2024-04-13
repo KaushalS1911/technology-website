@@ -5,12 +5,12 @@ import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 export const Counter = () => {
   const theme = useTheme();
-  const [counterState, setCounterstate] = useState(false);
+  const [counter, setCounter] = useState(false);
 
   return (
     <>
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
-        <ScrollTrigger onEnter={() => setCounterstate(true)}>
+        <ScrollTrigger onEnter={() => setCounter(true)}>
           <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
               item
@@ -23,8 +23,8 @@ export const Counter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                {counterState && (
-                  <CountUp start={0} end={60} duration={1}></CountUp>
+                {counter && (
+                  <CountUp start={0} end={50} duration={1}></CountUp>
                 )}
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
@@ -33,7 +33,6 @@ export const Counter = () => {
               <Box
                 sx={{
                   marginLeft: 1,
-                  fontSize: { sm: "12px", xs: "11px" },
                   lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
@@ -54,7 +53,7 @@ export const Counter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                {counterState && (
+                {counter && (
                   <CountUp start={0} end={80} duration={1}></CountUp>
                 )}
                 <Typography variant="span" color={theme.palette.primary.main}>
@@ -65,7 +64,6 @@ export const Counter = () => {
                 color={theme.palette.gray}
                 sx={{
                   marginLeft: 1,
-                  fontSize: { sm: "12px", xs: "11px" },
                   lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
@@ -85,8 +83,8 @@ export const Counter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                {counterState && (
-                  <CountUp start={0} end={40} duration={1}></CountUp>
+                {counter && (
+                  <CountUp start={0} end={15} duration={1}></CountUp>
                 )}
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
@@ -95,7 +93,6 @@ export const Counter = () => {
               <Box
                 sx={{
                   marginLeft: 1,
-                  fontSize: { sm: "12px", xs: "11px" },
                   lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
@@ -116,10 +113,10 @@ export const Counter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                {counterState && (
+                {counter && (
                   <CountUp
                     start={0}
-                    end={4.9}
+                    end={4.5}
                     decimals={1}
                     duration={1}
                   ></CountUp>
@@ -132,7 +129,6 @@ export const Counter = () => {
                 color={theme.palette.gray}
                 sx={{
                   marginLeft: 1,
-                  fontSize: "12px",
                   lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
