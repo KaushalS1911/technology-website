@@ -15,12 +15,12 @@ const itemData = [
   {
     img: CEO1,
     name: "Monil Kakadiya",
-    position: "Co-Founter & CEO",
+    position: "Co-Founder & CEO",
   },
   {
     img: CEO2,
     name: "Harshad Kakdiya",
-    position: "Co-Founter & CEO",
+    position: "Co-Founder & CEO",
   },
 ];
 const staff = [
