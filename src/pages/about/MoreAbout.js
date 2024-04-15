@@ -32,6 +32,7 @@ function MoreAbout() {
                                     borderRadius: "15px",
                                     height: "100%",
                                     transition: " 0.5s",
+                                    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
                                     cursor: "pointer",
                                     "&:hover": {
                                         transform: "translateY(-10px)",
@@ -72,6 +73,7 @@ function MoreAbout() {
                                     p: "25px",
                                     borderRadius: "15px",
                                     height: "100%",
+                                    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
                                     transition: " 0.5s",
                                     cursor: "pointer",
                                     "&:hover": {
@@ -112,6 +114,7 @@ function MoreAbout() {
                                     borderRadius: "15px",
                                     height: "100%",
                                     transition: " 0.5s",
+                                    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
                                     cursor: "pointer",
                                     "&:hover": {
                                         transform: "translateY(-10px)",

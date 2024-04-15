@@ -5,12 +5,12 @@ import monilsir from "../../assets/images/about/TPPS0075 1.webp";
 import Harshadsir from "../../assets/images/about/Mask group.webp";
 import logo from "../../assets/images/about/Group 387.webp";
 import CEOBox from "./CEOBox";
-import Dev1 from "../../../src/assets/images/about/dev1.webp"
-import Dev2 from "../../../src/assets/images/about/dev2.webp"
-import Dev3 from "../../../src/assets/images/about/dev3.webp"
-import Dev4 from "../../../src/assets/images/about/dev4.webp"
-import Dev5 from "../../../src/assets/images/about/dev5.webp"
-import Dev7 from "../../../src/assets/images/about/dev7.webp"
+import Dev1 from "../../../src/assets/images/about/dev1.webp";
+import Dev2 from "../../../src/assets/images/about/dev2.webp";
+import Dev3 from "../../../src/assets/images/about/dev3.webp";
+import Dev4 from "../../../src/assets/images/about/dev4.webp";
+import Dev5 from "../../../src/assets/images/about/dev5.webp";
+import Dev7 from "../../../src/assets/images/about/dev7.webp";
 
 const itemData = [
   {
@@ -20,7 +20,7 @@ const itemData = [
   },
   {
     img: Harshadsir,
-    name: "Harshad Kakdiya",
+    name: "Harshad Kakadiya",
     position: "Co-Founter & CEO",
   },
 ];
@@ -65,39 +65,38 @@ function Ceo() {
     <>
       <div style={{ margin: "40px 0px" }}>
         <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
-          <Grid container xl={12}>
-            <Grid item lg={8}>
+          <Grid container direction={'row'} justifyContent={'center'}>
+            <Grid item lg={8} >
               <Typography
                 variant="h3"
                 sx={{
                   fontWeight: "600",
-                  fontSize: "53px",
+                  fontSize: "45px",
+                  textAlign:"center",
                   lineHeight: "82.5px",
                 }}
               >
                 Meet the Founders
               </Typography>
               <Typography
-                variant="body1"
-                sx={{ fontSize: "19.5px" }}
+                sx={{ fontSize: "16px" ,textAlign:'center'}}
                 my={2}
                 color={theme.palette.gray}
               >
                 Our founding team started their journeys in the corporate world.
                 They then moved on to build their own startups before coming
-                together to form JBS Technology. They studied lean product development
-                through building startups from the ground up with very few
-                resources. This is why when you build a product with us it will
-                always be streamlined to the most important features for your
-                user.
+                together to form JBS Technology. They studied lean product
+                development through building startups from the ground up with
+                very few resources. This is why when you build a product with us
+                it will always be streamlined to the most important features for
+                your user.
               </Typography>
             </Grid>
           </Grid>
-          <Grid container justifyContent="start" spacing={3} py={3}>
+          <Grid container justifyContent="center" spacing={3} py={3}>
             {itemData.map((item, index) => (
-              <Grid item lg={3} sm={4} xs={12} key={index}>
+              <Grid item lg={3} sm={4} xs={12} key={index} justifyContent="center" spacing={3} py={3}>
                 <CEOBox
-                  
                   image={item.img}
                   name={item.name}
                   position={item.position}
@@ -105,13 +104,14 @@ function Ceo() {
               </Grid>
             ))}
           </Grid>
-          <Grid container xl={12}>
+          <Grid container xl={12} direction={'row'} justifyContent={'center'}>
             <Grid item lg={8}>
               <Typography
                 variant="h3"
                 sx={{
                   fontWeight: "600",
-                  fontSize: "53px",
+                  textAlign:'center',
+                  fontSize: "45px",
                   lineHeight: "82.5px",
                 }}
               >
@@ -119,7 +119,7 @@ function Ceo() {
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "19.5px" }}
+                sx={{ fontSize: "16px" ,textAlign:'center'}}
                 my={2}
                 color={theme.palette.gray}
               >
@@ -132,7 +132,8 @@ function Ceo() {
             </Grid>
           </Grid>
           <Box
-            sx={{ display: "flex", alignItems: "center", margin: "10px 0px" }}
+            sx={{ display: "flex", alignItems: "center", margin: "10px 0px" ,justifyContent:
+            "center"}}
           >
             <img
               src={logo}
@@ -151,7 +152,7 @@ function Ceo() {
               Development
             </Typography>
           </Box>
-          <Grid container justifyContent="start" spacing={3} py={3}>
+          <Grid container justifyContent="center" spacing={3} py={3}>
             {staff.map((item, index) => (
               <Grid item lg={3} sm={6} xs={12} key={index}>
                 <CEOBox
@@ -163,12 +164,12 @@ function Ceo() {
             ))}
           </Grid>
           <Box
-            sx={{ display: "flex", alignItems: "center", margin: "10px 0px" }}
+            sx={{ display: "flex", alignItems: "center", margin: "10px 0px",justifyContent:'center' }}
           >
             <img
               src={logo}
               alt="icone"
-              style={{ width: "49px", height: "49" }}
+              style={{ width: "49px", height: "49px" }}
             />
             <Typography
               variant="h6"
@@ -182,7 +183,7 @@ function Ceo() {
               UI / UX Designer
             </Typography>
           </Box>
-          <Grid container justifyContent="start" spacing={3} py={3}>
+          <Grid container justifyContent="center" spacing={3} py={3}>
             {staff_2.map((item, index) => (
               <Grid item lg={3} sm={4} xs={12} key={index}>
                 <CEOBox
