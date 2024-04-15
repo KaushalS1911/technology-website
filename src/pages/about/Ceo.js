@@ -1,7 +1,7 @@
 import { useTheme } from "@emotion/react";
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import monilsir from "../../assets/images/about/TPPS0075 1.webp";
+import CEO1 from "../../assets/images/about/TPPS0075 1.webp";
 import Harshadsir from "../../assets/images/about/Mask group.webp";
 import logo from "../../assets/images/about/Group 387.webp";
 import CEOBox from "./CEOBox";
@@ -9,14 +9,13 @@ import Dev1 from "../../../src/assets/images/about/dev1.webp";
 import Dev2 from "../../../src/assets/images/about/dev2.webp";
 import Dev3 from "../../../src/assets/images/about/dev3.webp";
 import Dev4 from "../../../src/assets/images/about/dev4.webp";
-import Dev5 from "../../../src/assets/images/about/dev5.webp";
 import Dev7 from "../../../src/assets/images/about/dev7.webp";
 
 const itemData = [
   {
-    img: monilsir,
+    img: CEO1,
     name: "Monil Kakadiya",
-    position: "Co-Founter & CEO",
+    position: "Co-Founder & CEO",
   },
   {
     img: Harshadsir,
@@ -34,11 +33,6 @@ const staff = [
     img: Dev2,
     name: "Abhishek Vaghsiya",
     position: "Frontend Developer",
-  },
-  {
-    img: Dev5,
-    name: "Harshil Savaliya",
-    position: "Full Stack Developer",
   },
   {
     img: Dev3,
