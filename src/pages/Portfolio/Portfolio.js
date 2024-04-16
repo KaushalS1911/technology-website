@@ -3,13 +3,16 @@ import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import {useTheme} from "@emotion/react";
 import nectarImg from "../../assets/images/portfolio/nectar-2 (1) 1.webp";
 import nectarlogo from "../../assets/images/portfolio/Group 1 1.webp";
-import project1 from "../../assets/images/portfolio/project1 (1).webp"
+import project1 from "../../assets/images/portfolio/hedger-min.jpg"
 import stocklogo from "../../assets/images/portfolio/sytock logo.webp"
-import project2 from "../../assets/images/portfolio/stock.webp";
-import project3 from "../../assets/images/portfolio/project1 (4).webp";
-import jbs from "../../assets/images/portfolio/jbs.webp";
-import paperlogo from "../../assets/images/portfolio/paperlogo.webp";
+import project2 from "../../assets/images/portfolio/paper_generation-min.png";
+import jbs from "../../assets/images/portfolio/jbs-it-institute-logo__1__720.png";
+import jbsTech from "../../assets/images/portfolio/jbs-technology-logo_720.png";
+import paperlogo from "../../assets/images/portfolio/untitled-1_360.png";
 import nectar from "../../assets/images/portfolio/nectar.webp";
+import InstituteWebImg from '../../assets/images/portfolio/institute_web-min.jpg'
+import InstituteAppImg from '../../assets/images/portfolio/institute_app-min.jpg'
+import TechnologyImg from '../../assets/images/portfolio/technology_website-min.png'
 import {useNavigate} from "react-router-dom";
 
 
@@ -22,6 +25,7 @@ const portfolioItems = [
         description:
             "Welcome to Nectar, your one-stop destination for all your grocery needs! We offer a convenient online platform where you can browse through a wide selection of fresh produce, pantry essentials, household items, and more, all from the comfort of your home. With seamless ordering and secure payment options, we strive to make your shopping experience effortless and enjoyable. Whether you're looking for everyday staples or specialty ingredients, we've got you covered. Say goodbye to long queues and heavy bags – shop with us and have your groceries delivered straight to your doorstep, saving you time and hassle!",
         buttonVariant: "outlined",
+        technologies: ["HTML","CSS","JavaScript","ReactJs","NodeJs"],
         buttonColor: "#fff",
         buttonBorder: "white",
         buttonBackground: "#fff",
@@ -31,15 +35,16 @@ const portfolioItems = [
     },
     {
         id: 2,
-        img: project2,
-        logo: paperlogo,
-        title: "Paper Generation",
+        img: InstituteWebImg,
+        logo: jbs,
+        title: "Institute Website",
         description:
-            "Introducing our Paper Generation Application – your go-to tool for effortlessly creating custom academic papers. Specify your requirements, and within minutes, generate high-quality content tailored to your needs. Say goodbye to tedious writing processes and hello to streamlined productivity with our intuitive platform.",
+            "Welcome to JBS IT Institute, where knowledge meets innovation. Our website serves as a comprehensive hub for aspiring IT professionals, offering a diverse range of courses, hands-on training, and industry-relevant certifications. With state-of-the-art facilities and experienced instructors, JBS IT Institute is committed to providing students with the skills and expertise needed to thrive in today's rapidly evolving tech landscape. Explore our website to discover how we can help you embark on a successful career in IT.",
         buttonVariant: "outlined",
-        buttonColor: "rgba(91,212,129,1)",
-        buttonBorder: "rgba(91,212,129,1)",
-        buttonBackground: "rgba(91,212,129,1)",
+        technologies: ["HTML","CSS","JavaScript","ReactJs","NodeJs", "MUI"],
+        buttonColor: "#141C25",
+        buttonBorder: "#141C25",
+        buttonBackground: "#141C25",
         backgroundColor: "#fff",
         sectionTextColor: "#3E3E3E",
     },
@@ -49,8 +54,9 @@ const portfolioItems = [
         logo: stocklogo,
         title: "Hedger Community",
         description:
-            "Enter the world of online trading with Hadger Community. Access diverse investment opportunities, from stocks to cryptocurrencies, with real-time insights and expert support. Start trading smarter today.",
+            "Hedger, our cutting-edge stock market website, revolutionizes the way users engage with financial markets. With real-time data, robust analysis tools, and a user-friendly interface, Hedger empowers investors of all levels to make informed decisions and manage their portfolios effectively. Whether it's tracking market trends, conducting research, or executing trades, Hedger provides a seamless and intuitive experience, making it the go-to platform for anyone looking to navigate the complexities of the stock market.",
         buttonVariant: "outlined",
+        technologies: ["Flutter", "NodeJs"],
         buttonColor: "#fff",
         buttonBorder: "white",
         buttonBackground: "#fff",
@@ -59,12 +65,43 @@ const portfolioItems = [
     },
     {
         id: 4,
-        img: project3,
-        logo: jbs,
-        title: "Institute Website",
+        img: project2,
+        logo: paperlogo,
+        title: "Paper Generator",
         description:
-            "Discover our Institute's website, your hub for academic excellence. Explore our courses, meet our faculty, and learn about our cutting-edge facilities. Start your journey towards success today.",
+            "Our Flutter Paper Generation Application revolutionizes the creation of examination papers with its intuitive interface, customizable options, and seamless integration with question banks. Offering features such as randomization and export capabilities, it ensures efficient and secure paper generation for educators and institutions. With a focus on usability and functionality, our application empowers users to streamline the examination process and uphold the integrity of assessments.",
         buttonVariant: "outlined",
+        technologies: ["Flutter","NodeJs"],
+        buttonColor: "#141C25",
+        buttonBorder: "#141C25",
+        buttonBackground: "#141C25",
+        backgroundColor: "#fff",
+        sectionTextColor: "#3E3E3E",
+    },
+    {
+        id: 5,
+        img: TechnologyImg,
+        logo: jbsTech,
+        title: "Technology website",
+        description:
+            "Functioning as a dynamic portal to state-of-the-art technological solutions and services, our IT company website seamlessly integrates innovation with user-centric design. Providing visitors with insights into our expertise across a spectrum of IT domains, from customized software development to agile consulting services, our platform underscores our dedication to excellence and client fulfillment. With user-friendly navigation and compelling content, we encourage exploration of our digital ecosystem, enabling businesses to envision how we can propel their success into the digital frontier.",
+        buttonVariant: "outlined",
+        technologies: ["HTML","CSS","JavaScript","ReactJs","NodeJs"],
+        buttonColor: "#e5e5e5",
+        buttonBorder: "#dcdcdc",
+        buttonBackground: "#e8e8e8",
+        backgroundColor: "#556B2F",
+        sectionTextColor: "#e7e7e7",
+    },
+    {
+        id: 5,
+        img: InstituteAppImg,
+        logo: jbs,
+        title: "Institute Application",
+        description:
+            "Our IT institute application offers a comprehensive platform for students to engage in interactive learning experiences. Packed with robust features, it provides access to diverse courses, real-time progress tracking, interactive quizzes, and a supportive community for collaborative learning. With user-friendly navigation and personalized learning paths, our application empowers students to excel in their IT journey with ease and efficiency.",
+        buttonVariant: "outlined",
+        technologies: ["Flutter","NodeJs"],
         buttonColor: "#141C25",
         buttonBorder: "#141C25",
         buttonBackground: "#141C25",
@@ -178,7 +215,6 @@ const Portfolio = () => {
                                             mt: 3,
                                             borderRadius: "30px",
                                             fontWeight: "600",
-                                            mt: "30px",
                                             padding: "16px 58px",
                                             borderColor: item.buttonBorder,
                                             color: item.buttonColor,
