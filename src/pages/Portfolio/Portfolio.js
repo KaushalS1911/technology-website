@@ -94,7 +94,7 @@ const portfolioItems = [
         sectionTextColor: "#e7e7e7",
     },
     {
-        id: 5,
+        id: 6,
         img: InstituteAppImg,
         logo: jbs,
         title: "Institute Application",
