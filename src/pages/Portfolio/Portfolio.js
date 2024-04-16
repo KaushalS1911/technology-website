@@ -137,8 +137,8 @@ const Portfolio = () => {
                                  sx={{my: "15px"}}>
                                 <Typography>
                                     The products we build are changing the way
-                                    indusrty leaders do
-                                    thier core business
+                                    industry leaders do
+                                    their core business
                                 </Typography>
                             </Box>
                         </Grid>
@@ -213,6 +213,7 @@ const Portfolio = () => {
                                         variant={item.buttonVariant}
                                         sx={{
                                             mt: 3,
+                                            mb: 5,
                                             borderRadius: "30px",
                                             fontWeight: "600",
                                             padding: "16px 58px",

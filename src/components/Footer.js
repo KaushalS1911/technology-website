@@ -18,7 +18,6 @@ const Footer = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.footerBlue,
-          mt: "40px",
         }}
       >
         <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
