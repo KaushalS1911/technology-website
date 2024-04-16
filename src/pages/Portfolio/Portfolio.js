@@ -203,7 +203,8 @@ const Portfolio = () => {
                                         sx={{
                                             mt: "20px",
                                             lineHeight: "1.7",
-                                            letterSpacing: "0.9px",
+                                            fontWeight: "500",
+                                            letterSpacing: "0.6px",
                                         }}
                                     >
                                         {item.description}
