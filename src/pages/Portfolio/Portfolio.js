@@ -12,7 +12,7 @@ import paperlogo from "../../assets/images/portfolio/untitled-1_360.png";
 import nectar from "../../assets/images/portfolio/nectar.webp";
 import InstituteWebImg from '../../assets/images/portfolio/institute_web-min.jpg'
 import InstituteAppImg from '../../assets/images/portfolio/institute_app-min.jpg'
-import TechnologyImg from '../../assets/images/portfolio/technology_website-min.png'
+import TechnologyImg from '../../assets/images/portfolio/technology_website (1).png'
 import {useNavigate} from "react-router-dom";
 
 
