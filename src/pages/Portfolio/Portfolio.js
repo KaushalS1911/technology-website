@@ -29,7 +29,7 @@ const portfolioItems = [
         buttonColor: "#fff",
         buttonBorder: "white",
         buttonBackground: "#fff",
-        backgroundColor: "rgba(91,212,129,1)",
+        backgroundColor: "rgb(85,191,119)",
         sectionTextColor: "white",
         images: [{nectarImg}, {nectar}],
     },
@@ -202,8 +202,7 @@ const Portfolio = () => {
                                         variant="body1"
                                         sx={{
                                             mt: "20px",
-                                            fontWeight: "600",
-                                            lineHeight: "1.5",
+                                            lineHeight: "1.7",
                                             letterSpacing: "0.9px",
                                         }}
                                     >
