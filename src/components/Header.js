@@ -8,7 +8,7 @@ import {
   Collapse,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/images/Header/JBS-technology-logo-2 1.webp";
+import logo from "../assets/images/Header/JBS-technology-logo-2 1.png";
 import { useTheme } from "@emotion/react";
 import { NavLink } from "react-router-dom";
 const Header = () => {
@@ -57,7 +57,7 @@ const Header = () => {
               >
                 <NavLink to={"/"}>
                   <Box
-                    sx={{ height: "50px", width: "60px", padding: "3px" }}
+                    sx={{ height: "100px", width: "100px", padding: "3px" }}
                     to={"/"}
                   >
                     <img src={logo} alt="Logo" />

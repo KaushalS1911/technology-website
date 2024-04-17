@@ -1,6 +1,9 @@
 import {Box, Grid, Typography} from "@mui/material";
 import React from "react";
-import CodeOffIcon from "@mui/icons-material/CodeOff";
+import webser1 from "../../assets/images/home-image/web-dev.png";
+import webser2 from "../../assets/images/home-image/app-dev.png";
+import webser3 from "../../assets/images/home-image/web-design.png";
+import webser4 from "../../assets/images/home-image/ecomm-development.png";
 import {useTheme} from "@emotion/react";
 
 const MainCources = () => {
@@ -9,28 +12,28 @@ const MainCources = () => {
     const courseInfo = [
         {
             id: "1",
-            logo: CodeOffIcon,
+            image:webser1,
             courseName: "Web Development",
             courseDescription:
                 "From simple brochure sites to powerful web applications, we craft digital experiences that engage, convert, and grow your business.",
         },
         {
             id: "2",
-            logo: CodeOffIcon,
+            image:webser2,
             courseName: "App Development",
             courseDescription:
                 "Got an app idea? We turn it into reality. From concept to launch, our experts build custom apps that solve problems and drive results.",
         },
         {
             id: "3",
-            logo: CodeOffIcon,
+            image:webser3,
             courseName: "Graphic Design",
             courseDescription:
                 " We work closely with you to understand your brand values, target audience, and design preferences, ensuring that our designs align with your vision and goals.",
         },
         {
             id: "4",
-            logo: CodeOffIcon,
+            image:webser4,
             courseName: "E-commerce Development",
             courseDescription:
                 "  We leverage cutting-edge technologies and industry best practices to create e-commerce websites that are visually appealing, easy to navigate, and optimized for conversions.",
@@ -64,24 +67,16 @@ const MainCources = () => {
                         <Grid item sm={6} lg={3} p={2} key={course.id}>
                             <Box
                                 sx={{
-                                    border: `3px dashed ${theme.palette.primary.main}`,
+                                    border: `2px dashed ${theme.palette.primary.main}`,
                                     padding: 3,
                                     borderRadius: 2,
                                     height:"100%",cursor: "pointer",
-                                    transition: "all 0.5s",
-                                    "&:hover": {
-                                        transform: "translateY(-10px)",
-                                        "& > div": {
-                                            color: "#fff",
-                                            bgcolor: "primary.main",
-                                        },
-                                    },
                                 }}
                             >
                                 <Box
                                     sx={{
-                                        height: "50px",
-                                        width: "50px",
+                                        height: "80px",
+                                        width: "80px",
                                         borderRadius: "50%",
                                         display: "grid",
                                         placeItems: "center",
@@ -91,7 +86,7 @@ const MainCources = () => {
                                         marginBottom: 2,
                                     }}
                                 >
-                                    {<course.logo/>}
+                                  <img src={course.image} alt="images" />
                                 </Box>
                                 <Typography
                                     variant="h5"

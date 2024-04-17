@@ -7,7 +7,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 function Location() {
   return (
     <>
-      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }} >
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Grid container spacing={3} justifyContent="center" my={8}>
           <Grid item xs={12} md={6} lg={4} xl={4}>
             <Box className="contact-info-box bg-light p-4">
@@ -19,7 +19,10 @@ function Location() {
               >
                 Mail Here
               </Typography>
-              <Typography variant="body1" sx={{ color: "#6c757d",wordBreak: "break-word" }}>
+              <Typography
+                variant="body1"
+                sx={{ color: "#6c757d", wordBreak: "break-word" }}
+              >
                 jbs.technology26@gmail.com
               </Typography>
             </Box>
@@ -35,7 +38,7 @@ function Location() {
                 Visit Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                203 , City Center, Yogi Chowk , Yogi Chowk Ground, Chikuwadi, Varachha, Surat - 395010 , Gujarat. IN
+                203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
               </Typography>
             </Box>
           </Grid>

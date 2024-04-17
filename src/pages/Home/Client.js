@@ -86,13 +86,13 @@ const Client = () => {
           </Typography>
           <OwlCarousel className="owl-theme" {...options}>
             <div className="item">
-              <Grid container spacing={7}>
+              <Grid container spacing={2}>
                 {companyImgArray.map((image, index) => (
-                  <Grid item xs={6} sm={4} md={3} lg={2} key={index}>
+                  <Grid item xs={6} sm={4} md={3} lg={2} key={index} sx={{padding:'20px'}}>
                     <img
                       src={image}
                       alt="company"
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "contain",width:"100%" ,height:'50px'}}
                     />
                   </Grid>
                 ))}
