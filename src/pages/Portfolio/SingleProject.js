@@ -14,7 +14,6 @@ const SingleProject = () => {
     const {id} = useParams()
 
     const data = portfolioItems.find((value) => value.id == id)
-    console.log(data);
   const responsive = {
     loop: true,
     margin: 10,
@@ -87,10 +86,9 @@ const SingleProject = () => {
           </Box>
           <Box>
             <Typography sx={{ fontSize: { xs: "14px", xl: "17px" } }}>
-              <li style={{ listStyle: "unset" }}>ReactJS</li>
-              <li style={{ listStyle: "unset" }}>NextJS</li>
-              <li style={{ listStyle: "unset" }}>MySQL</li>
-              <li style={{ listStyle: "unset" }}>GraphQL</li>
+              {data?.technologies.map((e) => {
+              return(<li style={{ listStyle: "unset" }}>{e}</li>)})
+              }
             </Typography>
           </Box>
         </Box>
