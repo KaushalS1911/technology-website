@@ -79,7 +79,7 @@ const MainCources = () => {
                                         width: "80px",
                                         borderRadius: "50%",
                                         display: "grid",
-                                        placeItems: "center",
+                                        placeItems: "center",   
                                         color: "primary.main",
                                         bgcolor: "#f7fafd",
                                         transition: "all 0.5s",

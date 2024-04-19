@@ -31,30 +31,6 @@ const data = [
     descripition3: "Location: Surat, Gujarat.",
     id: 3,
   },
-  // {
-  //   image: img1,
-  //   heading: "React.js Developer",
-  //   descripition1: "Experience: 2 ",
-  //   descripition2: "No of Openings: 1 ",
-  //   descripition3: "Location: Surat, Gujarat.",
-  //   id: 4,
-  // },
-  // {
-  //   image: img1,
-  //   heading: "React.js Developer",
-  //   descripition1: "Experience: 2 ",
-  //   descripition2: "No of Openings: 1 ",
-  //   descripition3: "Location: Surat, Gujarat.",
-  //   id: 5,
-  // },
-  // {
-  //   image: img1,
-  //   heading: "React.js Developer",
-  //   descripition1: "Experience: 2 ",
-  //   descripition2: "No of Openings: 1 ",
-  //   descripition3: "Location: Surat, Gujarat.",
-  //   id: 6,
-  // },
 ];
 export const CareerCards = () => {
   const theme = useTheme();

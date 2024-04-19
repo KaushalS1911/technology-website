@@ -1,8 +1,8 @@
-import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { Box, Grid, Typography } from "@mui/material";
 import company1 from "../../assets/images/home-image/companyLogo/company1.webp";
 import company2 from "../../assets/images/home-image/companyLogo/company2.webp";
 import company3 from "../../assets/images/home-image/companyLogo/company3.webp";
@@ -29,17 +29,18 @@ const Client = () => {
     margin: 10,
     nav: false,
     autoplay: true,
-    autoplaytimeout: 3000,
+    autoplayTimeout: 3000, 
+    slideTransition: 'linear', 
     dots: false,
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 1,
+        items: 2,
       },
       1000: {
-        items: 1,
+        items: 8, 
       },
     },
   };
@@ -66,42 +67,29 @@ const Client = () => {
   ];
 
   return (
-    <>
-      <Box
-        mb={"-40px"}
-        px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
-        sx={{ py: "60px", background: `url(${bglayer2}) no-repeat 0% 60%` }}
-      >
-        <Box py={5}>
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: "600",
-              fontSize: "35px",
-              marginBottom: "60px",
-              textAlign: "center",
-            }}
-          >
-            You Are In A Good Company
-          </Typography>
-          <OwlCarousel className="owl-theme" {...options}>
-            <div className="item">
-              <Grid container spacing={2}>
-                {companyImgArray.map((image, index) => (
-                  <Grid item xs={6} sm={4} md={3} lg={2} key={index} sx={{padding:'20px'}}>
-                    <img
-                      src={image}
-                      alt="company"
-                      style={{ objectFit: "contain",width:"100%" ,height:'50px'}}
-                    />
-                  </Grid>
-                ))}
+    <Box
+      px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
+      py={20}
+      sx={{
+        background: `url(${bglayer2}) no-repeat 0% 80%`,
+        textAlign: "center",
+      }}
+    >
+      <Typography variant="h3" sx={{ fontWeight: 600, fontSize: 35, marginBottom: 8 }}>
+        You Are In A Good Company
+      </Typography>
+      <OwlCarousel className="owl-theme" {...options}>
+        {companyImgArray.map((image, index) => (
+          <div className="item" key={index}>
+            <Grid container justifyContent="center">
+              <Grid item xs={6} sm={4} md={3} lg={12} sx={{ padding: 2 }} className="placement-company">
+                <img src={image} alt={`company-${index}`}  />
               </Grid>
-            </div>
-          </OwlCarousel>
-        </Box>
-      </Box>
-    </>
+            </Grid>
+          </div>
+        ))}
+      </OwlCarousel>
+    </Box>
   );
 };
 

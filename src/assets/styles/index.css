@@ -111,3 +111,40 @@ li {
   top: 50%;
   right: 5%;
 }
+.placement-company img {
+  width: 100%;
+  padding: 25px;
+  aspect-ratio: 4/2;
+}
+.nodeJs_resume__mnTyb input {
+  font-size: 15px;
+  height: 45px;
+  width: 160px;
+  outline: none!important;
+  color: transparent;
+  opacity: 1;
+}
+.nodeJs_customImageInput__f58b9:before {
+  content: "Upload Resume/CV";
+  display: block;
+  color: #35b8fc;
+  background: #fff;
+  border: 1px solid #35b8fc;
+  border-radius: 3px;
+  padding: 7px 8px;
+  outline: none!important;
+  white-space: nowrap;
+  font-size: 14px;
+  width: 100%;
+  margin: 8px 0;
+  text-align: center;
+}
+.react-tel-input .selected-flag {
+  width: 45px!important;
+}
+.react-tel-input .form-control {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border: 1px solid #35b8fc!important;
+  height: 42px!important;
+}
