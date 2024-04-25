@@ -1,7 +1,5 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import { Box, Grid, Typography } from "@mui/material";
 import company1 from "../../assets/images/home-image/companyLogo/company1.webp";
 import company2 from "../../assets/images/home-image/companyLogo/company2.webp";
@@ -26,7 +24,6 @@ import bglayer2 from "../../assets/images/home-image/bglayer2.webp";
 const Client = () => {
   const options = {
     loop: false,
-    margin: 10,
     nav: false,
     autoplay: true,
     autoplayTimeout: 3000, 
@@ -40,8 +37,14 @@ const Client = () => {
         items: 2,
       },
       1000: {
-        items: 8, 
+        items: 4,
       },
+      1200: {
+        items: 5
+      },
+      1400: {
+        items: 6
+      }
     },
   };
 
@@ -78,12 +81,12 @@ const Client = () => {
       <Typography variant="h3" sx={{ fontWeight: 600, fontSize: 35, marginBottom: 8 }}>
         You Are In A Good Company
       </Typography>
-      <OwlCarousel className="owl-theme" {...options}>
+      <OwlCarousel className="owl-them" {...options}>
         {companyImgArray.map((image, index) => (
           <div className="item" key={index}>
             <Grid container justifyContent="center">
               <Grid item xs={6} sm={4} md={3} lg={12} sx={{ padding: 2 }} className="placement-company">
-                <img src={image} alt={`company-${index}`}  />
+                <img src={image} alt={`company-${index}`} style={{  width: "100%", height: "100%" , objectFit: "contain"}} />
               </Grid>
             </Grid>
           </div>
