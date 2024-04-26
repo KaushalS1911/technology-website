@@ -3,6 +3,8 @@ import { Box, Grid, Typography } from "@mui/material";
 import MailIcon from "@mui/icons-material/Mail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { Link } from "react-router-dom";
+import theme from "../../components/theme";
 
 function Location() {
   return (
@@ -23,7 +25,9 @@ function Location() {
                 variant="body1"
                 sx={{ color: "#6c757d", wordBreak: "break-word" }}
               >
-                jbs.technology26@gmail.com
+                <Link to="mailto:jbs.technology26@gmail.com" style={{ color: "#6c757d" }}>
+                  jbs.technology26@gmail.com
+                </Link>
               </Typography>
             </Box>
           </Grid>
@@ -52,8 +56,10 @@ function Location() {
               >
                 Call Here
               </Typography>
-              <Typography variant="body1" sx={{ color: "#6c757d" }}>
+              <Typography variant="body1" >
+                <Link to="tel:+91 79844 43901" style={{ color: "#6c757d" }}>
                 +91 79844 43901
+                </Link>
               </Typography>
             </Box>
           </Grid>

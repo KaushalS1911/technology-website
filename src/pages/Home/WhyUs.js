@@ -1,9 +1,7 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import group from "../../assets/images/home-image/whoweare.gif";
-// import bglayer1 from "../../assets/images/home-image/bglayer1.webp";
 import why1 from "../../assets/images//home-image/inovative-technology.png";
-// import why2 from "../../assets/images/home-image/user-centric-design.png";
 import why3 from "../../assets/images/home-image/privacy-security.png";
 import why4 from "../../assets/images/home-image/global-community.png";
 import why5 from "../../assets/images/home-image/reaponsive-aupport.png";
@@ -12,7 +10,6 @@ const WhyUs = () => {
   return (
     <Box
       px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
-      // sx={{ background: `url(${bglayer1}) no-repeat 0% 0%` }}
       py="60px"
     >
       <Box>

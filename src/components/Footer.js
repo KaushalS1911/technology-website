@@ -1,7 +1,6 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "@emotion/react";
-import footerBack from "../assets/images/Footer/Object.webp";
 import footerLogo from "../assets/images/Footer/footerlogo.webp";
 import ModeOfTravelOutlinedIcon from "@mui/icons-material/ModeOfTravelOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -61,7 +60,7 @@ const Footer = () => {
                 Company
               </Typography>
               <Box sx={{ my: 1.3 }}>
-                <Link to="/">
+                <Link to="/" title="Home">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -74,7 +73,7 @@ const Footer = () => {
                     Home
                   </Box>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" title="about">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -87,7 +86,7 @@ const Footer = () => {
                     About
                   </Box>
                 </Link>
-                <Link to="/portfolio">
+                <Link to="/portfolio" title="portfolio">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -100,7 +99,7 @@ const Footer = () => {
                     Portfolio
                   </Box>
                 </Link>
-                <Link to="/services">
+                <Link to="/services" title="services">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -113,7 +112,7 @@ const Footer = () => {
                     Services
                   </Box>
                 </Link>
-                <Link to={"/careers"}>
+                <Link to={"/careers"} title="careers">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -126,7 +125,7 @@ const Footer = () => {
                     Careers
                   </Box>
                 </Link>
-                <Link to={"/contact "}>
+                <Link to={"/contact "} title="contact">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -217,8 +216,7 @@ const Footer = () => {
                     203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
                   </Box>
                 </Box>
-                <Box
-                  sx={{
+                <Box  sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
                     fontSize: "13px",
@@ -231,26 +229,35 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    jbs.technology26@gmail.com
+                    <Link to="mailto:jbs.technology26@gmail.com" style={{ color: "rgba(255,255,255,0.8)" }}>
+                      jbs.technology26@gmail.com
+                    </Link>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
+                <Box  sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
                     fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
+                    display: "flex",
                   }}
                 >
                   <CallOutlinedIcon
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
-                  Phone : 79844 43901
+                  <Box sx={{ fontSize: "13px" }}>
+                    <Link to="tel:+91 79844 43901" style={{ color: "rgba(255,255,255,0.8)" }}>
+                      Phone:+91 79844 43901
+                    </Link>
+                  </Box>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: "5px" }}>
                   <Box>
-                    <Link to="https://www.facebook.com/profile.php?id=61555676966897" target="_blank">
+                    <Link
+                      to="https://www.facebook.com/profile.php?id=61555676966897"
+                      target="_blank"
+                    >
                       <FacebookOutlinedIcon
                         sx={{
                           fontSize: "30px",
@@ -261,7 +268,10 @@ const Footer = () => {
                     </Link>
                   </Box>
                   <Box>
-                    <Link to="https://twitter.com/JBSTechnology26" target="_blank">
+                    <Link
+                      to="https://twitter.com/JBSTechnology26"
+                      target="_blank"
+                    >
                       <TwitterIcon
                         sx={{
                           fontSize: "30px",
@@ -272,7 +282,10 @@ const Footer = () => {
                     </Link>
                   </Box>
                   <Box>
-                    <Link to="https://www.instagram.com/jbs_technology/?hl=en" target="_blank">
+                    <Link
+                      to="https://www.instagram.com/jbs_technology/?hl=en"
+                      target="_blank"
+                    >
                       <InstagramIcon
                         sx={{
                           fontSize: "30px",
@@ -283,7 +296,10 @@ const Footer = () => {
                     </Link>
                   </Box>
                   <Box>
-                    <Link to="https://www.linkedin.com/company/jbs-coder-infotech/" target="_blank">
+                    <Link
+                      to="https://www.linkedin.com/company/jbs-coder-infotech/"
+                      target="_blank"
+                    >
                       <LinkedInIcon
                         sx={{
                           fontSize: "30px",
