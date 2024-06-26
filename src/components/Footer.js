@@ -213,10 +213,11 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
+                    203, City Center, Yogi Chowk Surat - 395006 , Gujarat. INDIA
                   </Box>
                 </Box>
-                <Box  sx={{
+                <Box
+                  sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
                     fontSize: "13px",
@@ -229,12 +230,16 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    <Link to="mailto:jbs.technology26@gmail.com" style={{ color: "rgba(255,255,255,0.8)" }}>
+                    <Link
+                      to="mailto:jbs.technology26@gmail.com"
+                      style={{ color: "rgba(255,255,255,0.8)" }}
+                    >
                       jbs.technology26@gmail.com
                     </Link>
                   </Box>
                 </Box>
-                <Box  sx={{
+                <Box
+                  sx={{
                     textDecoration: "none",
                     color: theme.palette.footerGray,
                     fontSize: "13px",
@@ -247,7 +252,10 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    <Link to="tel:+91 79844 43901" style={{ color: "rgba(255,255,255,0.8)" }}>
+                    <Link
+                      to="tel:+91 79844 43901"
+                      style={{ color: "rgba(255,255,255,0.8)" }}
+                    >
                       Phone:+91 79844 43901
                     </Link>
                   </Box>
