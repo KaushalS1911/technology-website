@@ -15,15 +15,16 @@ import logo from '../../assets/images/Header/JBS-technology-logo-2 1.png'
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {useGSAP} from "@gsap/react";
+import {NavLink} from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const menuItems = [
     {text: "Home", path: "/"},
-    {text: "About Us", path: "/about"},
-    {text: "Activity", path: "/activity"},
-    {text: "Course", path: "/course"},
-    {text: "Blog", path: "/blog"},
+    {text: "About", path: "/about"},
+    {text: "Portfolio", path: "/portfolio"},
+    {text: "Services", path: "/service"},
+    {text: "Careers", path: "/careers"},
     {text: "Contact Us", path: "/contact"},
 ];
 
@@ -49,7 +50,7 @@ const Navigation = () => {
                 duration: 0.5
             })
             .to('.nav', {width: isMobile ? "88%" :  "60%",borderRadius: "20px",marginTop: "20px",padding: "0"},"nav")
-            .to('.navLogo',{height:"10%"},"nav")
+            // .to('.navLogo',{height:"10%"},"nav")
     }, []);
 
     return (
@@ -76,7 +77,7 @@ const Navigation = () => {
                             p: 0,
                         }}
                     >
-                        <Box className={"navLogo"} sx={{height: "100%"}}>
+                        <Box className={"navLogo"} sx={{height: "70px"}}>
                             <img src={logo} alt="Logo" style={{height: "100%",width: "100%"}}/>
                         </Box>
                         {isMobile ? (
@@ -88,7 +89,7 @@ const Navigation = () => {
                                     <List sx={{width: 250}}>
                                         {menuItems.map((item, index) => (
                                             <ListItem button key={index} onClick={toggleDrawer}>
-                                                <Link
+                                                <NavLink
                                                     to={item.path}
                                                     sx={{
                                                         textDecoration: "none",
@@ -96,7 +97,7 @@ const Navigation = () => {
                                                     }}
                                                 >
                                                     <ListItemText primary={item.text} />
-                                                </Link>
+                                                </NavLink>
                                             </ListItem>
                                         ))}
                                     </List>
@@ -106,7 +107,7 @@ const Navigation = () => {
                             <List sx={{display: "flex", gap: {xs:1 , md:1 ,lg:2}, margin: 0, padding: 0,'& li ': {paddingRight: "0",paddingLeft: "10px"}}}>
                                 {menuItems.map((item, index) => (
                                     <ListItem key={index} sx={{width: "auto", cursor: "pointer",'& a ': {color: "black !important"}}}>
-                                        <Link
+                                        <NavLink
                                             to={item.path}
                                             sx={{
                                                 textDecoration: "none",
@@ -116,7 +117,7 @@ const Navigation = () => {
                                                 primary={item.text}
                                                 sx={{"& > span": {fontWeight: "500 !important"}}}
                                             />
-                                        </Link>
+                                        </NavLink>
                                     </ListItem>
                                 ))}
                             </List>

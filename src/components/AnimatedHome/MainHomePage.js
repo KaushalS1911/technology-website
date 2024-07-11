@@ -204,7 +204,7 @@ const MainHomePage = () => {
                 scrub: isXlScreen ? 4 : 5,
                 start: isXlScreen ? "top 10%" : "top top",
                 end: isXlScreen ? "bottom 150%" : "bottom 90%",
-                markers: true,
+                markers: false,
                 ease: "power1.inOut",
             },
         })
@@ -294,7 +294,7 @@ const MainHomePage = () => {
                 scrub: 3,
                 start: "top 100%",
                 end: "bottom 100%",
-                markers: true,
+                markers: false,
                 ease: "power1.inOut",
             },
         })
