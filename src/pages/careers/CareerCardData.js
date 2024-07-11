@@ -18,8 +18,8 @@ export const CareerCardData = () => {
   }, [careerData]);
 
   const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate(`/jobapply`);
+  const handleButtonClick = (data) => {
+    navigate(`/jobapply/${data}`);
   };
   return (
     <>
@@ -34,7 +34,7 @@ export const CareerCardData = () => {
               <Typography
                 underline="none"
                 href=""
-                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                sx={{ fontSize: { xs: "14px", xl: "16px" } }}
                 color={theme.palette.gray}
               >
                 Career
@@ -43,7 +43,7 @@ export const CareerCardData = () => {
             <Link>
               <Typography
                 underline="none"
-                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                sx={{ fontSize: { xs: "14px", xl: "16px" } }}
                 color={theme.palette.primary.main}
               >
                 {careerData.heading}
@@ -71,7 +71,7 @@ export const CareerCardData = () => {
               color={theme.palette.black.main}
               sx={{
                 padding: { md: "15px" },
-                fontSize: { xs: "14px", xl: "17px" },
+                fontSize: { xs: "14px", xl: "16px" },
                 lineHeight: { lg: "20px", xl: "30px" },
               }}
             >
@@ -151,7 +151,7 @@ export const CareerCardData = () => {
               variant="ul"
               // fontSize={14}
               sx={{
-                fontSize: { xs: "14px", xl: "18px" },
+                fontSize: { xs: "14px", xl: "16px" },
               }}
               lineHeight={2}
             >
@@ -253,9 +253,8 @@ export const CareerCardData = () => {
           <Box my={5} textAlign={"center"}>
             <Button
               variant="contained"
-              color="primary"
-              sx={{ padding: "8px 40px", fontSize: "18px" }}
-              onClick={() => handleButtonClick()}
+              sx={{ padding: "8px 40px", fontSize: "18px",backgroundColor:"#003361" }}
+              onClick={() => handleButtonClick(careerData.heading)}
             >
               Apply For Job
             </Button>

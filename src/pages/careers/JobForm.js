@@ -18,12 +18,13 @@ import { useTheme } from "@emotion/react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link, Link as RouterLink } from "react-router-dom";
+import {Link, Link as RouterLink, useParams} from "react-router-dom";
+import back from "../../assets/images/home-image/back-img.png";
 
 function JobForm({ defaultTechnology = "Node.js" }) {
   const theme = useTheme();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+const {id} = useParams()
   const validationSchema = Yup.object({
     firstName: Yup.string().required("First Name is required"),
     lastName: Yup.string().required("Last Name is required"),
@@ -61,6 +62,7 @@ function JobForm({ defaultTechnology = "Node.js" }) {
       for (const key in values) {
         formData.append(key, values[key]);
       }
+      formData.append("technology",id)
       try {
         const response = await axios.post(
           "https://jbs-institut-backend.onrender.com/api/resume",
@@ -93,10 +95,12 @@ function JobForm({ defaultTechnology = "Node.js" }) {
         style={{
           padding: "150px 0px",
           marginTop: "40px",
-          backgroundColor: "gray",
+          backgroundImage: `url(${back})`,
+          backgroundSize:"cover",
+          backgroundRepeat:"no-repeat"
         }}
       >
-        <Box textAlign="center">
+        <Box textAlign="center" color={"white"}>
           <Box sx={{ fontSize: "35px", fontWeight: "600" }}>
             APPLY FOR THIS JOB
           </Box>
@@ -130,17 +134,36 @@ function JobForm({ defaultTechnology = "Node.js" }) {
             display={"flex"}
             justifyContent={"center"}
           >
-            <Breadcrumbs aria-label="breadcrumb">
+            <Breadcrumbs aria-label="breadcrumb" color={"white"}>
               <Link
-                component={RouterLink}
-                to="/"
-                color="inherit"
-                underline="none"
+                  component={RouterLink}
+                  to="/careers"
+                  color="white"
+                  underline="none"
               >
-                <Box sx={{ color: "black" }}>Home</Box>
+                <Box sx={{ color: "white" }}>Careers</Box>
               </Link>
-              <Typography sx={{ color: "black" }}>Job Form</Typography>
+              <Link
+                  component={RouterLink}
+                  to="#"
+                  color="white"
+                  underline="none"
+                  sx={{ pointerEvents: "none", cursor: "default" }}
+              >
+                <Box sx={{ color: "white" }}>Job Form</Box>
+              </Link>
             </Breadcrumbs>
+            {/*<Breadcrumbs aria-label="breadcrumb" color={"white"}>*/}
+            {/*  <Link*/}
+            {/*    component={RouterLink}*/}
+            {/*    to="/careers"*/}
+            {/*    color="white"*/}
+            {/*    underline="none"*/}
+            {/*  >*/}
+            {/*    <Box sx={{ color: "white" }}>Career</Box>*/}
+            {/*  </Link>*/}
+            {/*  <Typography sx={{ color: "white" }}>Job Form</Typography>*/}
+            {/*</Breadcrumbs>*/}
           </Box>
         </Box>
       </div>

@@ -11,6 +11,7 @@ import About from "./pages/about/About";
 import Contact from "./pages/Contact Us/Contact";
 import Home from "./pages/Home/Home";
 import SingleProject from "./pages/Portfolio/SingleProject";
+import Navigation from "./components/global/Navigation";
 import BoxDetailPage from "./pages/Home/BoxDetailPage";
 import JobForm from "./pages/careers/JobForm";
 
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/*<Header />*/}
+        <Navigation />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,12 +39,12 @@ function App() {
           path="/portfolio/single-project/:id"
           element={<SingleProject />}
         />
-        <Route path="/jobapply" element={<JobForm />} />
+        <Route path="/jobapply/:id" element={<JobForm />} />
         <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/career-card-data/:id" element={<CareerCardData />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/detailpage" element={<BoxDetailPage />} />
+        {/*<Route path="/detailpage" element={<BoxDetailPage />} />*/}
         <Route path="/detailpage/:detId" element={<BoxDetailPage />} />
       </Routes>
       <Footer />

@@ -15,22 +15,22 @@ const data = [
     descripition3: "Location: Surat, Gujarat.",
     id: 1,
   },
-  {
-    image: node,
-    heading: "Node.js Developer",
-    descripition1: "Experience: 2 ",
-    descripition2: "No of Openings: 1 ",
-    descripition3: "Location: Surat, Gujarat.",
-    id: 2,
-  },
-  {
-    image: flutter,
-    heading: "Flutter Developer",
-    descripition1: "Experience: 2 ",
-    descripition2: "No of Openings: 1 ",
-    descripition3: "Location: Surat, Gujarat.",
-    id: 3,
-  },
+  // {
+  //   image: node,
+  //   heading: "Node.js Developer",
+  //   descripition1: "Experience: 2 ",
+  //   descripition2: "No of Openings: 1 ",
+  //   descripition3: "Location: Surat, Gujarat.",
+  //   id: 2,
+  // },
+  // {
+  //   image: flutter,
+  //   heading: "Flutter Developer",
+  //   descripition1: "Experience: 2 ",
+  //   descripition2: "No of Openings: 1 ",
+  //   descripition3: "Location: Surat, Gujarat.",
+  //   id: 3,
+  // },
 ];
 export const CareerCards = () => {
   const theme = useTheme();
@@ -42,8 +42,8 @@ export const CareerCards = () => {
           container
           spacing={3}
           alignItems={"center"}
-          justifyContent={"center"}
-          marginY={4}
+          // justifyContent={"center"}
+          paddingY={4}
         >
           {data.map((data, ind) => (
             <Grid
@@ -57,7 +57,7 @@ export const CareerCards = () => {
               <Box
                 bgcolor="white"
                 sx={{
-                  padding: "25px 15px",
+                  padding: "25px",
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
@@ -83,8 +83,8 @@ export const CareerCards = () => {
                   variant="h5"
                   sx={{
                     marginTop: "10px",
-                    fontWeight: "700",
-                    fontSize: { xl: "30px" },
+                    fontWeight: "600",
+                    fontSize: { xl: "26px" },
                   }}
                 >
                   {data.heading}
@@ -94,7 +94,7 @@ export const CareerCards = () => {
                   sx={{
                     marginTop: "8px",
                     color: `${theme.palette.gray}`,
-                    fontSize: { xs: "13px", xl: "17px" },
+                    fontSize: { xs: "13px", xl: "15px" },
                     letterSpacing: "0.5px",
                   }}
                 >
@@ -104,7 +104,7 @@ export const CareerCards = () => {
                   variant="body2"
                   sx={{
                     color: `${theme.palette.gray}`,
-                    fontSize: { xs: "13px", xl: "17px" },
+                    fontSize: { xs: "13px", xl: "15px" },
                     letterSpacing: "0.5px",
                   }}
                 >
@@ -114,7 +114,7 @@ export const CareerCards = () => {
                   variant="body2"
                   sx={{
                     color: `${theme.palette.gray}`,
-                    fontSize: { xs: "13px", xl: "17px" },
+                    fontSize: { xs: "13px", xl: "15px" },
                     letterSpacing: "0.5px",
                   }}
                 >

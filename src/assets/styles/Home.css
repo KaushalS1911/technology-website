@@ -1,0 +1,34 @@
+.heroSection img {
+
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.btn-blue{
+    background-color: #1f1754;
+    color: #fff;
+    padding: 16px 26px;
+    border: none;
+    font-size: 15px;
+    border-radius: 25px;
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+.reviewRating .swiper-button-prev{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.reviewRating .swiper-button-next{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+}
+.reviewRating .swiper-button-next:after,.reviewRating  .swiper-button-prev:after{
+    display: none !important;
+}
