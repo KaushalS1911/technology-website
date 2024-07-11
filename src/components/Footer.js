@@ -9,9 +9,39 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 const Footer = () => {
   const theme = useTheme();
+  const service = [
+      {
+          label:"Web Development",
+          link:"#"
+      }, {
+          label:"Mobile App Development",
+          link:"#"
+      }, {
+          label:"Graphic Design",
+          link:"#"
+      }, {
+          label:"E-commerce Development",
+          link:"#"
+      }, {
+          label:"Website Hosting",
+          link:"#"
+      }, {
+          label:"Website maintanance",
+          link:"#"
+      }, {
+          label:"Website Cloning",
+          link:"#"
+      }, {
+          label:"Logo and Brand Identity",
+          link:"#"
+      }, {
+          label:"UI / UX design",
+          link:"#"
+      },
+  ]
   return (
     <>
       <Box
@@ -152,39 +182,23 @@ const Footer = () => {
                 Services
               </Box>
               <Box sx={{ my: 1.3 }}>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Website Development
-                </Box>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Cloud App Development
-                </Box>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Website Hosting
-                </Box>
+                  {service?.map((data ) =>(
+                <NavLink to={data?.link}>
+                    <Box
+                        sx={{
+                            textDecoration: "none",
+                            color: theme.palette.footerGray,
+                            fontSize: "13px",
+                            letterSpacing: "0.8px",
+                            my: "9px",
+                        }}
+                    >
+                        {data?.label}
+                    </Box>
+                </NavLink>
+
+                  ))}
+
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
@@ -213,7 +227,7 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    203, City Center, Yogi Chowk Surat - 395006 , Gujarat. INDIA
+                      203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006
                   </Box>
                 </Box>
                 <Box

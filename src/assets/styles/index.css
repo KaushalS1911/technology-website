@@ -148,3 +148,15 @@ li {
   border: 1px solid #35b8fc!important;
   height: 42px!important;
 }
+
+
+/* about */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
