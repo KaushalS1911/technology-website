@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -88,25 +87,22 @@ li {
   transform: translateY(-10px);
 }
 
-
-
-
 /*  *************** slider ****************** */
 .owl-theme .owl-nav {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
-.owl-carousel .owl-nav button span{
+.owl-carousel .owl-nav button span {
   background-color: #d6d6d6 !important;
   padding: 15px !important;
   font-size: 25px !important;
 }
-.owl-carousel .owl-nav .owl-prev{
+.owl-carousel .owl-nav .owl-prev {
   position: absolute;
   top: 50%;
   left: 5%;
 }
-.owl-carousel .owl-nav .owl-next{
+.owl-carousel .owl-nav .owl-next {
   position: absolute;
   top: 50%;
   right: 5%;
@@ -120,7 +116,7 @@ li {
   font-size: 15px;
   height: 45px;
   width: 160px;
-  outline: none!important;
+  outline: none !important;
   color: transparent;
   opacity: 1;
 }
@@ -132,7 +128,7 @@ li {
   border: 1px solid #35b8fc;
   border-radius: 3px;
   padding: 7px 8px;
-  outline: none!important;
+  outline: none !important;
   white-space: nowrap;
   font-size: 14px;
   width: 100%;
@@ -140,11 +136,15 @@ li {
   text-align: center;
 }
 .react-tel-input .selected-flag {
-  width: 45px!important;
+  width: 45px !important;
 }
 .react-tel-input .form-control {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  border: 1px solid #35b8fc!important;
-  height: 42px!important;
+  border: 1px solid #35b8fc !important;
+  height: 42px !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 40px !important;
 }

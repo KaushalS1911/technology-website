@@ -371,17 +371,16 @@ const ApplyjobForm = () => {
                       <Grid pr={3}>
                         <Grid item lg={4} md={6} sm={12} xs={12}>
                           <div class="nodeJs_resume__mnTyb">
-                          <input
-                            type="file"
-                            accept=".pdf,.doc,.docx"
-                            class="nodeJs_customImageInput__f58b9"
-                            onChange={(event) => {
-                              const file = event.currentTarget.files[0];
-                              setFieldValue("resume_file", file);
-                            }}
-                          />
+                            <input
+                              type="file"
+                              accept=".pdf,.doc,.docx"
+                              class="nodeJs_customImageInput__f58b9"
+                              onChange={(event) => {
+                                const file = event.currentTarget.files[0];
+                                setFieldValue("resume_file", file);
+                              }}
+                            />
                           </div>
-                         
                         </Grid>
                       </Grid>
                       <Grid pr={3}>

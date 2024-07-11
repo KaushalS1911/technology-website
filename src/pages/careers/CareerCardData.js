@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { TitleAnimation } from "../../components/TitleAnimation";
-import { Box, Breadcrumbs, Grid, Typography } from "@mui/material";
+import { Box, Breadcrumbs, Button, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { data } from "./CareerCards";
 
 export const CareerCardData = () => {
@@ -16,6 +16,11 @@ export const CareerCardData = () => {
       setCareerData(singleData);
     }
   }, [careerData]);
+
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate(`/jobapply`);
+  };
   return (
     <>
       <Box paddingY={9} mt={"50px"}>
@@ -244,6 +249,16 @@ export const CareerCardData = () => {
                 </Typography>
               </li>
             </Typography>
+          </Box>
+          <Box my={5} textAlign={"center"}>
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{ padding: "8px 40px", fontSize: "18px" }}
+              onClick={() => handleButtonClick()}
+            >
+              Apply For Job
+            </Button>
           </Box>
         </Box>
       </Box>
