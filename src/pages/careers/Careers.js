@@ -11,11 +11,11 @@ export const Careers = () => {
     <>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
         <Box bgcolor={"white"} paddingY={9} my={"40px"}>
-          <TitleAnimation title="Openings" />
+          <TitleAnimation title="Careers" />
         </Box>
-        <Box mt={"40px"} mb={"80px"}>
+        <Box mt={"40px"} pb={"80px"}>
           <CareerCards />
-          {/* <ApplyjobForm /> */}
+           {/*<ApplyjobForm />*/}
         </Box>
       </Box>
     </>

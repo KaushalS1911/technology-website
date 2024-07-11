@@ -7,6 +7,9 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import {Link} from "react-router-dom";
 import right from '../../assets/images/about/card-right.png'
 import rotate from '../../assets/images/about/card-rotate.png'
+import card1 from "../../assets/images/about/Group 542.png"
+import card2 from "../../assets/images/about/Group 541.png"
+import card3 from "../../assets/images/about/Group 543.png"
 function MoreAbout() {
     const theme = useTheme();
     return (
@@ -29,7 +32,7 @@ function MoreAbout() {
                                         <img src={right} alt="rotate" style={{objectFit:"contain"}} />
                                     </Box>
                                 </Box>
-                                    <Box sx={{position:"absolute",top: {md:"13%",xs:"-35%"},left: {xs:"10%",sm:"25%",md:"-20%",lg:"-10%",xl:"3%"},animation: "rotate 7s linear infinite",height:"500px",width: {xs:"400px",md:"600px"} ,display:{xs:"none",sm:"block"}}}>
+                                    <Box sx={{position:"absolute",top: {md:"18%",xs:"-35%"},left: {xs:"10%",sm:"25%",md:"-20%",lg:"-10%",xl:"3%"},animation: "rotate 7s linear infinite",height:"500px",width: {xs:"400px",md:"600px"} ,display:{xs:"none",sm:"block"}}}>
                                         <img src={rotate} alt="rotate" style={{objectFit:"contain"}} />
                                     </Box>
                             </Box>
@@ -46,7 +49,10 @@ function MoreAbout() {
                                   }}
                               >
 
-                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"210px",width: {sm:"300px",xs:"100%"}}}>
+                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"260px",width: {sm:"300px",xs:"100%"}}}>
+                                      <Box sx={{height:"50px",width:"50px",mb:"10px"}}>
+                                          <img src={card1} alt="card"  />
+                                      </Box>
                                       <Typography
                                                   sx={{fontWeight: "600",fontSize:"18px",color:"#0E314C"}}>
                                           Our History
@@ -69,7 +75,10 @@ function MoreAbout() {
                                       margin: "20px 0px",
                                   }}
                               >
-                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"210px",width: {sm:"300px",xs:"100%"}}}>
+                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"260px",width: {sm:"300px",xs:"100%"}}}>
+                                      <Box sx={{height:"50px",width:"50px",mb:"10px"}}>
+                                          <img src={card2} alt="card" />
+                                      </Box>
                                       <Typography
                                                   sx={{fontWeight: "600",fontSize:"18px",color:"#0E314C"}}>
                                           Our Mission
@@ -93,7 +102,10 @@ function MoreAbout() {
                                       margin: {sm:"20px 0 0 25%"},
                                   }}
                               >
-                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"210px",width: {sm:"300px",xs:"100%"}}}>
+                                  <Box className="contact-info-box bg-light p-4" sx={{textAlign:"unset",height:"260px",width: {sm:"300px",xs:"100%"}}}>
+                                      <Box sx={{height:"50px",width:"50px",mb:"10px"}}>
+                                          <img src={card3} alt="card" />
+                                      </Box>
                                       <Typography
                                                   sx={{fontWeight: "600",fontSize:"18px",color:"#0E314C"}}>
                                           Who We Are

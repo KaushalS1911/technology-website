@@ -37,12 +37,12 @@ function App() {
           path="/portfolio/single-project/:id"
           element={<SingleProject />}
         />
-        <Route path="/jobapply" element={<JobForm />} />
+        <Route path="/jobapply/:id" element={<JobForm />} />
         <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/career-card-data/:id" element={<CareerCardData />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/detailpage" element={<BoxDetailPage />} />
+        {/*<Route path="/detailpage" element={<BoxDetailPage />} />*/}
         <Route path="/detailpage/:detId" element={<BoxDetailPage />} />
       </Routes>
       <Footer />
