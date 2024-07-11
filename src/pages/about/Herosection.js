@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import heroimage from "../../assets/images/about/Group 380.png";
+import heroimage from "../../assets/images/about/Group 380.webp";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@emotion/react";
 import { Box } from "@mui/material";

@@ -1,6 +1,6 @@
 import {Box, Button, Grid, Stack, Typography} from "@mui/material";
 import React from "react";
-import heroImage from "../../assets/images/home-image/3c.png";
+import heroImage from "../../assets/images/home-image/3c.webp";
 import {useTheme} from "@emotion/react";
 import {Link} from "react-router-dom";
 

@@ -1,45 +1,47 @@
-import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import company1 from "../../assets/images/home-image/companyLogo/company1.svg";
-import company2 from "../../assets/images/home-image/companyLogo/company2.svg";
-import company3 from "../../assets/images/home-image/companyLogo/company3.png";
-import company4 from "../../assets/images/home-image/companyLogo/company4.png";
-import company5 from "../../assets/images/home-image/companyLogo/company5.png";
-import company6 from "../../assets/images/home-image/companyLogo/downloadedLogo/astha2.png";
-import company7 from "../../assets/images/home-image/companyLogo/downloadedLogo/tenacious.png";
-import company8 from "../../assets/images/home-image/companyLogo/downloadedLogo/techstaunch.png";
-import company9 from "../../assets/images/home-image/companyLogo/downloadedLogo/tecocraft.png";
-import company10 from "../../assets/images/home-image/companyLogo/downloadedLogo/secretmindtech.png";
-import company11 from "../../assets/images/home-image/companyLogo/downloadedLogo/apc.png";
-import company12 from "../../assets/images/home-image/companyLogo/downloadedLogo/atologist.png";
-import company13 from "../../assets/images/home-image/companyLogo/downloadedLogo/weetech.png";
-import company14 from "../../assets/images/home-image/companyLogo/downloadedLogo/magnento.png";
-import company15 from "../../assets/images/home-image/companyLogo/downloadedLogo/zluck.png";
-import company16 from "../../assets/images/home-image/companyLogo/downloadedLogo/strong.png";
-import company17 from "../../assets/images/home-image/companyLogo/downloadedLogo/weingenious.png";
-import company18 from "../../assets/images/home-image/companyLogo/downloadedLogo/logistrix.png";
-import bglayer2 from "../../assets/images/home-image/bglayer2.png";
+import { Box, Grid, Typography } from "@mui/material";
+import company1 from "../../assets/images/home-image/companyLogo/company1.webp";
+import company2 from "../../assets/images/home-image/companyLogo/company2.webp";
+import company3 from "../../assets/images/home-image/companyLogo/downloadedLogo/strong.webp";
+import company4 from "../../assets/images/home-image/companyLogo/company4.webp";
+import company5 from "../../assets/images/home-image/companyLogo/company5.webp";
+import company6 from "../../assets/images/home-image/companyLogo/downloadedLogo/astha2.webp";
+import company7 from "../../assets/images/home-image/companyLogo/downloadedLogo/tenacious.webp";
+import company10 from "../../assets/images/home-image/companyLogo/downloadedLogo/secretmindtech.webp";
+import company11 from "../../assets/images/home-image/companyLogo/downloadedLogo/apc.webp";
+import company12 from "../../assets/images/home-image/companyLogo/downloadedLogo/atologist.webp";
+import company13 from "../../assets/images/home-image/companyLogo/downloadedLogo/weetech.webp";
+import company14 from "../../assets/images/home-image/companyLogo/downloadedLogo/magnento.webp";
+import company16 from "../../assets/images/home-image/companyLogo/downloadedLogo/strong.webp";
+import company17 from "../../assets/images/home-image/companyLogo/downloadedLogo/weingenious.webp";
+import company18 from "../../assets/images/home-image/companyLogo/downloadedLogo/logistrix.webp";
+import bglayer2 from "../../assets/images/home-image/bglayer2.webp";
 
 const Client = () => {
   const options = {
     loop: false,
-    margin: 10,
     nav: false,
     autoplay: true,
-    autoplaytimeout: 3000,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 4000,
+    slideTransition: "linear",
     dots: false,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
       },
       600: {
-        items: 1,
+        items: 3,
       },
       1000: {
-        items: 1,
+        items: 4,
+      },
+      1200: {
+        items: 5,
+      },
+      1400: {
+        items: 6,
       },
     },
   };
@@ -52,56 +54,62 @@ const Client = () => {
     company5,
     company6,
     company7,
-    company8,
-    company9,
     company10,
     company11,
     company12,
     company13,
     company14,
-    company15,
     company16,
     company17,
     company18,
   ];
 
   return (
-    <>
-      <Box
-        mb={"-40px"}
-        px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
-        sx={{ py: "60px", background: `url(${bglayer2}) no-repeat 0% 60%` }}
+    <Box
+      px={{ xs: "1rem", sm: "3rem", md: "2rem", xl: "2rem" }}
+      py={{ xs:8, sm:10 , md: 15, xl:20}}
+      sx={{
+        background: `url(${bglayer2}) no-repeat 0% 80%`,
+        textAlign: "center",
+      }}
+    >
+      <Typography
+        sx={{
+          fontWeight:700,
+          mb:5,
+          color: "#000",
+          fontFamily: "'Poppins', sans-serif",
+          fontSize: {
+            xs: "18px",
+            sm: "20px",
+            md: "28px",
+            xl: "30px",
+          },
+        }}
       >
-        <Box py={5}>
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: "600",
-              fontSize: "35px",
-              marginBottom: "60px",
-              textAlign: "center",
-            }}
-          >
-            You Are In A Good Company
-          </Typography>
-          <OwlCarousel className="owl-theme" {...options}>
-            <div className="item">
-              <Grid container spacing={7}>
-                {companyImgArray.map((image, index) => (
-                  <Grid item xs={6} sm={4} md={3} lg={2} key={index}>
-                    <img
-                      src={image}
-                      alt="company"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Grid>
-                ))}
+        You Are In A Good Company
+      </Typography>
+
+      <OwlCarousel className="owl-them" {...options}>
+        {companyImgArray.map((image, index) => (
+          <div className="item" key={index}>
+            <Grid container justifyContent="center">
+              <Grid sx={{ padding: 2 }} className="placement-company">
+                <img
+                  src={image}
+                  alt={`company-${index}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                />
               </Grid>
-            </div>
-          </OwlCarousel>
-        </Box>
-      </Box>
-    </>
+            </Grid>
+          </div>
+        ))}
+      </OwlCarousel>
+    </Box>
   );
 };
 

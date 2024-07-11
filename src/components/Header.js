@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import {
   AppBar,
   Box,
-  Container,
   IconButton,
   Toolbar,
   Typography,
   Collapse,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/images/Header/JBS-technology-logo-2 1.jpg";
+import logo from "../assets/images/Header/JBS-technology-logo-2 1.png";
 import { useTheme } from "@emotion/react";
 import { NavLink } from "react-router-dom";
 const Header = () => {
@@ -18,7 +17,6 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-  // Array of menu items
   const menuItems = [
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
@@ -59,7 +57,7 @@ const Header = () => {
               >
                 <NavLink to={"/"}>
                   <Box
-                    sx={{ height: "50px", width: "60px", padding: "3px" }}
+                    sx={{ height: "100px", width: "100px", padding: "3px" }}
                     to={"/"}
                   >
                     <img src={logo} alt="Logo" />

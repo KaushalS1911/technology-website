@@ -1,14 +1,18 @@
-import React from "react";
-import { Formik, useFormik } from "formik";
+import React, { useState } from "react";
+import { useFormik } from "formik";
 import * as Yup from "yup";
-import ContactImg from "../../assets/images/Contact/Contact-Us_image.png";
-import { Grid, TextField, Button, Container, Box } from "@mui/material";
-import { TitleAnimation } from "./TitleAnimation ";
+import ContactImg from "../../assets/images/Contact/Contact-Us_image.webp";
+import { Grid, TextField, Button, Box, CircularProgress } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import axios from "axios";
+import { TitleAnimation } from "./TitleAnimation ";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
   const theme = useTheme();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const validationSchema = Yup.object({
     firstName: Yup.string().required("First Name is required"),
     lastName: Yup.string().required("Last Name is required"),
@@ -19,6 +23,7 @@ function ContactUs() {
     subject: Yup.string().required("Subject is required"),
     message: Yup.string().required("Message is required"),
   });
+
   const Formik = useFormik({
     initialValues: {
       firstName: "",
@@ -30,24 +35,31 @@ function ContactUs() {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
+      setIsSubmitting(true);
       try {
-        await axios.post(
+        const response = await axios.post(
           "https://jbs-institut-backend.onrender.com/api/user-form",
           values
         );
-        resetForm();
-      }
-      catch (error) {
-        console.error("Error submitting form:", error);
+        if (response.status === 200) {
+          toast.success(response.data.message);
+          resetForm();
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error.data.message);
+      } finally {
+        setIsSubmitting(false);
       }
     },
   });
+
   return (
     <>
+      <ToastContainer />
       <div
         id="bannerSlider"
         className="position-relative"
-        style={{ padding: "100px 0px", marginTop: "40px" }}
+        style={{ padding: "200px 0px", marginTop: "40px" }}
       >
         <TitleAnimation title={`Contact Us`} />
       </div>
@@ -65,7 +77,7 @@ function ContactUs() {
               <div className="contact-image">
                 <img
                   src={ContactImg}
-                  alt="contact-image"
+                  alt="contactimage"
                   className="img-fluid"
                 />
               </div>
@@ -135,6 +147,7 @@ function ContactUs() {
                       label="Phone number"
                       variant="outlined"
                       value={Formik.values.contact}
+                      inputProps={{ maxLength: 10 }}
                       onChange={Formik.handleChange}
                       onBlur={Formik.handleBlur}
                       error={
@@ -190,7 +203,11 @@ function ContactUs() {
                       color="primary"
                       disabled={!Formik.isValid}
                     >
-                      Send Message
+                      {isSubmitting ? (
+                        <CircularProgress size={24} />
+                      ) : (
+                        "Send Message"
+                      )}
                     </Button>
                   </Grid>
                 </Grid>

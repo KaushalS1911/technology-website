@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import ServicesProduct from "./ServicesProduct";
 import { useTheme } from "@emotion/react";
 import { Counter } from "../../components/global/Counter";
+import MileStone from "../Home/MileStone";
 export const Services = () => {
   const theme = useTheme();
   return (
@@ -13,7 +14,8 @@ export const Services = () => {
           <ServiceHead />
         </Box>
         <Box bgcolor="white">
-          <Counter />
+          {/*<Counter />*/}
+          <MileStone />
         </Box>
         <Box mt={"40px"}>
           <ServicesProduct />

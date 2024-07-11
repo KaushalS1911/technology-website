@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { TitleAnimation } from "../../components/TitleAnimation";
-import { Box, Breadcrumbs, Grid, Typography } from "@mui/material";
+import { Box, Breadcrumbs, Button, Grid, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { data } from "./CareerCards";
 
 export const CareerCardData = () => {
@@ -16,6 +16,11 @@ export const CareerCardData = () => {
       setCareerData(singleData);
     }
   }, [careerData]);
+
+  const navigate = useNavigate();
+  const handleButtonClick = (data) => {
+    navigate(`/jobapply/${data}`);
+  };
   return (
     <>
       <Box paddingY={9} mt={"50px"}>
@@ -29,7 +34,7 @@ export const CareerCardData = () => {
               <Typography
                 underline="none"
                 href=""
-                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                sx={{ fontSize: { xs: "14px", xl: "16px" } }}
                 color={theme.palette.gray}
               >
                 Career
@@ -38,7 +43,7 @@ export const CareerCardData = () => {
             <Link>
               <Typography
                 underline="none"
-                sx={{ fontSize: { xs: "14px", xl: "17px" } }}
+                sx={{ fontSize: { xs: "14px", xl: "16px" } }}
                 color={theme.palette.primary.main}
               >
                 {careerData.heading}
@@ -66,7 +71,7 @@ export const CareerCardData = () => {
               color={theme.palette.black.main}
               sx={{
                 padding: { md: "15px" },
-                fontSize: { xs: "14px", xl: "17px" },
+                fontSize: { xs: "14px", xl: "16px" },
                 lineHeight: { lg: "20px", xl: "30px" },
               }}
             >
@@ -146,7 +151,7 @@ export const CareerCardData = () => {
               variant="ul"
               // fontSize={14}
               sx={{
-                fontSize: { xs: "14px", xl: "18px" },
+                fontSize: { xs: "14px", xl: "16px" },
               }}
               lineHeight={2}
             >
@@ -244,6 +249,15 @@ export const CareerCardData = () => {
                 </Typography>
               </li>
             </Typography>
+          </Box>
+          <Box my={5} textAlign={"center"}>
+            <Button
+              variant="contained"
+              sx={{ padding: "8px 40px", fontSize: "18px",backgroundColor:"#003361" }}
+              onClick={() => handleButtonClick(careerData.heading)}
+            >
+              Apply For Job
+            </Button>
           </Box>
         </Box>
       </Box>

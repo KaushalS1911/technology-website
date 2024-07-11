@@ -2,19 +2,16 @@ import {useTheme} from "@emotion/react";
 import {
     Box,
     Button,
-    CardMedia,
-    Container,
     Grid,
     Typography,
 } from "@mui/material";
-import staff1 from "../../assets/images/about/staff-1.jpg";
-import staff2 from "../../assets/images/about/staff-2.jpg";
-import staff3 from "../../assets/images/about/staff-3.jpg";
-import staff4 from "../../assets/images/about/staff-4.jpg";
-import staff5 from "../../assets/images/about/staff-5.jpg";
-import staff6 from "../../assets/images/about/staff-6.jpg";
-import staff7 from "../../assets/images/about/staff-7.jpg";
-import staff8 from "../../assets/images/about/staff-8.jpg";
+import staff1 from "../../assets/images/about/staff-1.webp";
+import staff2 from "../../assets/images/about/staff-2.webp";
+import staff3 from "../../assets/images/about/staff-3.webp";
+import staff4 from "../../assets/images/about/staff-4.webp";
+import staff5 from "../../assets/images/about/staff-5.webp";
+import staff6 from "../../assets/images/about/staff-6.webp";
+import staff7 from "../../assets/images/about/staff-7.webp";
 import React from "react";
 import {Link} from "react-router-dom";
 

@@ -1,8 +1,7 @@
-import { Box, Container, Grid,  Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "@emotion/react";
-import footerBack from "../assets/images/Footer/Object.png";
-import footerLogo from "../assets/images/Footer/footerlogo.png";
+import footerLogo from "../assets/images/Footer/footerlogo.webp";
 import ModeOfTravelOutlinedIcon from "@mui/icons-material/ModeOfTravelOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
@@ -10,15 +9,44 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 const Footer = () => {
   const theme = useTheme();
+  const service = [
+      {
+          label:"Web Development",
+          link:"#"
+      }, {
+          label:"Mobile App Development",
+          link:"#"
+      }, {
+          label:"Graphic Design",
+          link:"#"
+      }, {
+          label:"E-commerce Development",
+          link:"#"
+      }, {
+          label:"Website Hosting",
+          link:"#"
+      }, {
+          label:"Website maintanance",
+          link:"#"
+      }, {
+          label:"Website Cloning",
+          link:"#"
+      }, {
+          label:"Logo and Brand Identity",
+          link:"#"
+      }, {
+          label:"UI / UX design",
+          link:"#"
+      },
+  ]
   return (
     <>
       <Box
         sx={{
           backgroundColor: theme.palette.footerBlue,
-          mt: "40px",
         }}
       >
         <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
@@ -62,7 +90,7 @@ const Footer = () => {
                 Company
               </Typography>
               <Box sx={{ my: 1.3 }}>
-                <Link to="/">
+                <Link to="/" title="Home">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -75,7 +103,7 @@ const Footer = () => {
                     Home
                   </Box>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" title="about">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -88,7 +116,7 @@ const Footer = () => {
                     About
                   </Box>
                 </Link>
-                <Link to="/portfolio">
+                <Link to="/portfolio" title="portfolio">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -101,7 +129,7 @@ const Footer = () => {
                     Portfolio
                   </Box>
                 </Link>
-                <Link to="/services">
+                <Link to="/services" title="services">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -114,7 +142,7 @@ const Footer = () => {
                     Services
                   </Box>
                 </Link>
-                <Link to={"/careers"}>
+                <Link to={"/careers"} title="careers">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -127,7 +155,7 @@ const Footer = () => {
                     Careers
                   </Box>
                 </Link>
-                <Link to={"/contact "}>
+                <Link to={"/contact "} title="contact">
                   <Box
                     sx={{
                       textDecoration: "none",
@@ -154,39 +182,23 @@ const Footer = () => {
                 Services
               </Box>
               <Box sx={{ my: 1.3 }}>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Website Development
-                </Box>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Cloud App Development
-                </Box>
-                <Box
-                  sx={{
-                    textDecoration: "none",
-                    color: theme.palette.footerGray,
-                    fontSize: "13px",
-                    letterSpacing: "0.8px",
-                    my: "9px",
-                  }}
-                >
-                  Website Hosting
-                </Box>
+                  {service?.map((data ) =>(
+                <NavLink to={data?.link}>
+                    <Box
+                        sx={{
+                            textDecoration: "none",
+                            color: theme.palette.footerGray,
+                            fontSize: "13px",
+                            letterSpacing: "0.8px",
+                            my: "9px",
+                        }}
+                    >
+                        {data?.label}
+                    </Box>
+                </NavLink>
+
+                  ))}
+
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
@@ -215,7 +227,7 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    203, City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
+                      203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006
                   </Box>
                 </Box>
                 <Box
@@ -232,7 +244,12 @@ const Footer = () => {
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
                   <Box sx={{ fontSize: "13px" }}>
-                    jbs.technology26@gmail.com
+                    <Link
+                      to="mailto:jbs.technology26@gmail.com"
+                      style={{ color: "rgba(255,255,255,0.8)" }}
+                    >
+                      jbs.technology26@gmail.com
+                    </Link>
                   </Box>
                 </Box>
                 <Box
@@ -242,49 +259,77 @@ const Footer = () => {
                     fontSize: "13px",
                     letterSpacing: "0.8px",
                     my: "9px",
+                    display: "flex",
                   }}
                 >
                   <CallOutlinedIcon
                     sx={{ fontSize: "18px", marginRight: "5px" }}
                   />
-                  Phone : 79844 43901
+                  <Box sx={{ fontSize: "13px" }}>
+                    <Link
+                      to="tel:+91 79844 43901"
+                      style={{ color: "rgba(255,255,255,0.8)" }}
+                    >
+                      Phone:+91 79844 43901
+                    </Link>
+                  </Box>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: "5px" }}>
                   <Box>
-                    <FacebookOutlinedIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link
+                      to="https://www.facebook.com/profile.php?id=61555676966897"
+                      target="_blank"
+                    >
+                      <FacebookOutlinedIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <TwitterIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link
+                      to="https://twitter.com/JBSTechnology26"
+                      target="_blank"
+                    >
+                      <TwitterIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <InstagramIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link
+                      to="https://www.instagram.com/jbs_technology/?hl=en"
+                      target="_blank"
+                    >
+                      <InstagramIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box>
-                    <LinkedInIcon
-                      sx={{
-                        fontSize: "30px",
-                        color: theme.palette.footerGray,
-                        mx: "2px",
-                      }}
-                    />
+                    <Link
+                      to="https://www.linkedin.com/company/jbs-coder-infotech/"
+                      target="_blank"
+                    >
+                      <LinkedInIcon
+                        sx={{
+                          fontSize: "30px",
+                          color: theme.palette.footerGray,
+                          mx: "2px",
+                        }}
+                      />
+                    </Link>
                   </Box>
                 </Box>
               </Box>

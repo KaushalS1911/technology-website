@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-// import { TitleAnimation } from "../TitleAnimation";
-import keyboardImg from "../../assets/images/home-image/keyboard.jpg";
+import keyboardImg from "../../assets/images/home-image/keyboard.webp";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { TitleAnimation } from "../Contact Us/TitleAnimation ";
@@ -30,7 +29,7 @@ const MileStone = () => {
           onExit={() => setCounterOn(false)}
         >
           <Grid container spacing={3}>
-            <Grid item xs={6} sm={3}>
+            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
               <Typography sx={{ fontSize: "40px" }}>
                 +
                 {counterOn && (
@@ -39,7 +38,7 @@ const MileStone = () => {
               </Typography>
               <Typography variant="subtitle">Happy Clients</Typography>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
                   <CountUp start={0} end={80} duration={2} delay={0}></CountUp>
@@ -48,7 +47,7 @@ const MileStone = () => {
               </Typography>
               <Typography variant="subtitle">Projects</Typography>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
                   <CountUp start={0} end={15} duration={2} delay={0}></CountUp>
@@ -58,7 +57,7 @@ const MileStone = () => {
               <Typography variant="subtitle">In-house
                 specialists</Typography>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
               <Typography sx={{ fontSize: "40px" }}>
                 {counterOn && (
                   <CountUp
