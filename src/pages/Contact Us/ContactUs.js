@@ -35,7 +35,7 @@ function ContactUs() {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
-      setIsSubmitting(true); 
+      setIsSubmitting(true);
       try {
         const response = await axios.post(
           "https://jbs-institut-backend.onrender.com/api/user-form",
@@ -47,9 +47,8 @@ function ContactUs() {
         }
       } catch (error) {
         console.error("Error submitting form:", error.data.message);
-      }
-      finally {
-        setIsSubmitting(false); 
+      } finally {
+        setIsSubmitting(false);
       }
     },
   });
@@ -60,7 +59,7 @@ function ContactUs() {
       <div
         id="bannerSlider"
         className="position-relative"
-        style={{ padding: "100px 0px", marginTop: "40px" }}
+        style={{ padding: "200px 0px", marginTop: "40px" }}
       >
         <TitleAnimation title={`Contact Us`} />
       </div>
@@ -146,10 +145,9 @@ function ContactUs() {
                       id="your-subject"
                       name="contact"
                       label="Phone number"
-                      
                       variant="outlined"
                       value={Formik.values.contact}
-                      inputProps={{maxLength: 10}}
+                      inputProps={{ maxLength: 10 }}
                       onChange={Formik.handleChange}
                       onBlur={Formik.handleBlur}
                       error={
@@ -205,7 +203,11 @@ function ContactUs() {
                       color="primary"
                       disabled={!Formik.isValid}
                     >
-                      {isSubmitting ? <CircularProgress size={24} /> : "Send Message"}
+                      {isSubmitting ? (
+                        <CircularProgress size={24} />
+                      ) : (
+                        "Send Message"
+                      )}
                     </Button>
                   </Grid>
                 </Grid>

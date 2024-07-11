@@ -160,3 +160,7 @@ li {
     transform: rotate(360deg);
   }
 }
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 40px !important;
+}

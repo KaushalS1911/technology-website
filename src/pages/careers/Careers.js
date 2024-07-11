@@ -15,7 +15,7 @@ export const Careers = () => {
         </Box>
         <Box mt={"40px"} mb={"80px"}>
           <CareerCards />
-          <ApplyjobForm />
+          {/* <ApplyjobForm /> */}
         </Box>
       </Box>
     </>

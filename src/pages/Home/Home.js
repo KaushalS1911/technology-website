@@ -4,6 +4,7 @@ import MainCources from "./MainCources";
 import WhyUs from "./WhyUs";
 import MileStone from "./MileStone";
 import Client from "./Client";
+import BoxDetailPage from "./BoxDetailPage";
 
 const Home = () => {
   return (
