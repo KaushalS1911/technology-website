@@ -11,11 +11,13 @@ import About from "./pages/about/About";
 import Contact from "./pages/Contact Us/Contact";
 import Home from "./pages/Home/Home";
 import SingleProject from "./pages/Portfolio/SingleProject";
+import Navigation from "./components/global/Navigation";
 
 function App() {
   return (
     <>
-      <Header />
+      {/*<Header />*/}
+        <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

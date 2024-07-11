@@ -5,12 +5,14 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@gsap/react": "^2.1.1",
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "formik": "^2.4.5",
+    "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "npm": "^10.5.0",
     "react": "^18.2.0",
@@ -24,6 +26,7 @@
     "react-swipeable-views-utils": "^0.14.0",
     "react-swipeable-views-v18": "^1.1.27",
     "start": "^5.1.0",
+    "swiper": "^11.1.4",
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },

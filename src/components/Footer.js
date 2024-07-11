@@ -45,7 +45,7 @@ const Footer = () => {
                   <img
                     src={footerLogo}
                     alt="logo"
-                    style={{ objectFit: "contain" }}
+                    style={{ objectFit: "contain",height: "100%",width: "100%" }}
                   />
                 </Box>
               </Link>
