@@ -10,8 +10,8 @@ import {
     Drawer,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../../assets/images/Header/JBS-technology-logo-2 1.jpg";
 import {useMediaQuery} from "@mui/material";
+import logo from '../../assets/images/Header/JBS-technology-logo-2 1.png'
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {useGSAP} from "@gsap/react";
