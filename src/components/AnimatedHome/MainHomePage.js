@@ -35,7 +35,7 @@ import c1 from '../../assets/images/courses/web-dev.png'
 import c2 from '../../assets/images/courses/game.png'
 import c3 from '../../assets/images/courses/mobile app development.png'
 import c4 from '../../assets/images/courses/UI-UX.png'
-import c5 from '../../assets/images/courses/wev dev.png'
+import c5 from '../../assets/images/courses/digital.png'
 
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -106,7 +106,7 @@ const MainHomePage = () => {
             id: 12,
             title: "Digital Marketing",
             desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
-            img: c1
+            img: c5
         },
     ]
 
@@ -230,15 +230,15 @@ const MainHomePage = () => {
                 trigger: ".heroSection",
                 scroller: "body",
                 scrub: 3,
-                start: "top 100%",
-                end: "bottom 100%",
+                start: "top top",
+                end: "bottom 400%",
                 markers: false,
-                ease: "power1.inOut",
+                // ease: "power1.inOut",
             },
         })
         tl.to(logoRef.current, {
             y: -50,
-            duration: 3,
+            duration: 2,
             opacity: 1,
         }).to(logoRef.current, {
             opacity: 0,
@@ -252,28 +252,38 @@ const MainHomePage = () => {
             })
             .to(".mainLogo", {
                 duration: 1,
+                y: -50,
                 opacity: 1,
             })
             .to(".mainLogo", {
+                duration: 1,
+                scale: 1.5,
+                y: 280,
+            })
+            .to(".mainLogo", {
+                duration: 1,
+                scale: 2,
+                y: 720,
+            })
+            .to(".mainLogo", {
 
-                duration: 3,
+                duration: 1,
                 scale: 1.5,
                 right: stopAnimation ? "35%" : "7%",
-                y: stopAnimation ? 200 : 380,
+                y: 800 ,
             })
             .to(".mainLogo", {
-                duration: 4,
-                right: stopAnimation ? "35%" : "45%",
-                y: isMdScreen ? (stopAnimation ? (isXScreen ? 1150 : 1400) : 950) : 750,
-                scale: 2,
-                rotate: 360,
-            })
-            .to(".mainLogo", {
-                duration: 3,
-                right: "90%",
-                y: isMdScreen ? isXScreen ? 1400 : 1250 : 1070,
+                duration: 1,
+                right: "80%",
+                y: 1000,
                 scale: 0,
             })
+            // .to(".mainLogo", {
+            //     duration: 3,
+            //     right: "90%",
+            //     y: isMdScreen ? isXScreen ? 1400 : 1250 : 1070,
+            //     scale: 0,
+            // })
             .to(".colorAni", {
                 scale: 1,
             }, "button")
@@ -317,7 +327,7 @@ const MainHomePage = () => {
                             sx={{
                                 width: {md: "626px", sm: "550px"},
                                 textAlign: "center",
-                                mt: {sm: "50px", lg: "140px"},
+                                mt: {xs: "100px", lg: "140px"},
                             }}
                         >
                             <Typography
@@ -346,7 +356,8 @@ const MainHomePage = () => {
                                 we are dedicated to driving excellence through cutting-edge solutions tailored to meet
                                 your unique needs.
                             </Typography>
-                            <button className="btn-blue" style={{cursor: "pointer"}} onClick={() => navigate('/contact')}>Get a Free Quote Today
+                            <button className="btn-blue" style={{cursor: "pointer"}}
+                                    onClick={() => navigate('/contact')}>Get a Free Quote Today
                             </button>
                         </Box>
                     </Box>
@@ -438,12 +449,13 @@ const MainHomePage = () => {
                             <Grid container>
                                 <Grid
                                     item
-                                    xs={3}
+                                    xs={isXScreen ? 12 : 3}
                                     sx={{
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: "center",
                                         textAlign: "center",
+                                        mt: {xs: "100px", sm: "0px"}
                                     }}
                                 >
                                     <Box
@@ -462,50 +474,17 @@ const MainHomePage = () => {
                                 </Grid>
                                 <Grid
                                     item
-                                    xs={9}
+                                    xs={isXScreen ? 12 : 9}
                                     sx={{
                                         textAlign: "center",
                                         alignSelf: "center",
                                     }}>
-                                    {/*<Swiper*/}
-                                    {/*    spaceBetween={0}*/}
-                                    {/*    pagination={false}*/}
-                                    {/*    autoplay={{delay: 2000, disableOnInteraction: false}} // Autoplay configuration*/}
-                                    {/*    loop={true}*/}
-                                    {/*    breakpoints={{*/}
-                                    {/*        0: {*/}
-                                    {/*            slidesPerView: 1,*/}
-                                    {/*        },*/}
-                                    {/*        640: {*/}
-                                    {/*            slidesPerView: 2,*/}
-                                    {/*        },*/}
-                                    {/*        1024: {*/}
-                                    {/*            slidesPerView: 3,*/}
-                                    {/*        },*/}
-                                    {/*    }}*/}
-                                    {/*>*/}
-                                    {/*    {placementPartners.map((item, index) => (*/}
-                                    {/*        <SwiperSlide*/}
-                                    {/*            key={index}*/}
-                                    {/*            sx={{*/}
-                                    {/*                display: "flex",*/}
-                                    {/*                justifyContent: "center",*/}
-                                    {/*                alignItems: "center",*/}
-                                    {/*                textAlign: 'center'*/}
-                                    {/*            }}*/}
-                                    {/*        >*/}
-                                    {/*            <Box sx={{width: "auto", height: "80px"}}>*/}
-                                    {/*                <img src={item} alt="partner logo"*/}
-                                    {/*                     style={{height: "100%", width: "100%"}}/>*/}
-                                    {/*            </Box>*/}
-                                    {/*        </SwiperSlide>*/}
-                                    {/*    ))}*/}
-                                    {/*</Swiper>*/}
                                     <OwlCarousel className="owl-them" {...options}>
                                         {companyImgArray.map((image, index) => (
                                             <div className="item" key={index}>
                                                 <Grid container justifyContent="center">
-                                                    <Grid sx={{ padding: 1 ,height: "140px"}} className="placement-company">
+                                                    <Grid sx={{padding: 1, height: "140px"}}
+                                                          className="placement-company">
                                                         <img
                                                             src={image}
                                                             alt={`company-${index}`}
@@ -533,7 +512,7 @@ const MainHomePage = () => {
                                         sx={{
                                             fontWeight: "500",
                                             fontSize: {xs: "28px", sm: "38px", md: "48px"},
-                                            pr: {xs: "40px", sm: "60px", md: "100px"}
+                                            pr: {xs: "0px", sm: "60px", md: "100px"}
                                         }}
                                     >
                                         Unleash the Power of <Typography component={"span"} sx={{
@@ -547,7 +526,7 @@ const MainHomePage = () => {
                         </Grid>
                     </Box>
                     <Box sx={{mt: stopAnimation ? "200px" : "300px"}}/>
-                    <Box sx={{mt: "350px"}}>
+                    <Box sx={{mt: stopAnimation ? "0" : "350px"}}>
                         <Box>
                             <Button
                                 className="animationBtn"

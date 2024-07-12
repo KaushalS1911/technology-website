@@ -31,10 +31,11 @@ const MileStone = () => {
           <Grid container spacing={3}>
             <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
               <Typography sx={{ fontSize: "40px" }}>
-                +
+
                 {counterOn && (
                   <CountUp start={0} end={50} duration={2} delay={0}></CountUp>
                 )}
+                +
               </Typography>
               <Typography variant="subtitle">Happy Clients</Typography>
             </Grid>

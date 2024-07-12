@@ -178,7 +178,7 @@ function Horizontal() {
                             <Box className="boxDetailsTitle" sx={{
                                 position: "absolute",
                                 px: {xs: "25px", md: "40px", lg: "100px"},
-                                top: isSmScreen ? "55%" : "43%",
+                                top:  "43%",
                                 left: "50%",
                                 transform: "translateX(-50%)",
                                 color: "white",

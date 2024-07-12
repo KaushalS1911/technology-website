@@ -321,7 +321,7 @@ const course = [
     ],
   },
   {
-    id: 9,
+    id: 12,
     title: "Digital Marketing Services",
     img: webser10,
     smallDec:

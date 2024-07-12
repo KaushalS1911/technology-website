@@ -14,6 +14,7 @@ import {useMediaQuery} from "@mui/material";
 import logo from '../../assets/images/Header/JBS-technology-logo-2 1.png'
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useNavigate} from 'react-router-dom';
 import {useGSAP} from "@gsap/react";
 import {NavLink} from "react-router-dom";
 
@@ -32,6 +33,7 @@ const Navigation = () => {
     const isMobile = useMediaQuery("(max-width:900px)");
     const [drawerOpen, setDrawerOpen] = useState(false);
     const {contextSafe} = useGSAP();
+    const navigate = useNavigate();
     const toggleDrawer = () => {
         setDrawerOpen(!drawerOpen);
     };
@@ -77,7 +79,7 @@ const Navigation = () => {
                             p: 0,
                         }}
                     >
-                        <Box className={"navLogo"} sx={{height: "70px",width: "70px"}}>
+                        <Box className={"navLogo"} sx={{height: "70px",width: "70px",cursor: "pointer"}} onClick={() => navigate('/')}>
                             <img src={logo} alt="Logo" style={{height: "100%",width: "100%"}}/>
                         </Box>
                         {isMobile ? (
