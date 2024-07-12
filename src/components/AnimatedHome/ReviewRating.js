@@ -106,17 +106,7 @@ function ReviewRating() {
                                     spaceBetween={30}
                                     pagination={false}
                                     loop={true}
-                                    breakpoints={{
-                                        0: {
-                                            slidesPerView: 1,
-                                        },
-                                        640: {
-                                            slidesPerView: 1,
-                                        },
-                                        1024: {
-                                            slidesPerView: 1,
-                                        },
-                                    }}
+                                    slidesPerView={1}
                                 >
                                     {reviewData.map((review, index) => (
                                         <SwiperSlide

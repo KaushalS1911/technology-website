@@ -77,7 +77,7 @@ const Navigation = () => {
                             p: 0,
                         }}
                     >
-                        <Box className={"navLogo"} sx={{height: "70px"}}>
+                        <Box className={"navLogo"} sx={{height: "70px",width: "70px"}}>
                             <img src={logo} alt="Logo" style={{height: "100%",width: "100%"}}/>
                         </Box>
                         {isMobile ? (
