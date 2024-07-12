@@ -21,27 +21,27 @@ function Horizontal() {
         {
             img: img1,
             title: "Finance & Banking",
-            desc: "Banking software, financial management systems, trading platforms."
+            desc: "Our Finance & Banking solutions offer seamless, secure services and optimized investments. Trust our expertise for stability and growth in today's evolving financial landscape."
         },
         {
             img: img2,
             title: "Retail & E-Commerce",
-            desc: "Point-of-sale systems, inventory management, e-commerce platforms."
+            desc: "Our Retail & E-Commerce solutions drive your business forward with innovative technology. From online storefronts to inventory management, trust us to boost your success."
         },
         {
             img: img3,
             title: "Healthtech & Life Science",
-            desc: "Electronic health records, telemedicine solutions, patient management software."
+            desc: "Our Healthtech & Life Sciences solutions revolutionize healthcare with advanced technologies. From telemedicine to data-driven diagnostics, partner with us for precision and efficiency in medical advancements."
         },
         {
             img: img4,
             title: "Education",
-            desc: "Learning management systems, student information systems, educational apps."
+            desc: "Our Education solutions use cutting-edge technology to enhance learning. From virtual classrooms to personalized platforms, we empower institutions to deliver quality education anytime, anywhere."
         },
         {
             img: img5,
             title: "Goverment & Public Sector",
-            desc: "e-Government solutions, citizen services, public safety software."
+            desc: "Our Government & Public Sector solutions boost efficiency, transparency, and service delivery with advanced technologies. Partner with us to innovate and build a responsive public sector."
         },
     ];
 
