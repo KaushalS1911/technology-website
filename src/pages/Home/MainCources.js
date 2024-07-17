@@ -19,6 +19,7 @@ const course = [
     {
      id: 1,
       title: "Web Development",
+      link:"Web-Development",
   img: webser1,
   smallDec:
     "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
@@ -75,6 +76,7 @@ const course = [
   id: 2,
   title: "Mobile App Development",
   img: webser2,
+    link:"Mobile-App-Development",
   smallDec:
     "Transform your app idea into reality with our expertise. From initial concept to final launch, our specialists develop bespoke applications that address challenges and deliver measurable outcomes.",
   dec:
@@ -131,6 +133,7 @@ const course = [
   id: 3,
   title: "Graphic Design",
   img: webser3,
+   link:"Graphic-Design",
   smallDec:
     "We collaborate closely with you to comprehend your brand values, target audience, and design preferences, ensuring our solutions align seamlessly with your vision and objectives.",
   dec:
@@ -187,6 +190,7 @@ const course = [
   id: 4,
   title: "E-commerce Development",
   img: webser4,
+   link:"E-commerce-Development",
   smallDec:
     "We harness cutting-edge technologies and industry-leading practices to craft e-commerce websites that are visually compelling, user-friendly, and optimized for maximizing conversions.",
   dec:
@@ -249,6 +253,7 @@ const course = [
   {
   id: 5,
   title: "Website Hosting",
+    link:"Website-Hosting",
   img: webser5,
   smallDec: "We specialize in delivering dependable and secure hosting solutions, guaranteeing your website's accessibility and peak performance.",
   dec: "Website hosting is the process of storing and delivering website files to users over the internet. It is a critical part of having a website, as it allows your website to be accessible to visitors.",
@@ -314,6 +319,7 @@ const course = [
   {
     id: 6,
     title: "Website maintanance",
+    link:"Website-maintanance",
     img: webser6,
     smallDec:
         "Our dedicated team of experts specializes in offering comprehensive website maintenance solutions, allowing you to concentrate on your core business while we manage your website's technical requirements.",
@@ -352,6 +358,7 @@ const course = [
   id: 7,
   title: "Website Cloning",
   img: webser7,
+    link:"Website-Cloning",
   smallDec:
     "Our specialized team provides expert website cloning services, meticulously replicating websites to exact specifications while ensuring seamless functionality and fidelity to the original design.",
   dec: "Website cloning is the process of creating a replica of an existing website. This can be done for a variety of reasons, such as testing new features, creating a staging environment, or creating a backup.",
@@ -381,6 +388,7 @@ const course = [
   id: 8,
   title: "Logo and Brand Identity",
   img: webser8,
+    link:"Logo-and-Brand-Identity",
   smallDec:
     "Your logo and brand identity are pivotal elements that define your brand's perception and create a lasting impact on your audience.",
   dec: "A logo is a visual representation of a brand. It is often used as a symbol to represent the company or product. Brand identity is the overall image of a brand. It includes the logo, colors, fonts, and other elements that are used to create a consistent look and feel for the brand.",
@@ -447,6 +455,7 @@ const course = [
   {
   id: 9,
   title: "UI / UX design",
+    link:"UI-UX-design",
   img: webser9,
   smallDec:
     "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
@@ -500,6 +509,7 @@ const course = [
     id: 10,
     title: "Game Development Services",
     img: webser12,
+    link:"Game-Development-Services",
     smallDec:
         " At JBS Technology, we excel in creating engaging, high-quality games that captivate players and deliver immersive experiences. Our team of skilled developers, designers, and artists work collaboratively to bring your game ideas to life, from concept to launch.",
     secondTitle: "Our Services Include:",
@@ -553,6 +563,7 @@ const course = [
   {
     id: 11,
     title: "Flutter Development Services",
+    link:"Flutter-Development-Services",
     img: webser11,
     smallDec:
         "At JBS Technology, we harness the power of Flutter to create high-performance, visually appealing mobile applications. Our team of expert developers utilizes Flutter’s capabilities to deliver seamless, cross-platform apps that provide a native-like experience on both Android and iOS devices.",
@@ -602,6 +613,7 @@ const course = [
   {
     id: 12,
     title: "Digital Marketing Services",
+    link:"Digital-Marketing-Services",
     img: webser10,
     smallDec:
         "At JBS Technology, we offer comprehensive digital marketing services designed to maximize your online presence and drive measurable results. Our team of digital marketing experts specializes in developing tailored strategies that align with your business goals and target audience, ensuring optimal engagement and conversion rates.",

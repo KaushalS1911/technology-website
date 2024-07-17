@@ -15,39 +15,39 @@ const Footer = () => {
  const service = [
    {
      label: "Web Development",
-     link: "/detailpage/1",
+     link: "/services/Web-Development",
    },
    {
      label: "Mobile App Development",
-     link: "/detailpage/2",
+     link: "/services/Mobile-App-Development",
    },
    {
      label: "Graphic Design",
-     link: "/detailpage/3",
+     link: "/services/Graphic-Design",
    },
    {
      label: "E-commerce Development",
-     link: "/detailpage/4",
+     link: "/services/E-commerce-Development",
    },
    {
      label: "Website Hosting",
-     link: "/detailpage/5",
+     link: "/services/Website-Hosting",
    },
    {
      label: "Website maintanance",
-     link: "/detailpage/6",
+     link: "/services/Website-maintanance",
    },
    {
      label: "Website Cloning",
-     link: "/detailpage/7",
+     link: "/services/Website-Cloning",
    },
    {
      label: "Logo and Brand Identity",
-     link: "/detailpage/8",
+     link: "/services/Logo-and-Brand-Identity",
    },
    {
      label: "UI / UX design",
-     link: "/detailpage/9",
+     link: "/services/UI-UX-design",
    },
  ];
   return (

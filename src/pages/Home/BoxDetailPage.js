@@ -24,7 +24,8 @@ function BoxDetailPage() {
 
 
   const { detId } = useParams();
-  const project = course.find((p) => p.id.toString() === detId);
+    console.log(detId,"hello")
+  const project = course.find((p) => p.link == detId);
 
   return (
     <Box mt={13}>

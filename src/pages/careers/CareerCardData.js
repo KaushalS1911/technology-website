@@ -24,7 +24,7 @@ export const CareerCardData = () => {
   return (
     <>
       <Box paddingY={9} mt={"50px"}>
-        <TitleAnimation title={careerData.heading} />
+        <TitleAnimation title={careerData?.heading} />
       </Box>
 
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
@@ -46,7 +46,7 @@ export const CareerCardData = () => {
                 sx={{ fontSize: { xs: "14px", xl: "16px" } }}
                 color={theme.palette.primary.main}
               >
-                {careerData.heading}
+                {careerData?.heading}
               </Typography>
             </Link>
           </Breadcrumbs>
@@ -60,7 +60,7 @@ export const CareerCardData = () => {
           >
             <Grid item md={4} padding={2}>
               <img
-                src={careerData.image}
+                src={careerData?.image}
                 alt="react"
                 style={{ objectFit: "unset" }}
               />
@@ -71,28 +71,17 @@ export const CareerCardData = () => {
               color={theme.palette.black.main}
               sx={{
                 padding: { md: "15px" },
-                fontSize: { xs: "14px", xl: "16px" },
+                fontSize: { xs: "14px", xl: "15px" },
                 lineHeight: { lg: "20px", xl: "30px" },
               }}
             >
               <Typography variant="p">
-                We are looking for a skilled react.js developer to join our
-                front-end development team. In this role, you will be
-                responsible for developing and implementing user interface
-                components using React.js concepts and workflows such as Redux,
-                Flux, and Webpack. You will also be responsible for profiling
-                and improving front-end performance and documenting our
-                front-end codebase.
+                {careerData?.des1}
               </Typography>
               <Box marginY={2}>
                 <Typography variant="p">
-                  To ensure success as a react.js developer, you should have
-                  in-depth knowledge of JavaScript and React concepts, excellent
-                  front-end coding skills, and a good understanding of
-                  progressive web applications. Ultimately, a top-class react.js
-                  developer should be able to design and build modern user
-                  interface components to enhance application performance.
-                </Typography>
+                {careerData?.des2}
+                                 </Typography>
               </Box>
 
               <Typography variant="ul" lineHeight={2}>
@@ -106,7 +95,7 @@ export const CareerCardData = () => {
                   >
                     Experience :
                   </Typography>
-                  <Typography variant="p"> 1 years</Typography>
+                  <Typography variant="p">{careerData?.experience}</Typography>
                 </li>
                 <li style={{ listStyle: "unset" }}>
                   <Typography
@@ -118,7 +107,7 @@ export const CareerCardData = () => {
                   >
                     Openings :
                   </Typography>
-                  <Typography variant="p"> 2</Typography>
+                  <Typography variant="p">{careerData?.openings}</Typography>
                 </li>
                 <li style={{ listStyle: "unset" }}>
                   <Typography
@@ -130,7 +119,7 @@ export const CareerCardData = () => {
                   >
                     Location :
                   </Typography>
-                  <Typography variant="p"> Surat, Gujarat.</Typography>
+                  <Typography variant="p">{careerData?.location}</Typography>
                 </li>
 
                 <Typography variant="h6" marginY={1} marginLeft={2}>
@@ -138,8 +127,7 @@ export const CareerCardData = () => {
                 </Typography>
                 <li style={{ listStyle: "unset" }}>
                   <Typography variant="p">
-                    Meeting with the development team to discuss user interface
-                    ideas and applications.
+                    {careerData?.responsibilities1}
                   </Typography>
                 </li>
               </Typography>
@@ -151,104 +139,32 @@ export const CareerCardData = () => {
               variant="ul"
               // fontSize={14}
               sx={{
-                fontSize: { xs: "14px", xl: "16px" },
+                fontSize: { xs: "14px", xl: "15px" },
               }}
               lineHeight={2}
             >
+              {careerData?.responsibilities?.map((data) => (
               <li style={{ listStyle: "unset" }}>
                 <Typography variant="p">
-                  Reviewing application requirements and interface designs.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Identifying web-based user interactions.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Developing and implementing highly responsive user interface
-                  components using react concepts.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Writing application interface codes using JavaScript following
-                  react.js workflows.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Troubleshooting interface software and debugging application
-                  codes.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Developing and implementing front-end architecture to support
-                  user interface concepts.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Monitoring and improving front-end performance.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Documenting application changes and developing updates.
-                </Typography>
-              </li>
-              <Typography variant="h6" marginY={1}>
-                Requirements :
-              </Typography>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Bachelor’s degree in computer science, information technology,
-                  or a similar field.
+                  {data}
                 </Typography>
               </li>
 
+              ))}
+
+
+              <Typography variant="h6" marginY={1}>
+                Requirements :
+              </Typography>
+              {careerData?.requirements?.map((data) => (
               <li style={{ listStyle: "unset" }}>
                 <Typography variant="p">
-                  Previous experience working as a react.js developer.
+                  {data}
                 </Typography>
               </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  In-depth knowledge of JavaScript, CSS, HTML, and front-end
-                  languages.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Knowledge of REACT tools including React.js, Webpack, Enzyme,
-                  Redux, and Flux.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Experience with user interface design.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Knowledge of performance testing frameworks including Mocha
-                  and Jest.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Experience with browser-based debugging and performance
-                  testing software.
-                </Typography>
-              </li>
-              <li style={{ listStyle: "unset" }}>
-                <Typography variant="p">
-                  Excellent troubleshooting skills.
-                </Typography>
-              </li>
-            </Typography>
+
+              ))}
+                         </Typography>
           </Box>
           <Box my={5} textAlign={"center"}>
             <Button
