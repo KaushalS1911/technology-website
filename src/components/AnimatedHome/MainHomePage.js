@@ -40,21 +40,6 @@ import c5 from '../../assets/images/courses/digital.png'
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {useGSAP} from "@gsap/react";
-import company1 from "../../assets/images/home-image/companyLogo/company1.webp";
-import company2 from "../../assets/images/home-image/companyLogo/company2.webp";
-import company3 from "../../assets/images/home-image/companyLogo/downloadedLogo/strong.webp";
-import company4 from "../../assets/images/home-image/companyLogo/company4.webp";
-import company5 from "../../assets/images/home-image/companyLogo/company5.webp";
-import company6 from "../../assets/images/home-image/companyLogo/downloadedLogo/astha2.webp";
-import company7 from "../../assets/images/home-image/companyLogo/downloadedLogo/tenacious.webp";
-import company10 from "../../assets/images/home-image/companyLogo/downloadedLogo/secretmindtech.webp";
-import company11 from "../../assets/images/home-image/companyLogo/downloadedLogo/apc.webp";
-import company12 from "../../assets/images/home-image/companyLogo/downloadedLogo/atologist.webp";
-import company13 from "../../assets/images/home-image/companyLogo/downloadedLogo/weetech.webp";
-import company14 from "../../assets/images/home-image/companyLogo/downloadedLogo/magnento.webp";
-import company16 from "../../assets/images/home-image/companyLogo/downloadedLogo/strong.webp";
-import company17 from "../../assets/images/home-image/companyLogo/downloadedLogo/weingenious.webp";
-import company18 from "../../assets/images/home-image/companyLogo/downloadedLogo/logistrix.webp";
 import OwlCarousel from "react-owl-carousel";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -139,7 +124,7 @@ const MainHomePage = () => {
             scrollTrigger: {
                 trigger: ".heroSection",
                 scroller: "body",
-                scrub: isXlScreen ? 4 : 4,
+                scrub: isXlScreen ? 2 : 3,
                 start: isXlScreen ? "top 10%" : "top top",
                 end: isXlScreen ? "bottom 150%" : "bottom 100%",
                 markers: false,
@@ -149,7 +134,7 @@ const MainHomePage = () => {
             .to(
                 logoBRef.current,
                 {
-                    duration: 3,
+                    duration: 1,
                     top: "27px",
                     scale: 0.625,
                     rotate: 0,
@@ -160,7 +145,7 @@ const MainHomePage = () => {
             .to(
                 logoJRef.current,
                 {
-                    duration: 3,
+                    duration: 1,
                     top: "-30px",
                     left: "0px",
                     scale: 0.5,
@@ -172,7 +157,7 @@ const MainHomePage = () => {
             .to(
                 logoSRef.current,
                 {
-                    duration: 3,
+                    duration: 1,
                     top: "-50px",
                     right: "-360px",
                     scale: 0.47,
@@ -197,7 +182,7 @@ const MainHomePage = () => {
                 y: stopAnimation ? 200 : 380,
             })
             .to(".mainLogo", {
-                duration: 4,
+                duration: 2,
                 right: stopAnimation ? "35%" : "45%",
                 y: isMdScreen ? (stopAnimation ? (isXScreen ? 1150 : 1400) : 750) : 750,
                 scale: 2.5,
@@ -356,7 +341,7 @@ const MainHomePage = () => {
                                 we are dedicated to driving excellence through cutting-edge solutions tailored to meet
                                 your unique needs.
                             </Typography>
-                            <button className="btn-blue" style={{cursor: "pointer"}}
+                            <button className="btn-blue" style={{cursor: "pointer",fontWeight: "600"}}
                                     onClick={() => navigate('/contact')}>Get a Free Quote Today
                             </button>
                         </Box>
