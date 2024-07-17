@@ -176,7 +176,7 @@ const MainHomePage = () => {
                 opacity: 1,
             })
             .to(".mainLogo", {
-                duration: 3,
+                duration: 1,
                 scale: stopAnimation ? 1.5 : 2,
                 right: stopAnimation ? "35%" : "7%",
                 y: stopAnimation ? 200 : 380,
