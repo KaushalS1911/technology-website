@@ -64,31 +64,31 @@ const MainHomePage = () => {
     const courseData = [
 
         {
-            id: 1,
+            id: "Web-Development",
             title: "Web Development",
             desc: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
             img: c1
         },
         {
-            id: 10,
+            id: "Game-Development-Services",
             title: "Game Development",
             desc: "At JBS Technology, we create captivating, high-quality games with a collaborative team of skilled developers, designers, and artists.",
             img: c2
         },
         {
-            id: 2,
+            id: "Mobile-App-Development",
             title: "Mobile App Development",
             desc: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
             img: c3
         },
         {
-            id: 9,
+            id: "UI-UX-design",
             title: "UI/UX Designing",
             desc: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
             img: c4
         },
         {
-            id: 12,
+            id: "Digital-Marketing-Services",
             title: "Digital Marketing",
             desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
             img: c5
@@ -293,7 +293,7 @@ const MainHomePage = () => {
     }, []);
 
     const handleButtonClick = (projectId) => {
-        navigate(`/detailpage/${projectId}`);
+        navigate(`/services/${projectId}`);
     };
 
     return (

@@ -14,6 +14,14 @@ const data = [
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
     id: 1,
+    des1:"We are looking for a skilled react.js developer to join our front-end development team. In this role, you will be responsible for developing and implementing user interface components using React.js concepts and workflows such as Redux, Flux, and Webpack. You will also be responsible for profiling and improving front-end performance and documenting our front-end codebase.",
+    des2:"To ensure success as a react.js developer, you should have in-depth knowledge of JavaScript and React concepts, excellent front-end coding skills, and a good understanding of progressive web applications. Ultimately, a top-class react.js developer should be able to design and build modern user interface components to enhance application performance.",
+    experience:" 1 years",
+    openings : " 2",
+    location : ' Surat, Gujarat.',
+    responsibilities1:"Meeting with the development team to discuss user interface ideas and applications.",
+    responsibilities:["Reviewing application requirements and interface designs.","Identifying web-based user interactions.","Developing and implementing highly responsive user interface components using react concepts.","Writing application interface codes using JavaScript following react.js workflows."],
+    requirements:["Bachelor’s degree in computer science, information technology, or a similar field.","Previous experience working as a react.js developer.","In-depth knowledge of JavaScript, CSS, HTML, and front-end languages.","Knowledge of REACT tools including React.js, Webpack, Enzyme, Redux, and Flux.","Experience with user interface design."]
   },
   // {
   //   image: node,

@@ -45,7 +45,7 @@ function App() {
         <Route path="/career-card-data/:id" element={<CareerCardData />} />
         <Route path="/contact" element={<Contact />} />
         {/*<Route path="/detailpage" element={<BoxDetailPage />} />*/}
-        <Route path="/detailpage/:detId" element={<BoxDetailPage />} />
+        <Route path="/services/:detId" element={<BoxDetailPage />} />
       </Routes>
       <Footer />
     </>

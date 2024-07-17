@@ -48,7 +48,7 @@ const ServicesProduct = () => {
   // ];
   const data = course
   const handleButtonClick = (projectId) => {
-    navigate(`/detailpage/${projectId}`);
+    navigate(`/services/${projectId}`);
   };
 
   return (
@@ -64,7 +64,7 @@ const ServicesProduct = () => {
           {data.map((val, ind) => (
               <Grid item lg={4} key={ind}  md={6} sx={{ display: "flex" }}>
                 <Box
-                    onClick={() => handleButtonClick(val?.id)}
+                    onClick={() => handleButtonClick(val?.link)}
                     bgcolor="white"
                     sx={{
                       padding: { xl: "35px 25px", xs: "25px 20px" },
