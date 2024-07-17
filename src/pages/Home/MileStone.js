@@ -16,8 +16,7 @@ const MileStone = () => {
           color: "#fff",
           background: `linear-gradient(rgba(0, 51, 97, 0.6), rgba(0, 0, 0, 0.9)), url(${keyboardImg}) no-repeat fixed`,
           backgroundSize: "cover",
-          p: "70px",
-          // mt: "60px",
+          p: {xs:"35px",sm:"70px"},
         }}
       >
         <TitleAnimation title="Milestones Achieved So Far" />
@@ -29,44 +28,44 @@ const MileStone = () => {
           onExit={() => setCounterOn(false)}
         >
           <Grid container spacing={3}>
-            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
-              <Typography sx={{ fontSize: "40px" }}>
+            <Grid item xs={6} lg={3} md={6}>
+              <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
 
                 {counterOn && (
-                  <CountUp start={0} end={50} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={50} duration={2} delay={0} />
                 )}
                 +
               </Typography>
               <Typography variant="subtitle">Happy Clients</Typography>
             </Grid>
-            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
-              <Typography sx={{ fontSize: "40px" }}>
+            <Grid item xs={6} lg={3} md={6}>
+              <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
                 {counterOn && (
-                  <CountUp start={0} end={80} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={80} duration={2} delay={0} />
                 )}
                 +
               </Typography>
               <Typography variant="subtitle">Projects</Typography>
             </Grid>
-            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
-              <Typography sx={{ fontSize: "40px" }}>
+            <Grid item xs={6} lg={3} md={6}>
+              <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
                 {counterOn && (
-                  <CountUp start={0} end={15} duration={2} delay={0}></CountUp>
+                  <CountUp start={0} end={15} duration={2} delay={0} />
                 )}
                 +
               </Typography>
               <Typography variant="subtitle">In-house
                 specialists</Typography>
             </Grid>
-            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
-              <Typography sx={{ fontSize: "40px" }}>
+            <Grid item xs={6} lg={3} md={6}>
+              <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
                 {counterOn && (
                   <CountUp
                     start={0}
                     end={4650}
                     duration={2}
                     delay={0}
-                  ></CountUp>
+                  />
                 )}
                 +
               </Typography>

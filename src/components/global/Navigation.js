@@ -80,7 +80,7 @@ const Navigation = () => {
                         }}
                     >
                         <Box className={"navLogo"} sx={{height: "70px",width: "70px",cursor: "pointer"}} onClick={() => navigate('/')}>
-                            <img src={logo} alt="Logo" style={{height: "100%",width: "100%"}}/>
+                            <img src={logo} alt="Logo" style={{height: "100%",width: "100%"}} />
                         </Box>
                         {isMobile ? (
                             <>
