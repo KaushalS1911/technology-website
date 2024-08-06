@@ -14,6 +14,7 @@ import InstituteWebImg from "../../assets/images/portfolio/GirlsFirstFinance.png
 import InstituteAppImg from "../../assets/images/portfolio/institute_app-min.jpg";
 import TechnologyImg from "../../assets/images/portfolio/hedger-min.jpg";
 import nncf2 from "../../assets/images/portfolio/nccf2.jpg";
+import loyal from "../../assets/images/portfolio/loyal.png";
 import { useNavigate } from "react-router-dom";
 
 const portfolioItems = [
@@ -116,7 +117,7 @@ const portfolioItems = [
     buttonColor: "#fff",
     buttonBorder: "white",
     buttonBackground: "#fff",
-    backgroundColor: "#BB9AB1",
+    backgroundColor: "#BFAFED",
     sectionTextColor: "white",
     images: [{ Institute }, { nectar }],
   },
@@ -269,7 +270,7 @@ const portfolioItems = [
     buttonColor: "#fff",
     buttonBorder: "white",
     buttonBackground: "#fff",
-    backgroundColor: "#141C25",
+    backgroundColor: "#F4CBD4",
     sectionTextColor: "white",
   },
   {
@@ -537,6 +538,95 @@ const portfolioItems = [
     buttonBorder: "#141C25",
     buttonBackground: "#141C25",
     backgroundColor: "#fff",
+    sectionTextColor: "#3E3E3E",
+  },
+  {
+    id: 7,
+    img: loyal,
+    logo: jbsTech,
+    title: "Jewelery ERP System Of Loyal String",
+    description:
+      "Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems. The project involved creating a user-friendly platform that integrates seamlessly with their existing hardware, offering real-time monitoring, instant notifications, and robust data analytics.Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems. The project involved creating a user-friendly platform that integrates seamlessly with their existing hardware, offering real-time monitoring, instant notifications, and robust data analytics.",
+    title1: "Stock Market Insights",
+    des1: [
+      {
+        title: "Real-Time Stock Market Updates",
+        details: [
+          "Real-time stock market updates and news to keep you informed about market trends and movements.",
+          "In-depth analysis and reports on various stocks, sectors, and market indices.",
+          "Expert opinions and commentary on market conditions and investment opportunities.",
+        ],
+      },
+      {
+        title: "Investment Tools",
+        details: [
+          "Advanced stock screeners and filters to help you find investment opportunities that match your criteria.",
+          "Interactive charts and technical analysis tools for detailed stock analysis.",
+          "Portfolio tracking tools to monitor and manage your investments in real-time.",
+        ],
+      },
+      {
+        title: "Educational Resources",
+        details: [
+          "Comprehensive guides and tutorials on stock market basics, investment strategies, and financial planning.",
+          "Video tutorials and webinars conducted by stock market experts and experienced investors.",
+          "Glossary of stock market terms to help users understand complex financial jargon.",
+        ],
+      },
+      {
+        title: "Community Support",
+        details: [
+          "Discussion forums and community groups where members can share insights, ask questions, and discuss investment strategies.",
+          "Peer-to-peer mentoring and support to help beginners learn from experienced investors.",
+          "Regular community events, webinars, and Q&A sessions with industry experts.",
+        ],
+      },
+      {
+        title: "Personalized Recommendations",
+        details: [
+          "Customized stock recommendations based on user preferences and investment goals.",
+          "Alerts and notifications for significant market events, stock price changes, and investment opportunities.",
+          "Personalized investment plans and advice to help users achieve their financial objectives.",
+        ],
+      },
+      {
+        title: "Data and Research",
+        details: [
+          "Access to extensive databases of historical stock prices, financial statements, and market data.",
+          "Research reports and whitepapers on emerging market trends and investment themes.",
+          "Proprietary market indicators and algorithms to identify potential investment opportunities.",
+        ],
+      },
+      {
+        title: "User-Friendly Interface",
+        details: [
+          "Intuitive and easy-to-navigate website design for a seamless user experience.",
+          "Mobile-friendly platform for access on-the-go.",
+          "Customizable dashboards to display the information and tools most relevant to the user.",
+        ],
+      },
+      {
+        title: "Security and Privacy",
+        details: [
+          "Advanced security measures to protect user data and ensure safe transactions.",
+          "Privacy policies that prioritize user confidentiality and data protection.",
+          "Regular security audits and updates to maintain a secure platform.",
+        ],
+      },
+    ],
+    title2: "Why Choose Hedger Community?",
+    des2: [
+      "Comprehensive Resources: Everything you need to know about the stock market in one place.",
+      "Expert Insights: Access to professional analysis and market commentary.",
+      "Community Support: Connect with fellow investors and share knowledge.",
+      "Personalized Experience: Customized tools and recommendations tailored to your investment goals.",
+      "User-Friendly: Intuitive design and mobile accessibility for a seamless experience.",
+    ],
+    buttonVariant: "outlined",
+    buttonColor: "#141C25",
+    buttonBorder: "#141C25",
+    buttonBackground: "#141C25",
+    backgroundColor: "#F2EFEB",
     sectionTextColor: "#3E3E3E",
   },
 ];
