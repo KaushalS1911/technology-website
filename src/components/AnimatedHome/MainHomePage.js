@@ -428,7 +428,7 @@ const MainHomePage = () => {
                             component={"h2"}
                             sx={{fontWeight: 700, fontSize: "24px", textAlign: "center"}}
                         >
-                            Our Placement Partners
+                            our happy clients
                         </Typography>
                         <Box sx={{mt: "40px"}}>
                             <Grid container>

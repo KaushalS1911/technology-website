@@ -20,7 +20,7 @@ const MileStone = () => {
         }}
       >
         <TitleAnimation title="Milestones Achieved So Far" />
-        <Typography vaiant="body1" paddingY={6}>
+        <Typography vaiant="body1" paddingY={2}>
           Smiles delivered by our team all over the world
         </Typography>
         <ScrollTrigger

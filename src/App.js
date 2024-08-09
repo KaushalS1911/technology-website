@@ -14,23 +14,17 @@ import SingleProject from "./pages/Portfolio/SingleProject";
 import Navigation from "./components/global/Navigation";
 import BoxDetailPage from "./pages/Home/BoxDetailPage";
 import JobForm from "./pages/careers/JobForm";
+import ScrollToTop from "./components/global/ScrollToTop";
 
 function App() {
-  function ScrollToTop() {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-
-    return null;
-  }
+  
 
   return (
     <>
       {/*<Header />*/}
+      <ScrollToTop  />
         <Navigation />
-      <ScrollToTop />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -98,7 +98,7 @@ function Ceo() {
               </Grid>
             ))}
           </Grid>
-          <Grid container xl={12} direction={'row'} justifyContent={'center'}>
+          {/* <Grid container xl={12} direction={'row'} justifyContent={'center'}>
             <Grid item lg={8}>
               <Typography
                 variant="h3"
@@ -187,7 +187,7 @@ function Ceo() {
                 />
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Box>
       </div>
     </>
