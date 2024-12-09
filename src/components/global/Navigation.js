@@ -22,10 +22,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const menuItems = [
     {text: "Home", path: "/"},
-    {text: "About", path: "/about"},
-    {text: "Portfolio", path: "/portfolio"},
     {text: "Services", path: "/services"},
-    {text: "Careers", path: "/careers"},
+    {text: "Portfolio", path: "/portfolio"},
+    {text: "Blog", path: "/blog"},
+    {text: "About", path: "/about"},
+    // {text: "Careers", path: "/careers"},
     {text: "Contact Us", path: "/contact"},
 ];
 

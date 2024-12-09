@@ -36,6 +36,11 @@ import c2 from '../../assets/images/courses/game.png'
 import c3 from '../../assets/images/courses/mobile app development.png'
 import c4 from '../../assets/images/courses/UI-UX.png'
 import c5 from '../../assets/images/courses/digital.png'
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import SecurityIcon from '@mui/icons-material/Security';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AppsIcon from '@mui/icons-material/Apps';
 
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -61,37 +66,71 @@ const MainHomePage = () => {
     const stopAnimation = useMediaQuery(theme.breakpoints.down("700"));
 
     const {contextSafe} = useGSAP();
+    // const courseData = [
+    //
+    //     {
+    //         id: "Web-Development",
+    //         title: "Web Development",
+    //         desc: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
+    //         img: c1
+    //     },
+    //     {
+    //         id: "Game-Development-Services",
+    //         title: "Game Development",
+    //         desc: "At JBS Technology, we create captivating, high-quality games with a collaborative team of skilled developers, designers, and artists.",
+    //         img: c2
+    //     },
+    //     {
+    //         id: "Mobile-App-Development",
+    //         title: "Mobile App Development",
+    //         desc: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
+    //         img: c3
+    //     },
+    //     {
+    //         id: "UI-UX-design",
+    //         title: "UI/UX Designing",
+    //         desc: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
+    //         img: c4
+    //     },
+    //     {
+    //         id: "Digital-Marketing-Services",
+    //         title: "Digital Marketing",
+    //         desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
+    //         img: c5
+    //     },
+    // ]
+
     const courseData = [
 
         {
-            id: "Web-Development",
-            title: "Web Development",
-            desc: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
-            img: c1
+            id: "15+ Years of Experience",
+            title: "15+ Years of Experience",
+            desc: "A broad work experience with different industries",
+            img: <AssignmentIcon style={{fontSize: "80px"}}/>
         },
         {
-            id: "Game-Development-Services",
-            title: "Game Development",
-            desc: "At JBS Technology, we create captivating, high-quality games with a collaborative team of skilled developers, designers, and artists.",
-            img: c2
+            id: "6 Months Warranty",
+            title: "6 Months Warranty",
+            desc: "Free bug solving post project delivery, without any extra charges",
+            img: <SecurityIcon style={{fontSize: "80px"}}/>
         },
         {
-            id: "Mobile-App-Development",
-            title: "Mobile App Development",
-            desc: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
-            img: c3
+            id: "Milestone wise payment",
+            title: "Milestone wise payment",
+            desc: "Release payment on delivery & satisfatcion, divided in milestone",
+            img: <AttachMoneyIcon style={{fontSize: "80px"}}/>
         },
         {
-            id: "UI-UX-design",
-            title: "UI/UX Designing",
-            desc: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
-            img: c4
+            id: "Penaulty on Missed Deadline",
+            title: "Penaulty on Missed Deadline",
+            desc: "Get delivery on time and if missed then we get the penaulty",
+            img: <AccessTimeIcon style={{fontSize: "80px"}}/>
         },
         {
-            id: "Digital-Marketing-Services",
-            title: "Digital Marketing",
-            desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
-            img: c5
+            id: "Agile/DevOPS Methodology",
+            title: "Agile/DevOPS Methodology",
+            desc: "Most successful project execution method, 2 weeks sprint and delivery in chunks",
+            img: <AppsIcon style={{fontSize: "80px"}}/>
         },
     ]
 
@@ -344,6 +383,12 @@ const MainHomePage = () => {
                             <button className="btn-blue" style={{cursor: "pointer",fontWeight: "600"}}
                                     onClick={() => navigate('/contact')}>Get a Free Quote Today
                             </button>
+                            <button className="btn-blue" style={{cursor: "pointer",fontWeight: "600" , marginLeft : "10px"}}
+                                    onClick={() => navigate('/portfolio')}>View Portfolio
+                            </button>
+                            <button className="btn-blue" style={{cursor: "pointer",fontWeight: "600" , marginLeft : "10px"}}
+                                    onClick={() => navigate('/hire-developer')}>Hire Develeoper
+                            </button>
                         </Box>
                     </Box>
                     <Box
@@ -548,72 +593,101 @@ const MainHomePage = () => {
                         <Grid container spacing={5}>
                             {courseData?.map((item) => (
                                 <Grid item md={4} sm={6} xs={12}>
-                                    <Box sx={{
-                                        cursor: "pointer",
-                                        position: "relative",
-                                        height: "362px",
-                                        // width: {sm:"384px",xs: "100%"},
-                                        borderRadius: "17px",
-                                        overflow: "hidden",
-                                        '&:hover .details': {top: "45%"}
-                                    }} onClick={() => handleButtonClick(item.id)}>
-                                        <Box sx={{position: "absolute", height: "100%", width: "100%"}}>
-                                            <img src={item.img} alt={item.img}
-                                                 style={{height: "100%", width: "100%", objectFit: "cover"}}/>
+                                    <Box style={{border: "1px solid #F2F9FF", height: "auto",padding: "20px",textAlign: "center",position: "relative",borderRadius: "10px",boxShadow: "10px 10px 5px #F2F9FF"}}>
+                                        <Box  style={{
+                                            color: "#5C9EE4",
+                                            objectFit: "contain", // Ensure the image fits within the box
+                                            // marginBottom: "15px", // Add spacing below the image
+                                        }} >
+                                            {item.img}
                                         </Box>
+                                        <Box style={{fontSize: "16px",fontWeight: 700}}>{item.title}</Box>
+                                        <Box style={{fontSize: "14px", color: "#6C757D"}}>{item.desc}</Box>
                                         <Box sx={{
-                                            position: "absolute",
-                                            height: "100%",
+                                            backgroundColor: "white",
                                             width: "100%",
-                                            background: " linear-gradient( rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%)"
-                                        }}/>
-                                        <Box sx={{
-                                            position: "absolute",
-                                            color: "white",
-                                            px: {sm: "30px", xs: "20px"},
-                                            top: "88%",
-                                            transition: "0.5s"
-                                        }} className={"details"}>
-                                            <Box sx={{
-                                                fontSize: "21px",
-                                                fontWeight: "600",
-                                                mb: "18px"
-                                            }}>{item.title}</Box>
-                                            <Box sx={{
-                                                fontSize: "12px",
-                                                letterSpacing: "0.6px",
-                                                fontWeight: "300"
-                                            }}>{item.desc}</Box>
-                                            <Box sx={{
-                                                backgroundColor: "white",
-                                                width: "100%",
-                                                p: "15px",
-                                                py: "13px",
-                                                borderRadius: "30px",
-                                                mt: "10px",
-                                                display: "flex",
-                                                alignItems: "center",
-                                                justifyContent: "space-between",
-                                                position: "relative"
-                                            }}>
-                                                <Box sx={{color: "#000", fontSize: "15px", fontWeight: "600"}}>Know
-                                                    More</Box>
-                                                <Box sx={{
-                                                    color: "#fff",
-                                                    backgroundColor: "darkBlue",
-                                                    position: "absolute",
-                                                    top: "50%",
-                                                    right: "1%",
-                                                    py: "4px",
-                                                    px: "8px",
-                                                    borderRadius: "50%",
-                                                    transform: "translateY(-50%)"
-                                                }}><EastRoundedIcon sx={{mt: "3px"}}/></Box>
-                                            </Box>
+                                            p: "15px",
+                                            py: "13px",
+                                            borderRadius: "30px",
+                                            mt: "10px",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "space-between",
+                                            position: "relative"
+                                        }}>
                                         </Box>
                                     </Box>
                                 </Grid>
+
                             ))}
+                            {/*{courseData?.map((item) => (*/}
+                            {/*    <Grid item md={4} sm={6} xs={12}>*/}
+                            {/*        <Box sx={{*/}
+                            {/*            cursor: "pointer",*/}
+                            {/*            position: "relative",*/}
+                            {/*            height: "362px",*/}
+                            {/*            // width: {sm:"384px",xs: "100%"},*/}
+                            {/*            borderRadius: "17px",*/}
+                            {/*            overflow: "hidden",*/}
+                            {/*            '&:hover .details': {top: "45%"}*/}
+                            {/*        }} onClick={() => handleButtonClick(item.id)}>*/}
+                            {/*            <Box sx={{position: "absolute", height: "100%", width: "100%"}}>*/}
+                            {/*                <img src={item.img} alt={item.img}*/}
+                            {/*                     style={{height: "100%", width: "100%", objectFit: "cover"}}/>*/}
+                            {/*            </Box>*/}
+                            {/*            <Box sx={{*/}
+                            {/*                position: "absolute",*/}
+                            {/*                height: "100%",*/}
+                            {/*                width: "100%",*/}
+                            {/*                background: " linear-gradient( rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%)"*/}
+                            {/*            }}/>*/}
+                            {/*            <Box sx={{*/}
+                            {/*                position: "absolute",*/}
+                            {/*                color: "white",*/}
+                            {/*                px: {sm: "30px", xs: "20px"},*/}
+                            {/*                top: "88%",*/}
+                            {/*                transition: "0.5s"*/}
+                            {/*            }} className={"details"}>*/}
+                            {/*                <Box sx={{*/}
+                            {/*                    fontSize: "21px",*/}
+                            {/*                    fontWeight: "600",*/}
+                            {/*                    mb: "18px"*/}
+                            {/*                }}>{item.title}</Box>*/}
+                            {/*                <Box sx={{*/}
+                            {/*                    fontSize: "12px",*/}
+                            {/*                    letterSpacing: "0.6px",*/}
+                            {/*                    fontWeight: "300"*/}
+                            {/*                }}>{item.desc}</Box>*/}
+                            {/*                <Box sx={{*/}
+                            {/*                    backgroundColor: "white",*/}
+                            {/*                    width: "100%",*/}
+                            {/*                    p: "15px",*/}
+                            {/*                    py: "13px",*/}
+                            {/*                    borderRadius: "30px",*/}
+                            {/*                    mt: "10px",*/}
+                            {/*                    display: "flex",*/}
+                            {/*                    alignItems: "center",*/}
+                            {/*                    justifyContent: "space-between",*/}
+                            {/*                    position: "relative"*/}
+                            {/*                }}>*/}
+                            {/*                    <Box sx={{color: "#000", fontSize: "15px", fontWeight: "600"}}>Know*/}
+                            {/*                        More</Box>*/}
+                            {/*                    <Box sx={{*/}
+                            {/*                        color: "#fff",*/}
+                            {/*                        backgroundColor: "darkBlue",*/}
+                            {/*                        position: "absolute",*/}
+                            {/*                        top: "50%",*/}
+                            {/*                        right: "1%",*/}
+                            {/*                        py: "4px",*/}
+                            {/*                        px: "8px",*/}
+                            {/*                        borderRadius: "50%",*/}
+                            {/*                        transform: "translateY(-50%)"*/}
+                            {/*                    }}><EastRoundedIcon sx={{mt: "3px"}}/></Box>*/}
+                            {/*                </Box>*/}
+                            {/*            </Box>*/}
+                            {/*        </Box>*/}
+                            {/*    </Grid>*/}
+                            {/*))}*/}
                             <Grid item md={4} sm={6} xs={12}>
                                 <Box sx={{
                                     display: "flex",
@@ -628,6 +702,7 @@ const MainHomePage = () => {
                             </Grid>
                         </Grid>
                     </Box>
+
                 </Container>
 
             </Box>

@@ -19,7 +19,7 @@ const Home = () => {
         <Horizontal />
         {/*<Counter />*/}
           <MileStone />
-        <ReviewRating />
+        {/*<ReviewRating />*/}
       {/*<WhyUs />*/}
       {/*<MileStone />*/}
       {/*<Client />*/}

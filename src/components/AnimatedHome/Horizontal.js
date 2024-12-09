@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {Box, useMediaQuery, useTheme} from "@mui/material";
-import img1 from '../../assets/images/industries/ind1.png';
+import img1 from '../../assets/images/industries/ind1.jpg';
 import img2 from '../../assets/images/industries/ind2.png';
 import img3 from '../../assets/images/industries/ind3.png';
 import img4 from '../../assets/images/industries/ind4.png';

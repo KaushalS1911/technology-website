@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import ContactImg from "../../assets/images/Contact/Contact-Us_image.webp";
-import { Grid, TextField, Button, Box, CircularProgress } from "@mui/material";
+import {Grid, TextField, Button, Box, CircularProgress, Typography} from "@mui/material";
 import { useTheme } from "@emotion/react";
 import axios from "axios";
 import { TitleAnimation } from "./TitleAnimation ";
@@ -59,7 +59,7 @@ function ContactUs() {
       <div
         id="bannerSlider"
         className="position-relative"
-        style={{ padding: "200px 0px", marginTop: "40px" }}
+        style={{ padding: "150px 0px", marginTop: "40px" }}
       >
         <TitleAnimation title={`Contact Us`} />
       </div>
@@ -70,16 +70,42 @@ function ContactUs() {
               item
               xs={12}
               md={6}
-              display={"flex"}
+              // display={"flex"}
               alignItems={"center"}
               justifyContent={"center"}
             >
               <div className="contact-image">
-                <img
-                  src={ContactImg}
-                  alt="contactimage"
-                  className="img-fluid"
-                />
+                <Typography variant="h4" gutterBottom>
+                  Get in Touch
+                </Typography>
+                <Typography variant="h6">Contact Information</Typography>
+                <Typography>
+                  <strong>Work Phone Number:</strong> +91 914 902 5545, +91 8980 544 320
+                </Typography>
+                <Typography>
+                  <strong>HR Phone Number:</strong> +91 9624 008 889
+                </Typography>
+                <Typography>
+                  <strong>Work Inquiries:</strong> management@rushkar.com
+                </Typography>
+                <Typography>
+                  <strong>HR Inquiries:</strong> hrteam@rushkar.com
+                </Typography>
+                <Typography mt={2}>
+                  <strong>Ahmedabad Development Center:</strong>
+                  <br />
+                  411 - Sarthik Square, SG Highway, Pakwan Crossroad, Near GNFC Tower, Bodakdev, Ahmedabad, Gujarat 380054
+                </Typography>
+                <Typography mt={2}>
+                  <strong>Marketing Center:</strong>
+                  <br />
+                  B-512, Titanium City Center, Satellite, Ahmedabad, Gujarat 380015
+                </Typography>
+                <Typography mt={2}>
+                  <strong>Registered Address:</strong>
+                  <br />
+                  C/704, Sarita Residency - 2, Nr. Matru Village, Opp. Umiya Residency, New Nikol, Ahmedabad-382350, India
+                </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={6}>

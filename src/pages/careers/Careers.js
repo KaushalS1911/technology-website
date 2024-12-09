@@ -10,7 +10,7 @@ export const Careers = () => {
   return (
     <>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Box bgcolor={"white"} paddingY={9} my={"40px"}>
+        <Box bgcolor={"white"} paddingY={9} my={"200px"}>
           <TitleAnimation title="Careers" />
         </Box>
         <Box mt={"40px"} pb={"80px"}>

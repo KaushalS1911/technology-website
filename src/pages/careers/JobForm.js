@@ -93,7 +93,7 @@ const {id} = useParams()
         id="bannerSlider"
         className="position-relative"
         style={{
-          padding: "150px 0px",
+          padding: "200px 0px",
           marginTop: "40px",
           backgroundImage: `url(${back})`,
           backgroundSize:"cover",
@@ -133,7 +133,7 @@ const {id} = useParams()
             sx={{ marginTop: "20px" }}
             display={"flex"}
             justifyContent={"center"}
-          >
+          >0
             <Breadcrumbs aria-label="breadcrumb" color={"white"}>
               <Link
                   component={RouterLink}

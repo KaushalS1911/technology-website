@@ -15,6 +15,8 @@ import Navigation from "./components/global/Navigation";
 import BoxDetailPage from "./pages/Home/BoxDetailPage";
 import JobForm from "./pages/careers/JobForm";
 import ScrollToTop from "./components/global/ScrollToTop";
+import {Blog} from "./pages/blog/Blog";
+import HireDevelopers from "./pages/hiredeveloper/HireDevelopers";
 
 function App() {
   
@@ -35,11 +37,13 @@ function App() {
         />
         <Route path="/jobapply/:id" element={<JobForm />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/career-card-data/:id" element={<CareerCardData />} />
+        <Route path="/blog" element={<Blog />} />
+        {/*<Route path="/careers" element={<Careers />} />*/}
+        {/*<Route path="/career-card-data/:id" element={<CareerCardData />} />*/}
         <Route path="/contact" element={<Contact />} />
         {/*<Route path="/detailpage" element={<BoxDetailPage />} />*/}
         <Route path="/services/:detId" element={<BoxDetailPage />} />
+        <Route path="/hire-developer" element={<HireDevelopers />} />
       </Routes>
       <Footer />
     </>
