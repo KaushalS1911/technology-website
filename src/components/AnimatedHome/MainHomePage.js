@@ -593,7 +593,7 @@ const MainHomePage = () => {
                         <Grid container spacing={5}>
                             {courseData?.map((item) => (
                                 <Grid item md={4} sm={6} xs={12}>
-                                    <Box style={{border: "1px solid #F2F9FF", height: "auto",padding: "20px",textAlign: "center",position: "relative",borderRadius: "10px",boxShadow: "10px 10px 5px #F2F9FF"}}>
+                                    <Box style={{border: "1px solid #F2F9FF", height: "auto",padding: "20px",textAlign: "center",position: "relative",borderRadius: "10px",boxShadow: "5px 5px 5px #F2F9FF"}}>
                                         <Box  style={{
                                             color: "#5C9EE4",
                                             objectFit: "contain", // Ensure the image fits within the box
