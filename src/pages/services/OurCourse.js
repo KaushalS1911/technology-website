@@ -4,6 +4,7 @@ import c2 from '../../assets/images/courses/game.png'
 import c3 from '../../assets/images/courses/mobile app development.png'
 import c4 from '../../assets/images/courses/UI-UX.png'
 import c5 from '../../assets/images/courses/digital.png'
+import c6 from '../../assets/images/courses/adndroid.jpg'
 import {
     Box,
     Container,
@@ -52,10 +53,11 @@ const OurCourse = () => {
             img: c5
         },
         {
-            id: "Digital-Marketing-Services",
-            title: "Digital Marketing",
-            desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
-            img: c5
+            id: "Android Development",
+            title: "Android Development",
+            desc: "\n" +
+                "JBS Technology's Android Development course offers hands-on training to build dynamic mobile apps, guided by expert trainers in a practical setting.",
+            img: c6
         },
     ]
 
