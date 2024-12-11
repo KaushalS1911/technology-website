@@ -33,7 +33,7 @@ const MileStone = () => {
               <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
 
                 {counterOn && (
-                  <CountUp start={0} end={50} duration={2} delay={0} />
+                  <CountUp start={0} end={100} duration={2} delay={0} />
                 )}
                 +
               </Typography>
@@ -42,7 +42,7 @@ const MileStone = () => {
             <Grid item xs={6} lg={3} md={6}>
               <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
                 {counterOn && (
-                  <CountUp start={0} end={80} duration={2} delay={0} />
+                  <CountUp start={0} end={160} duration={2} delay={0} />
                 )}
                 +
               </Typography>
@@ -51,7 +51,7 @@ const MileStone = () => {
             <Grid item xs={6} lg={3} md={6}>
               <Typography sx={{ fontSize: {xs:"35px",sm:"50px"},textAlign: "center" }}>
                 {counterOn && (
-                  <CountUp start={0} end={15} duration={2} delay={0} />
+                  <CountUp start={0} end={30} duration={2} delay={0} />
                 )}
                 +
               </Typography>
@@ -63,7 +63,7 @@ const MileStone = () => {
                 {counterOn && (
                   <CountUp
                     start={0}
-                    end={4650}
+                    end={9300}
                     duration={2}
                     delay={0}
                   />

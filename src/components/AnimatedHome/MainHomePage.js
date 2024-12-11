@@ -103,8 +103,8 @@ const MainHomePage = () => {
     const courseData = [
 
         {
-            id: "15+ Years of Experience",
-            title: "15+ Years of Experience",
+            id: "5+ Years of Experience",
+            title: "5+ Years of Experience",
             desc: "A broad work experience with different industries",
             img: <AssignmentIcon style={{fontSize: "80px"}}/>
         },

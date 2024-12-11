@@ -51,6 +51,12 @@ const OurCourse = () => {
             desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
             img: c5
         },
+        {
+            id: "Digital-Marketing-Services",
+            title: "Digital Marketing",
+            desc: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
+            img: c5
+        },
     ]
 
     return (
