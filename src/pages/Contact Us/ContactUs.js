@@ -121,7 +121,7 @@ function ContactUs() {
                 </div>
 
                 <div style={{margin: "30px 0"}}>
-                  <Typography variant="h5">Contact With Us</Typography>
+                  <Typography variant="h5">Connect With Us</Typography>
                   <IconButton
                       aria-label="Instagram"
                       onClick={handleClickInsta}
