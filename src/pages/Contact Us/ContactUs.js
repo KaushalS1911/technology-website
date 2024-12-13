@@ -8,6 +8,10 @@ import axios from "axios";
 import { TitleAnimation } from "./TitleAnimation ";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { IconButton } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function ContactUs() {
   const theme = useTheme();
@@ -23,6 +27,16 @@ function ContactUs() {
     subject: Yup.string().required("Subject is required"),
     message: Yup.string().required("Message is required"),
   });
+
+  const handleClickInsta = () => {
+    window.open("https://www.instagram.com/jbs_technology/profilecard/?igsh=bmliZDh2eTJndzI3", "_blank");
+  };
+  const handleClickLink = () => {
+    window.open("https://in.linkedin.com/company/jbs-technique", "_blank");
+  };
+  const handleClickFace = () => {
+    window.open("https://www.instagram.com/jbs_technology/profilecard/?igsh=bmliZDh2eTJndzI3", "_blank");
+  };
 
   const Formik = useFormik({
     initialValues: {
@@ -78,34 +92,59 @@ function ContactUs() {
                 <Typography variant="h4" gutterBottom>
                   Get in Touch
                 </Typography>
-                <Typography variant="h6">Contact Information</Typography>
+               <div style={{margin: "30px 0"}}>
+                <Typography variant="h5">Contact Us</Typography>
                 <Typography>
-                  <strong>Work Phone Number:</strong> +91 914 902 5545, +91 8980 544 320
+                  <strong style={{fontSize: "20px"}}>Phone :</strong>
+                  +91 7984 443 901
                 </Typography>
-                <Typography>
-                  <strong>HR Phone Number:</strong> +91 9624 008 889
+                 <Typography>
+                  <strong style={{fontSize: "20px"}}>Work :</strong>
+                  +91 8200 863 163
                 </Typography>
-                <Typography>
-                  <strong>Work Inquiries:</strong> management@rushkar.com
+                 <Typography>
+                  <strong style={{fontSize: "20px"}}>Email :</strong>
+                  jbs.technology26@gmail.com
                 </Typography>
-                <Typography>
-                  <strong>HR Inquiries:</strong> hrteam@rushkar.com
-                </Typography>
-                <Typography mt={2}>
-                  <strong>Ahmedabad Development Center:</strong>
-                  <br />
-                  411 - Sarthik Square, SG Highway, Pakwan Crossroad, Near GNFC Tower, Bodakdev, Ahmedabad, Gujarat 380054
-                </Typography>
-                <Typography mt={2}>
-                  <strong>Marketing Center:</strong>
-                  <br />
-                  B-512, Titanium City Center, Satellite, Ahmedabad, Gujarat 380015
-                </Typography>
-                <Typography mt={2}>
-                  <strong>Registered Address:</strong>
-                  <br />
-                  C/704, Sarita Residency - 2, Nr. Matru Village, Opp. Umiya Residency, New Nikol, Ahmedabad-382350, India
-                </Typography>
+              </div>
+                <div style={{margin: "30px 0"}}>
+                  <Typography variant="h5">Visit Us</Typography>
+                  <Typography>
+                    <strong style={{fontSize: "20px"}}>Office Address:</strong>
+                    <br/>
+                    203, City Center ,
+                    <br/>
+                    yogichowk punagam,
+                    <br/>
+                    surat - 395010
+                  </Typography>
+                </div>
+
+                <div style={{margin: "30px 0"}}>
+                  <Typography variant="h5">Contact With Us</Typography>
+                  <IconButton
+                      aria-label="Instagram"
+                      onClick={handleClickInsta}
+                      sx={{ color: "#E4405F" }}
+                  >
+                    <InstagramIcon fontSize="large" />
+                  </IconButton>
+                  <IconButton
+                      aria-label="LinkedIn"
+                      onClick={handleClickLink}
+                      sx={{ color: "#0077B5" }}
+                  >
+                    <LinkedInIcon fontSize="large" />
+                  </IconButton>
+                  <IconButton
+                      aria-label="LinkedIn"
+                      onClick={handleClickFace}
+                      sx={{ color: "#0077B5" }}
+                  >
+                    <FacebookIcon fontSize="large" />
+                  </IconButton>
+                </div>
+
               </div>
             </Grid>
             <Grid item xs={12} md={6}>
