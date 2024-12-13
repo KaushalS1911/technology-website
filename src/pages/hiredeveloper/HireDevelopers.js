@@ -8,7 +8,7 @@ import HireDevelopersGrid from "./HireDevelopersGrid";
 
 
 
-const HireDevelopers = () => {
+const   HireDevelopers = () => {
     return (
         <Box bgcolor={theme.palette.backgroundLiteGrey}>
             <Box bgcolor={"white"} paddingY={9} my={"40px"}>
@@ -32,63 +32,64 @@ const HireDevelopers = () => {
                             <Typography variant="h5" gutterBottom>
                                 Hire Dedicated dot net/Asp.Net Developers - Hire C# MVC Developers
                             </Typography>
-                            <Typography variant="body1" paragraph>
+                            <Typography variant="body1" paragraph marginBottom={"50px"}>
                                 DDot Net is a great web development platform that offers complete software infrastructure, a programming model, and different services needed to create robust applications.
                             </Typography>
+                            <Typography variant="h5" gutterBottom >
+                                Why Choose Us for Developer Hiring?
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Diverse Expertise: </strong>
+                                Developers skilled in web, mobile, software, and cloud solutions, with proficiency in modern technologies such as React, Angular, Vue.js, Node.js, Python, and more.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Agile Methodology: </strong>
+                                We follow agile practices for iterative and flexible development, ensuring that projects are completed efficiently and on schedule.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Scalable Solutions: </strong>
+                                From small apps to enterprise-level systems, our developers create scalable solutions tailored to your business requirements.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Global Talent Pool: </strong>
+                                Access top-tier developers from various backgrounds and locations to bring the best skills to your team.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>End-to-End Services: </strong>
+                                From planning and design to development and maintenance, we offer comprehensive services to ensure seamless project execution.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom marginBottom={"50px"}>
+                                <strong>Seamless Collaboration: </strong>
+                                Our developers work closely with your in-house teams, ensuring smooth communication and alignment with your goals.
+                            </Typography>
+
+
+
+                            <Typography variant="h5"  gutterBottom >
+                                Why Choose Us for Your Developer Needs?
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Proven Track Record: </strong>
+                                We’ve successfully delivered numerous projects across various industries, demonstrating our ability to drive results.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom>
+                                <strong>Flexible Engagement Options: </strong>
+                                Whether you need a single developer for a short-term project or a full team for long-term development, we offer scalable solutions that meet your needs.
+                            </Typography>
+                            <Typography fontSize={"18px"} gutterBottom marginBottom={"50px"}>
+                                <strong>Commitment to Excellence: </strong>
+                                Our developers are committed to producing high-quality, well-tested, and reliable software that exceeds your expectations.
+                            </Typography>
+
                             <Typography variant="h5" gutterBottom>
                                 Hire Dedicated Developers for Node JS
                             </Typography>
                             <Typography variant="body1" paragraph>
                                 Speed, productivity, and scalability are essential while opting for Node JS as a project development platform.
                             </Typography>
-                            <Box mb={4}>
-                                <Typography variant="h5" component="h2" gutterBottom>
-                                    Hire Dedicated dot net/Asp.Net Developers - Hire C# MVC Developers
-                                </Typography>
-                                <Typography variant="body1">
-                                    DDot Net is a great web development platform that offers complete software infrastructure, a programming model,
-                                    and different services needed to create robust applications.{" "}
-                                    <strong>Hire dot net developers</strong> / Hire C# MVC developers / hire remote developers from Rushkar Pvt
-                                    Ltd in Bharat as they are highly proficient and trained in using various technologies like C#, C# MVC, .Net,
-                                    Asp.Net, Ajax, VB.Net, and more.
-                                </Typography>
-                            </Box>
 
-                            {/* Section: Hire Dedicated Developers for Node JS */}
-                            <Box mb={4}>
-                                <Typography variant="h5" component="h2" gutterBottom>
-                                    Hire Dedicated Developers for Node JS
-                                </Typography>
-                                <Typography variant="body1">
-                                    Speed, productivity, and scalability are essential while opting for Node JS as a project development platform.
-                                    It lets developers write JavaScript both on the server side and the client side. Hire Node JS developers from
-                                    Rushkar who are passionate about creating scalable network applications using the Node JS framework.
-                                </Typography>
-                            </Box>
+                            <Box marginBottom={"60px"}>
 
-                            {/* Section: Hire Dedicated Developers for Frontend */}
-                            <Box mb={4}>
-                                <Typography variant="h5" component="h2" gutterBottom>
-                                    Hire Dedicated Developers for Frontend
-                                </Typography>
-                                <Typography variant="body1">
-                                    Whether you want front-end developers for your current website or a new one, we have the specialists you
-                                    need. Hire Front-end developers from Rushkar to get the expertise you need for your project development. Our
-                                    experts will help you maximize the user experience through user-friendly, interactive, and responsive
-                                    front-end designs.
-                                </Typography>
-                            </Box>
-
-                            {/* Section: Advantages of Hiring Developers */}
-                            <Box mb={4}>
-                                <Typography variant="h5" component="h2" gutterBottom>
-                                    Advantages of Hiring Dedicated Developers from Rushkar
-                                </Typography>
-                                <Typography variant="body1" gutterBottom>
-                                    Rushkar has a big pool of experienced, skilled, and talented mobile and web developers to convert ideas into
-                                    reality cost-effectively. All our dedicated developers have many years of experience in offering solutions to
-                                    big and small businesses worldwide. Below are the many benefits of hiring our dedicated developers:
-                                </Typography>
                                 <List>
                                     <ListItem>
                                         <ListItemText
