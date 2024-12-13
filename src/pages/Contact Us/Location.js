@@ -45,8 +45,7 @@ function Location() {
                 Visit Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                203, City Center, Savlia Cir, Sanman Society, Mansarovar
-                Society, Yoginagar Society, Surat, Gujarat 395006
+                203, City Center, yogi , Surat, Gujarat 395006
               </Typography>
             </Box>
           </Grid>
