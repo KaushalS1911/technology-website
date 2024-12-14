@@ -13,6 +13,7 @@ import webser9 from "../../assets/images/home-image/UI-UX.jpg";
 import webser10 from "../../assets/images/home-image/Flutter-App-Development.png";
 import webser11 from "../../assets/images/home-image/Marketing.jpg";
 import webser12 from "../../assets/images/home-image/Game-development.png";
+import webser13 from "../../assets/images/home-image/app.jpg";
 import { useTheme } from "@emotion/react";
 import { useNavigate } from "react-router-dom";
 const course = [
@@ -962,7 +963,7 @@ const course = [
     id: 12,
     title: "Digital Marketing Services",
     link: "Digital-Marketing-Services",
-    img: webser10,
+    img: webser12,
     smallDec:
       "At JBS Technology, we offer comprehensive digital marketing services designed to maximize your online presence and drive measurable results. Our team of digital marketing experts specializes in developing tailored strategies that align with your business goals and target audience, ensuring optimal engagement and conversion rates.",
     secondTitle: "Our Services Include:",
@@ -1018,6 +1019,86 @@ const course = [
         We provide insightful analytics and detailed reporting to track key
         performance indicators (KPIs), measure campaign effectiveness, and make
         data-driven decisions for continuous improvement.
+      </div>,
+    ],
+    thirdTitle: "Why Choose Us?",
+    details2: [
+      <div>
+        <span style={{ fontWeight: "bold" }}>Strategic Expertise:</span> Benefit
+        from our strategic approach to digital marketing, where we combine
+        industry insights with innovative strategies to achieve your business
+        goals effectively.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Customized Solutions:</span> We
+        tailor our digital marketing services to fit your unique needs and
+        objectives, ensuring every campaign is meticulously crafted for maximum
+        impact and ROI.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Dedicated Support:</span> Our team
+        is committed to your success, providing dedicated support and proactive
+        guidance to optimize your digital presence and drive continuous growth.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Proven Track Record:</span> With a
+        proven track record of delivering successful campaigns across various
+        industries, we bring experience and reliability to every project we
+        undertake.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Transparent Communication:</span>{" "}
+        We believe in open and transparent communication, keeping you informed
+        every step of the way with clear reporting and actionable insights.
+      </div>,
+    ],
+  },
+  {
+    id: 13,
+    title: "Android Development",
+    link: "Android-Development",
+    img: webser13,
+    smallDec:
+      "At OUT JBS Technology, we specialize in crafting cutting-edge Android applications that align with user-centric design principles and deliver seamless digital experiences. Our Android development team leverages the latest tools, frameworks, and technologies to create robust, scalable, and feature-rich mobile solutions tailored to meet diverse industry needs.",
+    secondTitle: "Our Services Include:",
+    details1: [
+      <div>
+        <span style={{ fontWeight: "bold" }}>
+          Custom App Development:
+        </span>{" "}
+        Developing tailored Android apps involves creating customized solutions designed to address a business's unique challenges, goals, and expectations, ensuring the app delivers maximum value as a purpose-built product rather than a generic solution.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>
+          Open-Source Platform:
+        </span>{" "}
+        Android is built on an open-source framework, making it highly flexible and customizable.Developers have access to a vast ecosystem of libraries, tools, and resources to build innovative applications.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>
+          Diverse Programming Languages:
+        </span>{" "}
+        Primary languages include Kotlin and Java, which are robust, scalable, and supported by extensive documentation.Flexibility in using other languages like C++ or Python for specific components.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Wide Device Compatibility:</span>
+        Android apps run on a variety of devices, from smartphones and tablets to wearables, TVs, and IoT devices.Development involves ensuring compatibility across different screen sizes, hardware configurations, and Android versions.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>Feature-Rich SDK:</span>
+        Android offers a Software Development Kit (SDK) packed with tools like Android Studio, emulators, and testing frameworks to simplify development.APIs enable integration of advanced features like location services, camera access, and machine learning.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>
+          Integration with Modern Technologies:
+        </span>{" "}
+        Android apps can leverage technologies like AI/ML (e.g., TensorFlow Lite), AR/VR (e.g., ARCore), and IoT for smart device control.Seamless integration with cloud services like Firebase for authentication, real-time databases, and analytics.
+      </div>,
+      <div>
+        <span style={{ fontWeight: "bold" }}>
+          Cost-Effective Development:
+        </span>{" "}
+        Android's open-source nature and wide talent pool make development more accessible and budget-friendly for businesses.Easy deployment on the Google Play Store with a minimal one-time registration fee.
       </div>,
     ],
     thirdTitle: "Why Choose Us?",

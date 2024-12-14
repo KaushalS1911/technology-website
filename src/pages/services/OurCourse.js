@@ -53,7 +53,7 @@ const OurCourse = () => {
             img: c5
         },
         {
-            id: "Android Development",
+            id: "Android-Development",
             title: "Android Development",
             desc: "\n" +
                 "JBS Technology's Android Development course offers hands-on training to build dynamic mobile apps, guided by expert trainers in a practical setting.",
